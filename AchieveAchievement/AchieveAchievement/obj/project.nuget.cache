@@ -1,0 +1,1091 @@
+{
+  "version": 2,
+  "dgSpecHash": "hhVZRWx+gTCryilupvoHsdshzq7Q+exv71dqeWKlF/TlU8RhLTih7g4HdgLLZtw4A47HkpOPZrW64BWPoUJTqg==",
+  "success": false,
+  "projectFilePath": "C:\\Users\\james\\source\\repos\\Achieve Achievement\\AchieveAchievement\\AchieveAchievement\\AchieveAchievement.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\james\\.nuget\\packages\\microsoft.windows.sdk.net.ref\\10.0.19041.31\\microsoft.windows.sdk.net.ref.10.0.19041.31.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Microsoft.Maui.Controls (>= 8.0.6)' for 'net8.0-android34.0'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, JBM, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "libraryId": "Microsoft.Maui.Controls",
+      "targetGraphs": [
+        "net8.0-android34.0"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Microsoft.NET.ILLink.Tasks (>= 8.0.2)' for 'net8.0-android34.0'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, JBM, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "libraryId": "Microsoft.NET.ILLink.Tasks",
+      "targetGraphs": [
+        "net8.0-android34.0"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Microsoft.Maui.Controls.Compatibility (>= 8.0.6)' for 'net8.0-android34.0'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, JBM, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "libraryId": "Microsoft.Maui.Controls.Compatibility",
+      "targetGraphs": [
+        "net8.0-android34.0"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Microsoft.Extensions.Logging.Debug (>= 8.0.0)' for 'net8.0-android34.0'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, JBM, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "libraryId": "Microsoft.Extensions.Logging.Debug",
+      "targetGraphs": [
+        "net8.0-android34.0"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Microsoft.Maui.Controls (>= 8.0.6)' for 'net8.0-ios17.2'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, JBM, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "libraryId": "Microsoft.Maui.Controls",
+      "targetGraphs": [
+        "net8.0-ios17.2"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Microsoft.NET.ILLink.Tasks (>= 8.0.2)' for 'net8.0-ios17.2'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, JBM, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "libraryId": "Microsoft.NET.ILLink.Tasks",
+      "targetGraphs": [
+        "net8.0-ios17.2"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Microsoft.Maui.Controls.Compatibility (>= 8.0.6)' for 'net8.0-ios17.2'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, JBM, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "libraryId": "Microsoft.Maui.Controls.Compatibility",
+      "targetGraphs": [
+        "net8.0-ios17.2"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Microsoft.Extensions.Logging.Debug (>= 8.0.0)' for 'net8.0-ios17.2'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, JBM, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "libraryId": "Microsoft.Extensions.Logging.Debug",
+      "targetGraphs": [
+        "net8.0-ios17.2"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Microsoft.Maui.Controls (>= 8.0.6)' for 'net8.0-maccatalyst17.2'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, JBM, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "libraryId": "Microsoft.Maui.Controls",
+      "targetGraphs": [
+        "net8.0-maccatalyst17.2"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Microsoft.NET.ILLink.Tasks (>= 8.0.2)' for 'net8.0-maccatalyst17.2'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, JBM, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "libraryId": "Microsoft.NET.ILLink.Tasks",
+      "targetGraphs": [
+        "net8.0-maccatalyst17.2"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Microsoft.Maui.Controls.Compatibility (>= 8.0.6)' for 'net8.0-maccatalyst17.2'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, JBM, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "libraryId": "Microsoft.Maui.Controls.Compatibility",
+      "targetGraphs": [
+        "net8.0-maccatalyst17.2"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Microsoft.Extensions.Logging.Debug (>= 8.0.0)' for 'net8.0-maccatalyst17.2'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, JBM, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "libraryId": "Microsoft.Extensions.Logging.Debug",
+      "targetGraphs": [
+        "net8.0-maccatalyst17.2"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Microsoft.Maui.Controls (>= 8.0.6)' for 'net8.0-windows10.0.19041'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, JBM, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "libraryId": "Microsoft.Maui.Controls",
+      "targetGraphs": [
+        "net8.0-windows10.0.19041"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Microsoft.Maui.Controls.Compatibility (>= 8.0.6)' for 'net8.0-windows10.0.19041'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, JBM, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "libraryId": "Microsoft.Maui.Controls.Compatibility",
+      "targetGraphs": [
+        "net8.0-windows10.0.19041"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Microsoft.Extensions.Logging.Debug (>= 8.0.0)' for 'net8.0-windows10.0.19041'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, JBM, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "libraryId": "Microsoft.Extensions.Logging.Debug",
+      "targetGraphs": [
+        "net8.0-windows10.0.19041"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Microsoft.Maui.Controls (>= 8.0.6)' for 'net8.0-android34.0/android-arm'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, JBM, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "libraryId": "Microsoft.Maui.Controls",
+      "targetGraphs": [
+        "net8.0-android34.0/android-arm"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Microsoft.NET.ILLink.Tasks (>= 8.0.2)' for 'net8.0-android34.0/android-arm'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, JBM, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "libraryId": "Microsoft.NET.ILLink.Tasks",
+      "targetGraphs": [
+        "net8.0-android34.0/android-arm"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Microsoft.Maui.Controls.Compatibility (>= 8.0.6)' for 'net8.0-android34.0/android-arm'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, JBM, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "libraryId": "Microsoft.Maui.Controls.Compatibility",
+      "targetGraphs": [
+        "net8.0-android34.0/android-arm"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Microsoft.Extensions.Logging.Debug (>= 8.0.0)' for 'net8.0-android34.0/android-arm'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, JBM, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "libraryId": "Microsoft.Extensions.Logging.Debug",
+      "targetGraphs": [
+        "net8.0-android34.0/android-arm"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Microsoft.Maui.Controls (>= 8.0.6)' for 'net8.0-android34.0/android-arm64'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, JBM, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "libraryId": "Microsoft.Maui.Controls",
+      "targetGraphs": [
+        "net8.0-android34.0/android-arm64"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Microsoft.NET.ILLink.Tasks (>= 8.0.2)' for 'net8.0-android34.0/android-arm64'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, JBM, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "libraryId": "Microsoft.NET.ILLink.Tasks",
+      "targetGraphs": [
+        "net8.0-android34.0/android-arm64"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Microsoft.Maui.Controls.Compatibility (>= 8.0.6)' for 'net8.0-android34.0/android-arm64'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, JBM, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "libraryId": "Microsoft.Maui.Controls.Compatibility",
+      "targetGraphs": [
+        "net8.0-android34.0/android-arm64"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Microsoft.Extensions.Logging.Debug (>= 8.0.0)' for 'net8.0-android34.0/android-arm64'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, JBM, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "libraryId": "Microsoft.Extensions.Logging.Debug",
+      "targetGraphs": [
+        "net8.0-android34.0/android-arm64"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Microsoft.Maui.Controls (>= 8.0.6)' for 'net8.0-android34.0/android-x64'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, JBM, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "libraryId": "Microsoft.Maui.Controls",
+      "targetGraphs": [
+        "net8.0-android34.0/android-x64"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Microsoft.NET.ILLink.Tasks (>= 8.0.2)' for 'net8.0-android34.0/android-x64'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, JBM, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "libraryId": "Microsoft.NET.ILLink.Tasks",
+      "targetGraphs": [
+        "net8.0-android34.0/android-x64"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Microsoft.Maui.Controls.Compatibility (>= 8.0.6)' for 'net8.0-android34.0/android-x64'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, JBM, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "libraryId": "Microsoft.Maui.Controls.Compatibility",
+      "targetGraphs": [
+        "net8.0-android34.0/android-x64"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Microsoft.Extensions.Logging.Debug (>= 8.0.0)' for 'net8.0-android34.0/android-x64'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, JBM, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "libraryId": "Microsoft.Extensions.Logging.Debug",
+      "targetGraphs": [
+        "net8.0-android34.0/android-x64"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Microsoft.Maui.Controls (>= 8.0.6)' for 'net8.0-android34.0/android-x86'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, JBM, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "libraryId": "Microsoft.Maui.Controls",
+      "targetGraphs": [
+        "net8.0-android34.0/android-x86"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Microsoft.NET.ILLink.Tasks (>= 8.0.2)' for 'net8.0-android34.0/android-x86'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, JBM, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "libraryId": "Microsoft.NET.ILLink.Tasks",
+      "targetGraphs": [
+        "net8.0-android34.0/android-x86"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Microsoft.Maui.Controls.Compatibility (>= 8.0.6)' for 'net8.0-android34.0/android-x86'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, JBM, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "libraryId": "Microsoft.Maui.Controls.Compatibility",
+      "targetGraphs": [
+        "net8.0-android34.0/android-x86"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Microsoft.Extensions.Logging.Debug (>= 8.0.0)' for 'net8.0-android34.0/android-x86'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, JBM, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "libraryId": "Microsoft.Extensions.Logging.Debug",
+      "targetGraphs": [
+        "net8.0-android34.0/android-x86"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Microsoft.Maui.Controls (>= 8.0.6)' for 'net8.0-android34.0/iossimulator-x64'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, JBM, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "libraryId": "Microsoft.Maui.Controls",
+      "targetGraphs": [
+        "net8.0-android34.0/iossimulator-x64"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Microsoft.NET.ILLink.Tasks (>= 8.0.2)' for 'net8.0-android34.0/iossimulator-x64'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, JBM, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "libraryId": "Microsoft.NET.ILLink.Tasks",
+      "targetGraphs": [
+        "net8.0-android34.0/iossimulator-x64"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Microsoft.Maui.Controls.Compatibility (>= 8.0.6)' for 'net8.0-android34.0/iossimulator-x64'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, JBM, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "libraryId": "Microsoft.Maui.Controls.Compatibility",
+      "targetGraphs": [
+        "net8.0-android34.0/iossimulator-x64"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Microsoft.Extensions.Logging.Debug (>= 8.0.0)' for 'net8.0-android34.0/iossimulator-x64'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, JBM, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "libraryId": "Microsoft.Extensions.Logging.Debug",
+      "targetGraphs": [
+        "net8.0-android34.0/iossimulator-x64"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Microsoft.Maui.Controls (>= 8.0.6)' for 'net8.0-android34.0/maccatalyst-x64'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, JBM, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "libraryId": "Microsoft.Maui.Controls",
+      "targetGraphs": [
+        "net8.0-android34.0/maccatalyst-x64"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Microsoft.NET.ILLink.Tasks (>= 8.0.2)' for 'net8.0-android34.0/maccatalyst-x64'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, JBM, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "libraryId": "Microsoft.NET.ILLink.Tasks",
+      "targetGraphs": [
+        "net8.0-android34.0/maccatalyst-x64"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Microsoft.Maui.Controls.Compatibility (>= 8.0.6)' for 'net8.0-android34.0/maccatalyst-x64'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, JBM, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "libraryId": "Microsoft.Maui.Controls.Compatibility",
+      "targetGraphs": [
+        "net8.0-android34.0/maccatalyst-x64"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Microsoft.Extensions.Logging.Debug (>= 8.0.0)' for 'net8.0-android34.0/maccatalyst-x64'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, JBM, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "libraryId": "Microsoft.Extensions.Logging.Debug",
+      "targetGraphs": [
+        "net8.0-android34.0/maccatalyst-x64"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Microsoft.Maui.Controls (>= 8.0.6)' for 'net8.0-android34.0/win10-x64'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, JBM, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "libraryId": "Microsoft.Maui.Controls",
+      "targetGraphs": [
+        "net8.0-android34.0/win10-x64"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Microsoft.NET.ILLink.Tasks (>= 8.0.2)' for 'net8.0-android34.0/win10-x64'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, JBM, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "libraryId": "Microsoft.NET.ILLink.Tasks",
+      "targetGraphs": [
+        "net8.0-android34.0/win10-x64"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Microsoft.Maui.Controls.Compatibility (>= 8.0.6)' for 'net8.0-android34.0/win10-x64'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, JBM, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "libraryId": "Microsoft.Maui.Controls.Compatibility",
+      "targetGraphs": [
+        "net8.0-android34.0/win10-x64"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Microsoft.Extensions.Logging.Debug (>= 8.0.0)' for 'net8.0-android34.0/win10-x64'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, JBM, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "libraryId": "Microsoft.Extensions.Logging.Debug",
+      "targetGraphs": [
+        "net8.0-android34.0/win10-x64"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Microsoft.Maui.Controls (>= 8.0.6)' for 'net8.0-ios17.2/android-arm'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, JBM, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "libraryId": "Microsoft.Maui.Controls",
+      "targetGraphs": [
+        "net8.0-ios17.2/android-arm"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Microsoft.NET.ILLink.Tasks (>= 8.0.2)' for 'net8.0-ios17.2/android-arm'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, JBM, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "libraryId": "Microsoft.NET.ILLink.Tasks",
+      "targetGraphs": [
+        "net8.0-ios17.2/android-arm"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Microsoft.Maui.Controls.Compatibility (>= 8.0.6)' for 'net8.0-ios17.2/android-arm'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, JBM, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "libraryId": "Microsoft.Maui.Controls.Compatibility",
+      "targetGraphs": [
+        "net8.0-ios17.2/android-arm"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Microsoft.Extensions.Logging.Debug (>= 8.0.0)' for 'net8.0-ios17.2/android-arm'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, JBM, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "libraryId": "Microsoft.Extensions.Logging.Debug",
+      "targetGraphs": [
+        "net8.0-ios17.2/android-arm"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Microsoft.Maui.Controls (>= 8.0.6)' for 'net8.0-ios17.2/android-arm64'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, JBM, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "libraryId": "Microsoft.Maui.Controls",
+      "targetGraphs": [
+        "net8.0-ios17.2/android-arm64"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Microsoft.NET.ILLink.Tasks (>= 8.0.2)' for 'net8.0-ios17.2/android-arm64'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, JBM, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "libraryId": "Microsoft.NET.ILLink.Tasks",
+      "targetGraphs": [
+        "net8.0-ios17.2/android-arm64"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Microsoft.Maui.Controls.Compatibility (>= 8.0.6)' for 'net8.0-ios17.2/android-arm64'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, JBM, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "libraryId": "Microsoft.Maui.Controls.Compatibility",
+      "targetGraphs": [
+        "net8.0-ios17.2/android-arm64"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Microsoft.Extensions.Logging.Debug (>= 8.0.0)' for 'net8.0-ios17.2/android-arm64'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, JBM, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "libraryId": "Microsoft.Extensions.Logging.Debug",
+      "targetGraphs": [
+        "net8.0-ios17.2/android-arm64"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Microsoft.Maui.Controls (>= 8.0.6)' for 'net8.0-ios17.2/android-x64'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, JBM, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "libraryId": "Microsoft.Maui.Controls",
+      "targetGraphs": [
+        "net8.0-ios17.2/android-x64"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Microsoft.NET.ILLink.Tasks (>= 8.0.2)' for 'net8.0-ios17.2/android-x64'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, JBM, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "libraryId": "Microsoft.NET.ILLink.Tasks",
+      "targetGraphs": [
+        "net8.0-ios17.2/android-x64"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Microsoft.Maui.Controls.Compatibility (>= 8.0.6)' for 'net8.0-ios17.2/android-x64'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, JBM, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "libraryId": "Microsoft.Maui.Controls.Compatibility",
+      "targetGraphs": [
+        "net8.0-ios17.2/android-x64"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Microsoft.Extensions.Logging.Debug (>= 8.0.0)' for 'net8.0-ios17.2/android-x64'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, JBM, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "libraryId": "Microsoft.Extensions.Logging.Debug",
+      "targetGraphs": [
+        "net8.0-ios17.2/android-x64"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Microsoft.Maui.Controls (>= 8.0.6)' for 'net8.0-ios17.2/android-x86'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, JBM, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "libraryId": "Microsoft.Maui.Controls",
+      "targetGraphs": [
+        "net8.0-ios17.2/android-x86"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Microsoft.NET.ILLink.Tasks (>= 8.0.2)' for 'net8.0-ios17.2/android-x86'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, JBM, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "libraryId": "Microsoft.NET.ILLink.Tasks",
+      "targetGraphs": [
+        "net8.0-ios17.2/android-x86"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Microsoft.Maui.Controls.Compatibility (>= 8.0.6)' for 'net8.0-ios17.2/android-x86'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, JBM, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "libraryId": "Microsoft.Maui.Controls.Compatibility",
+      "targetGraphs": [
+        "net8.0-ios17.2/android-x86"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Microsoft.Extensions.Logging.Debug (>= 8.0.0)' for 'net8.0-ios17.2/android-x86'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, JBM, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "libraryId": "Microsoft.Extensions.Logging.Debug",
+      "targetGraphs": [
+        "net8.0-ios17.2/android-x86"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Microsoft.Maui.Controls (>= 8.0.6)' for 'net8.0-ios17.2/iossimulator-x64'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, JBM, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "libraryId": "Microsoft.Maui.Controls",
+      "targetGraphs": [
+        "net8.0-ios17.2/iossimulator-x64"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Microsoft.NET.ILLink.Tasks (>= 8.0.2)' for 'net8.0-ios17.2/iossimulator-x64'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, JBM, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "libraryId": "Microsoft.NET.ILLink.Tasks",
+      "targetGraphs": [
+        "net8.0-ios17.2/iossimulator-x64"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Microsoft.Maui.Controls.Compatibility (>= 8.0.6)' for 'net8.0-ios17.2/iossimulator-x64'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, JBM, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "libraryId": "Microsoft.Maui.Controls.Compatibility",
+      "targetGraphs": [
+        "net8.0-ios17.2/iossimulator-x64"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Microsoft.Extensions.Logging.Debug (>= 8.0.0)' for 'net8.0-ios17.2/iossimulator-x64'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, JBM, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "libraryId": "Microsoft.Extensions.Logging.Debug",
+      "targetGraphs": [
+        "net8.0-ios17.2/iossimulator-x64"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Microsoft.Maui.Controls (>= 8.0.6)' for 'net8.0-ios17.2/maccatalyst-x64'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, JBM, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "libraryId": "Microsoft.Maui.Controls",
+      "targetGraphs": [
+        "net8.0-ios17.2/maccatalyst-x64"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Microsoft.NET.ILLink.Tasks (>= 8.0.2)' for 'net8.0-ios17.2/maccatalyst-x64'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, JBM, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "libraryId": "Microsoft.NET.ILLink.Tasks",
+      "targetGraphs": [
+        "net8.0-ios17.2/maccatalyst-x64"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Microsoft.Maui.Controls.Compatibility (>= 8.0.6)' for 'net8.0-ios17.2/maccatalyst-x64'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, JBM, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "libraryId": "Microsoft.Maui.Controls.Compatibility",
+      "targetGraphs": [
+        "net8.0-ios17.2/maccatalyst-x64"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Microsoft.Extensions.Logging.Debug (>= 8.0.0)' for 'net8.0-ios17.2/maccatalyst-x64'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, JBM, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "libraryId": "Microsoft.Extensions.Logging.Debug",
+      "targetGraphs": [
+        "net8.0-ios17.2/maccatalyst-x64"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Microsoft.Maui.Controls (>= 8.0.6)' for 'net8.0-ios17.2/win10-x64'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, JBM, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "libraryId": "Microsoft.Maui.Controls",
+      "targetGraphs": [
+        "net8.0-ios17.2/win10-x64"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Microsoft.NET.ILLink.Tasks (>= 8.0.2)' for 'net8.0-ios17.2/win10-x64'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, JBM, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "libraryId": "Microsoft.NET.ILLink.Tasks",
+      "targetGraphs": [
+        "net8.0-ios17.2/win10-x64"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Microsoft.Maui.Controls.Compatibility (>= 8.0.6)' for 'net8.0-ios17.2/win10-x64'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, JBM, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "libraryId": "Microsoft.Maui.Controls.Compatibility",
+      "targetGraphs": [
+        "net8.0-ios17.2/win10-x64"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Microsoft.Extensions.Logging.Debug (>= 8.0.0)' for 'net8.0-ios17.2/win10-x64'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, JBM, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "libraryId": "Microsoft.Extensions.Logging.Debug",
+      "targetGraphs": [
+        "net8.0-ios17.2/win10-x64"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Microsoft.Maui.Controls (>= 8.0.6)' for 'net8.0-maccatalyst17.2/android-arm'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, JBM, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "libraryId": "Microsoft.Maui.Controls",
+      "targetGraphs": [
+        "net8.0-maccatalyst17.2/android-arm"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Microsoft.NET.ILLink.Tasks (>= 8.0.2)' for 'net8.0-maccatalyst17.2/android-arm'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, JBM, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "libraryId": "Microsoft.NET.ILLink.Tasks",
+      "targetGraphs": [
+        "net8.0-maccatalyst17.2/android-arm"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Microsoft.Maui.Controls.Compatibility (>= 8.0.6)' for 'net8.0-maccatalyst17.2/android-arm'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, JBM, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "libraryId": "Microsoft.Maui.Controls.Compatibility",
+      "targetGraphs": [
+        "net8.0-maccatalyst17.2/android-arm"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Microsoft.Extensions.Logging.Debug (>= 8.0.0)' for 'net8.0-maccatalyst17.2/android-arm'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, JBM, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "libraryId": "Microsoft.Extensions.Logging.Debug",
+      "targetGraphs": [
+        "net8.0-maccatalyst17.2/android-arm"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Microsoft.Maui.Controls (>= 8.0.6)' for 'net8.0-maccatalyst17.2/android-arm64'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, JBM, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "libraryId": "Microsoft.Maui.Controls",
+      "targetGraphs": [
+        "net8.0-maccatalyst17.2/android-arm64"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Microsoft.NET.ILLink.Tasks (>= 8.0.2)' for 'net8.0-maccatalyst17.2/android-arm64'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, JBM, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "libraryId": "Microsoft.NET.ILLink.Tasks",
+      "targetGraphs": [
+        "net8.0-maccatalyst17.2/android-arm64"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Microsoft.Maui.Controls.Compatibility (>= 8.0.6)' for 'net8.0-maccatalyst17.2/android-arm64'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, JBM, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "libraryId": "Microsoft.Maui.Controls.Compatibility",
+      "targetGraphs": [
+        "net8.0-maccatalyst17.2/android-arm64"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Microsoft.Extensions.Logging.Debug (>= 8.0.0)' for 'net8.0-maccatalyst17.2/android-arm64'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, JBM, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "libraryId": "Microsoft.Extensions.Logging.Debug",
+      "targetGraphs": [
+        "net8.0-maccatalyst17.2/android-arm64"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Microsoft.Maui.Controls (>= 8.0.6)' for 'net8.0-maccatalyst17.2/android-x64'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, JBM, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "libraryId": "Microsoft.Maui.Controls",
+      "targetGraphs": [
+        "net8.0-maccatalyst17.2/android-x64"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Microsoft.NET.ILLink.Tasks (>= 8.0.2)' for 'net8.0-maccatalyst17.2/android-x64'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, JBM, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "libraryId": "Microsoft.NET.ILLink.Tasks",
+      "targetGraphs": [
+        "net8.0-maccatalyst17.2/android-x64"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Microsoft.Maui.Controls.Compatibility (>= 8.0.6)' for 'net8.0-maccatalyst17.2/android-x64'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, JBM, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "libraryId": "Microsoft.Maui.Controls.Compatibility",
+      "targetGraphs": [
+        "net8.0-maccatalyst17.2/android-x64"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Microsoft.Extensions.Logging.Debug (>= 8.0.0)' for 'net8.0-maccatalyst17.2/android-x64'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, JBM, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "libraryId": "Microsoft.Extensions.Logging.Debug",
+      "targetGraphs": [
+        "net8.0-maccatalyst17.2/android-x64"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Microsoft.Maui.Controls (>= 8.0.6)' for 'net8.0-maccatalyst17.2/android-x86'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, JBM, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "libraryId": "Microsoft.Maui.Controls",
+      "targetGraphs": [
+        "net8.0-maccatalyst17.2/android-x86"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Microsoft.NET.ILLink.Tasks (>= 8.0.2)' for 'net8.0-maccatalyst17.2/android-x86'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, JBM, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "libraryId": "Microsoft.NET.ILLink.Tasks",
+      "targetGraphs": [
+        "net8.0-maccatalyst17.2/android-x86"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Microsoft.Maui.Controls.Compatibility (>= 8.0.6)' for 'net8.0-maccatalyst17.2/android-x86'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, JBM, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "libraryId": "Microsoft.Maui.Controls.Compatibility",
+      "targetGraphs": [
+        "net8.0-maccatalyst17.2/android-x86"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Microsoft.Extensions.Logging.Debug (>= 8.0.0)' for 'net8.0-maccatalyst17.2/android-x86'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, JBM, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "libraryId": "Microsoft.Extensions.Logging.Debug",
+      "targetGraphs": [
+        "net8.0-maccatalyst17.2/android-x86"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Microsoft.Maui.Controls (>= 8.0.6)' for 'net8.0-maccatalyst17.2/iossimulator-x64'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, JBM, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "libraryId": "Microsoft.Maui.Controls",
+      "targetGraphs": [
+        "net8.0-maccatalyst17.2/iossimulator-x64"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Microsoft.NET.ILLink.Tasks (>= 8.0.2)' for 'net8.0-maccatalyst17.2/iossimulator-x64'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, JBM, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "libraryId": "Microsoft.NET.ILLink.Tasks",
+      "targetGraphs": [
+        "net8.0-maccatalyst17.2/iossimulator-x64"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Microsoft.Maui.Controls.Compatibility (>= 8.0.6)' for 'net8.0-maccatalyst17.2/iossimulator-x64'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, JBM, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "libraryId": "Microsoft.Maui.Controls.Compatibility",
+      "targetGraphs": [
+        "net8.0-maccatalyst17.2/iossimulator-x64"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Microsoft.Extensions.Logging.Debug (>= 8.0.0)' for 'net8.0-maccatalyst17.2/iossimulator-x64'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, JBM, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "libraryId": "Microsoft.Extensions.Logging.Debug",
+      "targetGraphs": [
+        "net8.0-maccatalyst17.2/iossimulator-x64"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Microsoft.Maui.Controls (>= 8.0.6)' for 'net8.0-maccatalyst17.2/maccatalyst-x64'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, JBM, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "libraryId": "Microsoft.Maui.Controls",
+      "targetGraphs": [
+        "net8.0-maccatalyst17.2/maccatalyst-x64"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Microsoft.NET.ILLink.Tasks (>= 8.0.2)' for 'net8.0-maccatalyst17.2/maccatalyst-x64'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, JBM, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "libraryId": "Microsoft.NET.ILLink.Tasks",
+      "targetGraphs": [
+        "net8.0-maccatalyst17.2/maccatalyst-x64"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Microsoft.Maui.Controls.Compatibility (>= 8.0.6)' for 'net8.0-maccatalyst17.2/maccatalyst-x64'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, JBM, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "libraryId": "Microsoft.Maui.Controls.Compatibility",
+      "targetGraphs": [
+        "net8.0-maccatalyst17.2/maccatalyst-x64"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Microsoft.Extensions.Logging.Debug (>= 8.0.0)' for 'net8.0-maccatalyst17.2/maccatalyst-x64'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, JBM, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "libraryId": "Microsoft.Extensions.Logging.Debug",
+      "targetGraphs": [
+        "net8.0-maccatalyst17.2/maccatalyst-x64"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Microsoft.Maui.Controls (>= 8.0.6)' for 'net8.0-maccatalyst17.2/win10-x64'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, JBM, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "libraryId": "Microsoft.Maui.Controls",
+      "targetGraphs": [
+        "net8.0-maccatalyst17.2/win10-x64"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Microsoft.NET.ILLink.Tasks (>= 8.0.2)' for 'net8.0-maccatalyst17.2/win10-x64'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, JBM, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "libraryId": "Microsoft.NET.ILLink.Tasks",
+      "targetGraphs": [
+        "net8.0-maccatalyst17.2/win10-x64"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Microsoft.Maui.Controls.Compatibility (>= 8.0.6)' for 'net8.0-maccatalyst17.2/win10-x64'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, JBM, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "libraryId": "Microsoft.Maui.Controls.Compatibility",
+      "targetGraphs": [
+        "net8.0-maccatalyst17.2/win10-x64"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Microsoft.Extensions.Logging.Debug (>= 8.0.0)' for 'net8.0-maccatalyst17.2/win10-x64'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, JBM, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "libraryId": "Microsoft.Extensions.Logging.Debug",
+      "targetGraphs": [
+        "net8.0-maccatalyst17.2/win10-x64"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Microsoft.Maui.Controls (>= 8.0.6)' for 'net8.0-windows10.0.19041/android-arm'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, JBM, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "libraryId": "Microsoft.Maui.Controls",
+      "targetGraphs": [
+        "net8.0-windows10.0.19041/android-arm"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Microsoft.Maui.Controls.Compatibility (>= 8.0.6)' for 'net8.0-windows10.0.19041/android-arm'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, JBM, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "libraryId": "Microsoft.Maui.Controls.Compatibility",
+      "targetGraphs": [
+        "net8.0-windows10.0.19041/android-arm"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Microsoft.Extensions.Logging.Debug (>= 8.0.0)' for 'net8.0-windows10.0.19041/android-arm'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, JBM, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "libraryId": "Microsoft.Extensions.Logging.Debug",
+      "targetGraphs": [
+        "net8.0-windows10.0.19041/android-arm"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Microsoft.Maui.Controls (>= 8.0.6)' for 'net8.0-windows10.0.19041/android-arm64'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, JBM, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "libraryId": "Microsoft.Maui.Controls",
+      "targetGraphs": [
+        "net8.0-windows10.0.19041/android-arm64"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Microsoft.Maui.Controls.Compatibility (>= 8.0.6)' for 'net8.0-windows10.0.19041/android-arm64'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, JBM, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "libraryId": "Microsoft.Maui.Controls.Compatibility",
+      "targetGraphs": [
+        "net8.0-windows10.0.19041/android-arm64"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Microsoft.Extensions.Logging.Debug (>= 8.0.0)' for 'net8.0-windows10.0.19041/android-arm64'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, JBM, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "libraryId": "Microsoft.Extensions.Logging.Debug",
+      "targetGraphs": [
+        "net8.0-windows10.0.19041/android-arm64"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Microsoft.Maui.Controls (>= 8.0.6)' for 'net8.0-windows10.0.19041/android-x64'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, JBM, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "libraryId": "Microsoft.Maui.Controls",
+      "targetGraphs": [
+        "net8.0-windows10.0.19041/android-x64"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Microsoft.Maui.Controls.Compatibility (>= 8.0.6)' for 'net8.0-windows10.0.19041/android-x64'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, JBM, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "libraryId": "Microsoft.Maui.Controls.Compatibility",
+      "targetGraphs": [
+        "net8.0-windows10.0.19041/android-x64"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Microsoft.Extensions.Logging.Debug (>= 8.0.0)' for 'net8.0-windows10.0.19041/android-x64'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, JBM, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "libraryId": "Microsoft.Extensions.Logging.Debug",
+      "targetGraphs": [
+        "net8.0-windows10.0.19041/android-x64"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Microsoft.Maui.Controls (>= 8.0.6)' for 'net8.0-windows10.0.19041/android-x86'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, JBM, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "libraryId": "Microsoft.Maui.Controls",
+      "targetGraphs": [
+        "net8.0-windows10.0.19041/android-x86"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Microsoft.Maui.Controls.Compatibility (>= 8.0.6)' for 'net8.0-windows10.0.19041/android-x86'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, JBM, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "libraryId": "Microsoft.Maui.Controls.Compatibility",
+      "targetGraphs": [
+        "net8.0-windows10.0.19041/android-x86"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Microsoft.Extensions.Logging.Debug (>= 8.0.0)' for 'net8.0-windows10.0.19041/android-x86'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, JBM, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "libraryId": "Microsoft.Extensions.Logging.Debug",
+      "targetGraphs": [
+        "net8.0-windows10.0.19041/android-x86"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Microsoft.Maui.Controls (>= 8.0.6)' for 'net8.0-windows10.0.19041/iossimulator-x64'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, JBM, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "libraryId": "Microsoft.Maui.Controls",
+      "targetGraphs": [
+        "net8.0-windows10.0.19041/iossimulator-x64"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Microsoft.Maui.Controls.Compatibility (>= 8.0.6)' for 'net8.0-windows10.0.19041/iossimulator-x64'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, JBM, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "libraryId": "Microsoft.Maui.Controls.Compatibility",
+      "targetGraphs": [
+        "net8.0-windows10.0.19041/iossimulator-x64"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Microsoft.Extensions.Logging.Debug (>= 8.0.0)' for 'net8.0-windows10.0.19041/iossimulator-x64'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, JBM, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "libraryId": "Microsoft.Extensions.Logging.Debug",
+      "targetGraphs": [
+        "net8.0-windows10.0.19041/iossimulator-x64"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Microsoft.Maui.Controls (>= 8.0.6)' for 'net8.0-windows10.0.19041/maccatalyst-x64'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, JBM, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "libraryId": "Microsoft.Maui.Controls",
+      "targetGraphs": [
+        "net8.0-windows10.0.19041/maccatalyst-x64"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Microsoft.Maui.Controls.Compatibility (>= 8.0.6)' for 'net8.0-windows10.0.19041/maccatalyst-x64'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, JBM, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "libraryId": "Microsoft.Maui.Controls.Compatibility",
+      "targetGraphs": [
+        "net8.0-windows10.0.19041/maccatalyst-x64"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Microsoft.Extensions.Logging.Debug (>= 8.0.0)' for 'net8.0-windows10.0.19041/maccatalyst-x64'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, JBM, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "libraryId": "Microsoft.Extensions.Logging.Debug",
+      "targetGraphs": [
+        "net8.0-windows10.0.19041/maccatalyst-x64"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Microsoft.Maui.Controls (>= 8.0.6)' for 'net8.0-windows10.0.19041/win10-x64'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, JBM, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "libraryId": "Microsoft.Maui.Controls",
+      "targetGraphs": [
+        "net8.0-windows10.0.19041/win10-x64"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Microsoft.Maui.Controls.Compatibility (>= 8.0.6)' for 'net8.0-windows10.0.19041/win10-x64'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, JBM, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "libraryId": "Microsoft.Maui.Controls.Compatibility",
+      "targetGraphs": [
+        "net8.0-windows10.0.19041/win10-x64"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Microsoft.Extensions.Logging.Debug (>= 8.0.0)' for 'net8.0-windows10.0.19041/win10-x64'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, JBM, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "libraryId": "Microsoft.Extensions.Logging.Debug",
+      "targetGraphs": [
+        "net8.0-windows10.0.19041/win10-x64"
+      ]
+    }
+  ]
+}
