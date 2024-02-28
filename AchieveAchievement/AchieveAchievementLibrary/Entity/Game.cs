@@ -11,6 +11,5 @@ namespace AchieveAchievementLibrary.Entity
         public bool HideGame { get; set; }
         public string PlataformsString { get; set; }
         public IEnumerable<Achievement> Achievements { get; set; }
-        public IEnumerable<Plataform> Plataforms { get; set; }
     }
 }
