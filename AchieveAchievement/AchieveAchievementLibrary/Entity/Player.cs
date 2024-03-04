@@ -10,5 +10,6 @@ namespace AchieveAchievementLibrary.Entity
         public bool ShowContacts { get; set; }
         public IEnumerable<Game> Games { get; set; }
         public IEnumerable<Contact> Contacts { get; set; }
+        public IEnumerable<PlayerFriend> Friends { get; set; }
     }
 }
