@@ -1,9 +1,6 @@
-﻿using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using AchieveAchievementLibrary.Data.DataSettings;
+using AchieveAchievementLibrary.Entity;
+using Microsoft.EntityFrameworkCore;
 
 namespace AchieveAchievementLibrary.Data
 {
@@ -16,7 +13,12 @@ namespace AchieveAchievementLibrary.Data
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            
+            modelBuilder.AccountModelBuilder();
+            modelBuilder.PlayerModelBuilder();
+            modelBuilder.AchievementModelBuilder();
+            modelBuilder.ContactModelBuilder();
+            modelBuilder.GameModelBuilder();
+            modelBuilder.PlayerFriendModelBuilder();
         }
     }
 }

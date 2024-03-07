@@ -41,7 +41,7 @@ namespace AchieveAchievementLibrary.Data.DataSettings
 
                 model.HasMany(x => x.Achievements)
                      .WithOne(x => x.Game)
-                     .HasForeignKey(x => x.Game.Id);
+                     .HasForeignKey(x => x.GameId);
             });
         }
     }

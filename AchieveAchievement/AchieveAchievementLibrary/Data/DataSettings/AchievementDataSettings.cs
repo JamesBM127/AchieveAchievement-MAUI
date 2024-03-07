@@ -1,17 +1,12 @@
 ﻿using AchieveAchievementLibrary.Entity;
 using JBMDatabase.Data.DataSettings;
 using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace AchieveAchievementLibrary.Data.DataSettings
 {
     public static class AchievementDataSettings
     {
-        public static void PlayerModelBuilder(this ModelBuilder modelBuilder)
+        public static void AchievementModelBuilder(this ModelBuilder modelBuilder)
         {
             modelBuilder.BaseEntityModelBuilder<Achievement>();
 

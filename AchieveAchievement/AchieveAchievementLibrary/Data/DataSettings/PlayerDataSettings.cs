@@ -26,7 +26,7 @@ namespace AchieveAchievementLibrary.Data.DataSettings
 
                 model.HasMany(x => x.Contacts)
                      .WithOne(x => x.Player)
-                     .HasForeignKey(x => x.Player.Id)
+                     .HasForeignKey(x => x.PlayerId)
                      .OnDelete(DeleteBehavior.Cascade);
 
                 model.HasOne(x => x.Account)

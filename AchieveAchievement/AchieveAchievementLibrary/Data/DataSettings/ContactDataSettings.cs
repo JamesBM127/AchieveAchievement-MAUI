@@ -11,7 +11,7 @@ namespace AchieveAchievementLibrary.Data.DataSettings
 {
     public static class ContactDataSettings
     {
-        public static void PlayerModelBuilder(this ModelBuilder modelBuilder)
+        public static void ContactModelBuilder(this ModelBuilder modelBuilder)
         {
             modelBuilder.BaseEntityModelBuilder<Contact>();
 

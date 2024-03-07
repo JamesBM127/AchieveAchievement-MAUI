@@ -5,7 +5,7 @@ namespace AchieveAchievementLibrary.Data.DataSettings
 {
     public static class PlayerFriendDataSettings
     {
-        public static void PlayerModelBuilder(this ModelBuilder modelBuilder)
+        public static void PlayerFriendModelBuilder(this ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<PlayerFriend>(model =>
             {
@@ -13,23 +13,23 @@ namespace AchieveAchievementLibrary.Data.DataSettings
 
                 model.HasKey(x => new {x.Player1Id, x.Player2Id});
 
-                model.Property(x => x.Player1)
-                     .HasColumnName("Player1")
-                     .IsRequired();
+                //model.Property(x => x.Player1)
+                //     .HasColumnName("Player1")
+                //     .IsRequired();
 
-                model.Property(x => x.Player2)
-                     .HasColumnName("Player2")
-                     .IsRequired();
+                //model.Property(x => x.Player2)
+                //     .HasColumnName("Player2")
+                //     .IsRequired();
 
                 model.HasOne(X => X.Player1)
-                     .WithMany(xf => xf.Friends)
+                     .WithMany(x => x.Friends)
                      .HasForeignKey(x => x.Player1Id)
-                     .OnDelete(DeleteBehavior.Cascade);
+                     .OnDelete(DeleteBehavior.Restrict);
 
-                model.HasOne(X => X.Player2)
+                model.HasOne(x => x.Player2)
                      .WithMany()
                      .HasForeignKey(x => x.Player2Id)
-                     .OnDelete(DeleteBehavior.Cascade);
+                     .OnDelete(DeleteBehavior.Restrict);
             });
         }
     }
