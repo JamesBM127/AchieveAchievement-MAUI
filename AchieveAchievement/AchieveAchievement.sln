@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AchieveAchievement", "Achie
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AchieveAchievementLibrary", "AchieveAchievementLibrary\AchieveAchievementLibrary.csproj", "{33D8F43E-3A83-405F-B3B2-BC09A87F4F08}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AATest", "AATest\AATest.csproj", "{6EA4A7FF-048C-4D1C-AC51-F389E0BD0060}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,6 +25,10 @@ Global
 		{33D8F43E-3A83-405F-B3B2-BC09A87F4F08}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{33D8F43E-3A83-405F-B3B2-BC09A87F4F08}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{33D8F43E-3A83-405F-B3B2-BC09A87F4F08}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6EA4A7FF-048C-4D1C-AC51-F389E0BD0060}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6EA4A7FF-048C-4D1C-AC51-F389E0BD0060}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6EA4A7FF-048C-4D1C-AC51-F389E0BD0060}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6EA4A7FF-048C-4D1C-AC51-F389E0BD0060}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

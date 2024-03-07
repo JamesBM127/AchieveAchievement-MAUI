@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "dgSpecHash": "aaVr11Wnii6WCLSz1mguGBbnIobiC/2BhLmxjSGJuhtsbe8O+eH3/lVG8sYYTKZVcB8I3iPQvikcagelI+/SMQ==",
-  "success": false,
+  "dgSpecHash": "VsNpxxbwuGW9a3E4G17gmm3TIZ/y5SupGm1NnboJBhCuNSjrpB+g+X9xYUtWkFv1yua9tuwsCEpVfJiFtVo+EA==",
+  "success": true,
   "projectFilePath": "C:\\Users\\james\\source\\repos\\Achieve Achievement\\AchieveAchievement\\AchieveAchievement\\AchieveAchievement.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\james\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
@@ -38,22 +38,23 @@
     "C:\\Users\\james\\.nuget\\packages\\microsoft.graphics.win2d\\1.0.5.1\\microsoft.graphics.win2d.1.0.5.1.nupkg.sha512",
     "C:\\Users\\james\\.nuget\\packages\\microsoft.identity.client\\4.56.0\\microsoft.identity.client.4.56.0.nupkg.sha512",
     "C:\\Users\\james\\.nuget\\packages\\microsoft.identity.client.extensions.msal\\4.56.0\\microsoft.identity.client.extensions.msal.4.56.0.nupkg.sha512",
+    "C:\\Users\\james\\.nuget\\packages\\microsoft.identity.client.nativeinterop\\0.13.8\\microsoft.identity.client.nativeinterop.0.13.8.nupkg.sha512",
     "C:\\Users\\james\\.nuget\\packages\\microsoft.identitymodel.abstractions\\6.24.0\\microsoft.identitymodel.abstractions.6.24.0.nupkg.sha512",
     "C:\\Users\\james\\.nuget\\packages\\microsoft.identitymodel.jsonwebtokens\\6.24.0\\microsoft.identitymodel.jsonwebtokens.6.24.0.nupkg.sha512",
     "C:\\Users\\james\\.nuget\\packages\\microsoft.identitymodel.logging\\6.24.0\\microsoft.identitymodel.logging.6.24.0.nupkg.sha512",
     "C:\\Users\\james\\.nuget\\packages\\microsoft.identitymodel.protocols\\6.24.0\\microsoft.identitymodel.protocols.6.24.0.nupkg.sha512",
     "C:\\Users\\james\\.nuget\\packages\\microsoft.identitymodel.protocols.openidconnect\\6.24.0\\microsoft.identitymodel.protocols.openidconnect.6.24.0.nupkg.sha512",
     "C:\\Users\\james\\.nuget\\packages\\microsoft.identitymodel.tokens\\6.24.0\\microsoft.identitymodel.tokens.6.24.0.nupkg.sha512",
-    "C:\\Users\\james\\.nuget\\packages\\microsoft.maui.controls\\8.0.6\\microsoft.maui.controls.8.0.6.nupkg.sha512",
-    "C:\\Users\\james\\.nuget\\packages\\microsoft.maui.controls.build.tasks\\8.0.6\\microsoft.maui.controls.build.tasks.8.0.6.nupkg.sha512",
-    "C:\\Users\\james\\.nuget\\packages\\microsoft.maui.controls.compatibility\\8.0.6\\microsoft.maui.controls.compatibility.8.0.6.nupkg.sha512",
-    "C:\\Users\\james\\.nuget\\packages\\microsoft.maui.controls.core\\8.0.6\\microsoft.maui.controls.core.8.0.6.nupkg.sha512",
-    "C:\\Users\\james\\.nuget\\packages\\microsoft.maui.controls.xaml\\8.0.6\\microsoft.maui.controls.xaml.8.0.6.nupkg.sha512",
-    "C:\\Users\\james\\.nuget\\packages\\microsoft.maui.core\\8.0.6\\microsoft.maui.core.8.0.6.nupkg.sha512",
-    "C:\\Users\\james\\.nuget\\packages\\microsoft.maui.essentials\\8.0.6\\microsoft.maui.essentials.8.0.6.nupkg.sha512",
-    "C:\\Users\\james\\.nuget\\packages\\microsoft.maui.graphics\\8.0.6\\microsoft.maui.graphics.8.0.6.nupkg.sha512",
-    "C:\\Users\\james\\.nuget\\packages\\microsoft.maui.graphics.win2d.winui.desktop\\8.0.6\\microsoft.maui.graphics.win2d.winui.desktop.8.0.6.nupkg.sha512",
-    "C:\\Users\\james\\.nuget\\packages\\microsoft.maui.resizetizer\\8.0.6\\microsoft.maui.resizetizer.8.0.6.nupkg.sha512",
+    "C:\\Users\\james\\.nuget\\packages\\microsoft.maui.controls\\8.0.7\\microsoft.maui.controls.8.0.7.nupkg.sha512",
+    "C:\\Users\\james\\.nuget\\packages\\microsoft.maui.controls.build.tasks\\8.0.7\\microsoft.maui.controls.build.tasks.8.0.7.nupkg.sha512",
+    "C:\\Users\\james\\.nuget\\packages\\microsoft.maui.controls.compatibility\\8.0.7\\microsoft.maui.controls.compatibility.8.0.7.nupkg.sha512",
+    "C:\\Users\\james\\.nuget\\packages\\microsoft.maui.controls.core\\8.0.7\\microsoft.maui.controls.core.8.0.7.nupkg.sha512",
+    "C:\\Users\\james\\.nuget\\packages\\microsoft.maui.controls.xaml\\8.0.7\\microsoft.maui.controls.xaml.8.0.7.nupkg.sha512",
+    "C:\\Users\\james\\.nuget\\packages\\microsoft.maui.core\\8.0.7\\microsoft.maui.core.8.0.7.nupkg.sha512",
+    "C:\\Users\\james\\.nuget\\packages\\microsoft.maui.essentials\\8.0.7\\microsoft.maui.essentials.8.0.7.nupkg.sha512",
+    "C:\\Users\\james\\.nuget\\packages\\microsoft.maui.graphics\\8.0.7\\microsoft.maui.graphics.8.0.7.nupkg.sha512",
+    "C:\\Users\\james\\.nuget\\packages\\microsoft.maui.graphics.win2d.winui.desktop\\8.0.7\\microsoft.maui.graphics.win2d.winui.desktop.8.0.7.nupkg.sha512",
+    "C:\\Users\\james\\.nuget\\packages\\microsoft.maui.resizetizer\\8.0.7\\microsoft.maui.resizetizer.8.0.7.nupkg.sha512",
     "C:\\Users\\james\\.nuget\\packages\\microsoft.net.illink.tasks\\8.0.2\\microsoft.net.illink.tasks.8.0.2.nupkg.sha512",
     "C:\\Users\\james\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\james\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
@@ -68,17 +69,25 @@
     "C:\\Users\\james\\.nuget\\packages\\runtime.any.system.reflection.primitives\\4.3.0\\runtime.any.system.reflection.primitives.4.3.0.nupkg.sha512",
     "C:\\Users\\james\\.nuget\\packages\\runtime.any.system.resources.resourcemanager\\4.3.0\\runtime.any.system.resources.resourcemanager.4.3.0.nupkg.sha512",
     "C:\\Users\\james\\.nuget\\packages\\runtime.any.system.runtime\\4.3.0\\runtime.any.system.runtime.4.3.0.nupkg.sha512",
+    "C:\\Users\\james\\.nuget\\packages\\runtime.any.system.runtime.handles\\4.3.0\\runtime.any.system.runtime.handles.4.3.0.nupkg.sha512",
+    "C:\\Users\\james\\.nuget\\packages\\runtime.any.system.runtime.interopservices\\4.3.0\\runtime.any.system.runtime.interopservices.4.3.0.nupkg.sha512",
     "C:\\Users\\james\\.nuget\\packages\\runtime.any.system.text.encoding\\4.3.0\\runtime.any.system.text.encoding.4.3.0.nupkg.sha512",
     "C:\\Users\\james\\.nuget\\packages\\runtime.any.system.threading.tasks\\4.3.0\\runtime.any.system.threading.tasks.4.3.0.nupkg.sha512",
     "C:\\Users\\james\\.nuget\\packages\\runtime.native.system\\4.3.0\\runtime.native.system.4.3.0.nupkg.sha512",
+    "C:\\Users\\james\\.nuget\\packages\\runtime.unix.system.diagnostics.debug\\4.3.0\\runtime.unix.system.diagnostics.debug.4.3.0.nupkg.sha512",
     "C:\\Users\\james\\.nuget\\packages\\runtime.unix.system.private.uri\\4.3.0\\runtime.unix.system.private.uri.4.3.0.nupkg.sha512",
+    "C:\\Users\\james\\.nuget\\packages\\runtime.win.system.diagnostics.debug\\4.3.0\\runtime.win.system.diagnostics.debug.4.3.0.nupkg.sha512",
     "C:\\Users\\james\\.nuget\\packages\\runtime.win7.system.private.uri\\4.3.0\\runtime.win7.system.private.uri.4.3.0.nupkg.sha512",
     "C:\\Users\\james\\.nuget\\packages\\sqlitepclraw.bundle_e_sqlite3\\2.1.6\\sqlitepclraw.bundle_e_sqlite3.2.1.6.nupkg.sha512",
     "C:\\Users\\james\\.nuget\\packages\\sqlitepclraw.core\\2.1.6\\sqlitepclraw.core.2.1.6.nupkg.sha512",
     "C:\\Users\\james\\.nuget\\packages\\sqlitepclraw.lib.e_sqlite3\\2.1.6\\sqlitepclraw.lib.e_sqlite3.2.1.6.nupkg.sha512",
+    "C:\\Users\\james\\.nuget\\packages\\sqlitepclraw.lib.e_sqlite3.android\\2.1.6\\sqlitepclraw.lib.e_sqlite3.android.2.1.6.nupkg.sha512",
+    "C:\\Users\\james\\.nuget\\packages\\sqlitepclraw.lib.e_sqlite3.ios\\2.1.6\\sqlitepclraw.lib.e_sqlite3.ios.2.1.6.nupkg.sha512",
     "C:\\Users\\james\\.nuget\\packages\\sqlitepclraw.provider.e_sqlite3\\2.1.6\\sqlitepclraw.provider.e_sqlite3.2.1.6.nupkg.sha512",
+    "C:\\Users\\james\\.nuget\\packages\\sqlitepclraw.provider.internal\\2.1.6\\sqlitepclraw.provider.internal.2.1.6.nupkg.sha512",
     "C:\\Users\\james\\.nuget\\packages\\system.buffers\\4.5.1\\system.buffers.4.5.1.nupkg.sha512",
     "C:\\Users\\james\\.nuget\\packages\\system.configuration.configurationmanager\\6.0.1\\system.configuration.configurationmanager.6.0.1.nupkg.sha512",
+    "C:\\Users\\james\\.nuget\\packages\\system.diagnostics.debug\\4.3.0\\system.diagnostics.debug.4.3.0.nupkg.sha512",
     "C:\\Users\\james\\.nuget\\packages\\system.diagnostics.diagnosticsource\\6.0.1\\system.diagnostics.diagnosticsource.6.0.1.nupkg.sha512",
     "C:\\Users\\james\\.nuget\\packages\\system.drawing.common\\6.0.0\\system.drawing.common.6.0.0.nupkg.sha512",
     "C:\\Users\\james\\.nuget\\packages\\system.formats.asn1\\5.0.0\\system.formats.asn1.5.0.0.nupkg.sha512",
@@ -96,9 +105,12 @@
     "C:\\Users\\james\\.nuget\\packages\\system.runtime\\4.3.0\\system.runtime.4.3.0.nupkg.sha512",
     "C:\\Users\\james\\.nuget\\packages\\system.runtime.caching\\6.0.0\\system.runtime.caching.6.0.0.nupkg.sha512",
     "C:\\Users\\james\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
+    "C:\\Users\\james\\.nuget\\packages\\system.runtime.handles\\4.3.0\\system.runtime.handles.4.3.0.nupkg.sha512",
+    "C:\\Users\\james\\.nuget\\packages\\system.runtime.interopservices\\4.3.0\\system.runtime.interopservices.4.3.0.nupkg.sha512",
     "C:\\Users\\james\\.nuget\\packages\\system.runtime.interopservices.nfloat.internal\\6.0.1\\system.runtime.interopservices.nfloat.internal.6.0.1.nupkg.sha512",
     "C:\\Users\\james\\.nuget\\packages\\system.security.accesscontrol\\6.0.0\\system.security.accesscontrol.6.0.0.nupkg.sha512",
     "C:\\Users\\james\\.nuget\\packages\\system.security.cryptography.cng\\5.0.0\\system.security.cryptography.cng.5.0.0.nupkg.sha512",
+    "C:\\Users\\james\\.nuget\\packages\\system.security.cryptography.primitives\\4.3.0\\system.security.cryptography.primitives.4.3.0.nupkg.sha512",
     "C:\\Users\\james\\.nuget\\packages\\system.security.cryptography.protecteddata\\6.0.0\\system.security.cryptography.protecteddata.6.0.0.nupkg.sha512",
     "C:\\Users\\james\\.nuget\\packages\\system.security.permissions\\6.0.0\\system.security.permissions.6.0.0.nupkg.sha512",
     "C:\\Users\\james\\.nuget\\packages\\system.security.principal.windows\\5.0.0\\system.security.principal.windows.5.0.0.nupkg.sha512",
@@ -107,6 +119,7 @@
     "C:\\Users\\james\\.nuget\\packages\\system.text.encoding.codepages\\6.0.0\\system.text.encoding.codepages.6.0.0.nupkg.sha512",
     "C:\\Users\\james\\.nuget\\packages\\system.text.encodings.web\\8.0.0\\system.text.encodings.web.8.0.0.nupkg.sha512",
     "C:\\Users\\james\\.nuget\\packages\\system.text.json\\8.0.0\\system.text.json.8.0.0.nupkg.sha512",
+    "C:\\Users\\james\\.nuget\\packages\\system.threading\\4.3.0\\system.threading.4.3.0.nupkg.sha512",
     "C:\\Users\\james\\.nuget\\packages\\system.threading.tasks\\4.3.0\\system.threading.tasks.4.3.0.nupkg.sha512",
     "C:\\Users\\james\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512",
     "C:\\Users\\james\\.nuget\\packages\\system.windows.extensions\\6.0.0\\system.windows.extensions.6.0.0.nupkg.sha512",
@@ -195,708 +208,5 @@
     "C:\\Users\\james\\.nuget\\packages\\xamarin.kotlinx.coroutines.core.jvm\\1.7.2.1\\xamarin.kotlinx.coroutines.core.jvm.1.7.2.1.nupkg.sha512",
     "C:\\Users\\james\\.nuget\\packages\\microsoft.windows.sdk.net.ref\\10.0.19041.31\\microsoft.windows.sdk.net.ref.10.0.19041.31.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "NU1100",
-      "level": "Error",
-      "message": "Unable to resolve 'SQLitePCLRaw.lib.e_sqlite3.android (>= 2.1.6)' for 'net8.0-android34.0'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, JBM, Microsoft Visual Studio Offline Packages, nuget.org.",
-      "libraryId": "SQLitePCLRaw.lib.e_sqlite3.android",
-      "targetGraphs": [
-        "net8.0-android34.0"
-      ]
-    },
-    {
-      "code": "NU1100",
-      "level": "Error",
-      "message": "Unable to resolve 'SQLitePCLRaw.lib.e_sqlite3.ios (>= 2.1.6)' for 'net8.0-ios17.2'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, JBM, Microsoft Visual Studio Offline Packages, nuget.org.",
-      "libraryId": "SQLitePCLRaw.lib.e_sqlite3.ios",
-      "targetGraphs": [
-        "net8.0-ios17.2"
-      ]
-    },
-    {
-      "code": "NU1100",
-      "level": "Error",
-      "message": "Unable to resolve 'SQLitePCLRaw.provider.internal (>= 2.1.6)' for 'net8.0-ios17.2'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, JBM, Microsoft Visual Studio Offline Packages, nuget.org.",
-      "libraryId": "SQLitePCLRaw.provider.internal",
-      "targetGraphs": [
-        "net8.0-ios17.2"
-      ]
-    },
-    {
-      "code": "NU1100",
-      "level": "Error",
-      "message": "Unable to resolve 'System.Runtime.Handles (>= 4.3.0)' for 'net8.0-ios17.2'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, JBM, Microsoft Visual Studio Offline Packages, nuget.org.",
-      "libraryId": "System.Runtime.Handles",
-      "targetGraphs": [
-        "net8.0-ios17.2"
-      ]
-    },
-    {
-      "code": "NU1100",
-      "level": "Error",
-      "message": "Unable to resolve 'System.Runtime.InteropServices (>= 4.3.0)' for 'net8.0-ios17.2'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, JBM, Microsoft Visual Studio Offline Packages, nuget.org.",
-      "libraryId": "System.Runtime.InteropServices",
-      "targetGraphs": [
-        "net8.0-ios17.2"
-      ]
-    },
-    {
-      "code": "NU1100",
-      "level": "Error",
-      "message": "Unable to resolve 'System.Security.Cryptography.Primitives (>= 4.3.0)' for 'net8.0-ios17.2'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, JBM, Microsoft Visual Studio Offline Packages, nuget.org.",
-      "libraryId": "System.Security.Cryptography.Primitives",
-      "targetGraphs": [
-        "net8.0-ios17.2"
-      ]
-    },
-    {
-      "code": "NU1100",
-      "level": "Error",
-      "message": "Unable to resolve 'System.Threading (>= 4.3.0)' for 'net8.0-ios17.2'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, JBM, Microsoft Visual Studio Offline Packages, nuget.org.",
-      "libraryId": "System.Threading",
-      "targetGraphs": [
-        "net8.0-ios17.2"
-      ]
-    },
-    {
-      "code": "NU1100",
-      "level": "Error",
-      "message": "Unable to resolve 'Microsoft.Identity.Client.NativeInterop (>= 0.13.8)' for 'net8.0-windows10.0.19041'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, JBM, Microsoft Visual Studio Offline Packages, nuget.org.",
-      "libraryId": "Microsoft.Identity.Client.NativeInterop",
-      "targetGraphs": [
-        "net8.0-windows10.0.19041"
-      ]
-    },
-    {
-      "code": "NU1100",
-      "level": "Error",
-      "message": "Unable to resolve 'SQLitePCLRaw.lib.e_sqlite3.android (>= 2.1.6)' for 'net8.0-android34.0/android-arm'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, JBM, Microsoft Visual Studio Offline Packages, nuget.org.",
-      "libraryId": "SQLitePCLRaw.lib.e_sqlite3.android",
-      "targetGraphs": [
-        "net8.0-android34.0/android-arm"
-      ]
-    },
-    {
-      "code": "NU1100",
-      "level": "Error",
-      "message": "Unable to resolve 'SQLitePCLRaw.lib.e_sqlite3.android (>= 2.1.6)' for 'net8.0-android34.0/android-arm64'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, JBM, Microsoft Visual Studio Offline Packages, nuget.org.",
-      "libraryId": "SQLitePCLRaw.lib.e_sqlite3.android",
-      "targetGraphs": [
-        "net8.0-android34.0/android-arm64"
-      ]
-    },
-    {
-      "code": "NU1100",
-      "level": "Error",
-      "message": "Unable to resolve 'SQLitePCLRaw.lib.e_sqlite3.android (>= 2.1.6)' for 'net8.0-android34.0/android-x64'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, JBM, Microsoft Visual Studio Offline Packages, nuget.org.",
-      "libraryId": "SQLitePCLRaw.lib.e_sqlite3.android",
-      "targetGraphs": [
-        "net8.0-android34.0/android-x64"
-      ]
-    },
-    {
-      "code": "NU1100",
-      "level": "Error",
-      "message": "Unable to resolve 'SQLitePCLRaw.lib.e_sqlite3.android (>= 2.1.6)' for 'net8.0-android34.0/android-x86'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, JBM, Microsoft Visual Studio Offline Packages, nuget.org.",
-      "libraryId": "SQLitePCLRaw.lib.e_sqlite3.android",
-      "targetGraphs": [
-        "net8.0-android34.0/android-x86"
-      ]
-    },
-    {
-      "code": "NU1100",
-      "level": "Error",
-      "message": "Unable to resolve 'SQLitePCLRaw.lib.e_sqlite3.android (>= 2.1.6)' for 'net8.0-android34.0/iossimulator-x64'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, JBM, Microsoft Visual Studio Offline Packages, nuget.org.",
-      "libraryId": "SQLitePCLRaw.lib.e_sqlite3.android",
-      "targetGraphs": [
-        "net8.0-android34.0/iossimulator-x64"
-      ]
-    },
-    {
-      "code": "NU1100",
-      "level": "Error",
-      "message": "Unable to resolve 'SQLitePCLRaw.lib.e_sqlite3.android (>= 2.1.6)' for 'net8.0-android34.0/maccatalyst-x64'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, JBM, Microsoft Visual Studio Offline Packages, nuget.org.",
-      "libraryId": "SQLitePCLRaw.lib.e_sqlite3.android",
-      "targetGraphs": [
-        "net8.0-android34.0/maccatalyst-x64"
-      ]
-    },
-    {
-      "code": "NU1100",
-      "level": "Error",
-      "message": "Unable to resolve 'SQLitePCLRaw.lib.e_sqlite3.android (>= 2.1.6)' for 'net8.0-android34.0/win10-x64'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, JBM, Microsoft Visual Studio Offline Packages, nuget.org.",
-      "libraryId": "SQLitePCLRaw.lib.e_sqlite3.android",
-      "targetGraphs": [
-        "net8.0-android34.0/win10-x64"
-      ]
-    },
-    {
-      "code": "NU1100",
-      "level": "Error",
-      "message": "Unable to resolve 'SQLitePCLRaw.lib.e_sqlite3.ios (>= 2.1.6)' for 'net8.0-ios17.2/android-arm'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, JBM, Microsoft Visual Studio Offline Packages, nuget.org.",
-      "libraryId": "SQLitePCLRaw.lib.e_sqlite3.ios",
-      "targetGraphs": [
-        "net8.0-ios17.2/android-arm"
-      ]
-    },
-    {
-      "code": "NU1100",
-      "level": "Error",
-      "message": "Unable to resolve 'SQLitePCLRaw.provider.internal (>= 2.1.6)' for 'net8.0-ios17.2/android-arm'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, JBM, Microsoft Visual Studio Offline Packages, nuget.org.",
-      "libraryId": "SQLitePCLRaw.provider.internal",
-      "targetGraphs": [
-        "net8.0-ios17.2/android-arm"
-      ]
-    },
-    {
-      "code": "NU1100",
-      "level": "Error",
-      "message": "Unable to resolve 'System.Runtime.Handles (>= 4.3.0)' for 'net8.0-ios17.2/android-arm'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, JBM, Microsoft Visual Studio Offline Packages, nuget.org.",
-      "libraryId": "System.Runtime.Handles",
-      "targetGraphs": [
-        "net8.0-ios17.2/android-arm"
-      ]
-    },
-    {
-      "code": "NU1100",
-      "level": "Error",
-      "message": "Unable to resolve 'System.Runtime.InteropServices (>= 4.3.0)' for 'net8.0-ios17.2/android-arm'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, JBM, Microsoft Visual Studio Offline Packages, nuget.org.",
-      "libraryId": "System.Runtime.InteropServices",
-      "targetGraphs": [
-        "net8.0-ios17.2/android-arm"
-      ]
-    },
-    {
-      "code": "NU1100",
-      "level": "Error",
-      "message": "Unable to resolve 'System.Security.Cryptography.Primitives (>= 4.3.0)' for 'net8.0-ios17.2/android-arm'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, JBM, Microsoft Visual Studio Offline Packages, nuget.org.",
-      "libraryId": "System.Security.Cryptography.Primitives",
-      "targetGraphs": [
-        "net8.0-ios17.2/android-arm"
-      ]
-    },
-    {
-      "code": "NU1100",
-      "level": "Error",
-      "message": "Unable to resolve 'System.Threading (>= 4.3.0)' for 'net8.0-ios17.2/android-arm'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, JBM, Microsoft Visual Studio Offline Packages, nuget.org.",
-      "libraryId": "System.Threading",
-      "targetGraphs": [
-        "net8.0-ios17.2/android-arm"
-      ]
-    },
-    {
-      "code": "NU1100",
-      "level": "Error",
-      "message": "Unable to resolve 'runtime.any.System.Runtime.Handles (>= 4.3.0)' for 'net8.0-ios17.2/android-arm'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, JBM, Microsoft Visual Studio Offline Packages, nuget.org.",
-      "libraryId": "runtime.any.System.Runtime.Handles",
-      "targetGraphs": [
-        "net8.0-ios17.2/android-arm"
-      ]
-    },
-    {
-      "code": "NU1100",
-      "level": "Error",
-      "message": "Unable to resolve 'runtime.any.System.Runtime.InteropServices (>= 4.3.0)' for 'net8.0-ios17.2/android-arm'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, JBM, Microsoft Visual Studio Offline Packages, nuget.org.",
-      "libraryId": "runtime.any.System.Runtime.InteropServices",
-      "targetGraphs": [
-        "net8.0-ios17.2/android-arm"
-      ]
-    },
-    {
-      "code": "NU1100",
-      "level": "Error",
-      "message": "Unable to resolve 'SQLitePCLRaw.lib.e_sqlite3.ios (>= 2.1.6)' for 'net8.0-ios17.2/android-arm64'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, JBM, Microsoft Visual Studio Offline Packages, nuget.org.",
-      "libraryId": "SQLitePCLRaw.lib.e_sqlite3.ios",
-      "targetGraphs": [
-        "net8.0-ios17.2/android-arm64"
-      ]
-    },
-    {
-      "code": "NU1100",
-      "level": "Error",
-      "message": "Unable to resolve 'SQLitePCLRaw.provider.internal (>= 2.1.6)' for 'net8.0-ios17.2/android-arm64'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, JBM, Microsoft Visual Studio Offline Packages, nuget.org.",
-      "libraryId": "SQLitePCLRaw.provider.internal",
-      "targetGraphs": [
-        "net8.0-ios17.2/android-arm64"
-      ]
-    },
-    {
-      "code": "NU1100",
-      "level": "Error",
-      "message": "Unable to resolve 'System.Runtime.Handles (>= 4.3.0)' for 'net8.0-ios17.2/android-arm64'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, JBM, Microsoft Visual Studio Offline Packages, nuget.org.",
-      "libraryId": "System.Runtime.Handles",
-      "targetGraphs": [
-        "net8.0-ios17.2/android-arm64"
-      ]
-    },
-    {
-      "code": "NU1100",
-      "level": "Error",
-      "message": "Unable to resolve 'System.Runtime.InteropServices (>= 4.3.0)' for 'net8.0-ios17.2/android-arm64'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, JBM, Microsoft Visual Studio Offline Packages, nuget.org.",
-      "libraryId": "System.Runtime.InteropServices",
-      "targetGraphs": [
-        "net8.0-ios17.2/android-arm64"
-      ]
-    },
-    {
-      "code": "NU1100",
-      "level": "Error",
-      "message": "Unable to resolve 'System.Security.Cryptography.Primitives (>= 4.3.0)' for 'net8.0-ios17.2/android-arm64'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, JBM, Microsoft Visual Studio Offline Packages, nuget.org.",
-      "libraryId": "System.Security.Cryptography.Primitives",
-      "targetGraphs": [
-        "net8.0-ios17.2/android-arm64"
-      ]
-    },
-    {
-      "code": "NU1100",
-      "level": "Error",
-      "message": "Unable to resolve 'System.Threading (>= 4.3.0)' for 'net8.0-ios17.2/android-arm64'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, JBM, Microsoft Visual Studio Offline Packages, nuget.org.",
-      "libraryId": "System.Threading",
-      "targetGraphs": [
-        "net8.0-ios17.2/android-arm64"
-      ]
-    },
-    {
-      "code": "NU1100",
-      "level": "Error",
-      "message": "Unable to resolve 'runtime.any.System.Runtime.Handles (>= 4.3.0)' for 'net8.0-ios17.2/android-arm64'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, JBM, Microsoft Visual Studio Offline Packages, nuget.org.",
-      "libraryId": "runtime.any.System.Runtime.Handles",
-      "targetGraphs": [
-        "net8.0-ios17.2/android-arm64"
-      ]
-    },
-    {
-      "code": "NU1100",
-      "level": "Error",
-      "message": "Unable to resolve 'runtime.any.System.Runtime.InteropServices (>= 4.3.0)' for 'net8.0-ios17.2/android-arm64'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, JBM, Microsoft Visual Studio Offline Packages, nuget.org.",
-      "libraryId": "runtime.any.System.Runtime.InteropServices",
-      "targetGraphs": [
-        "net8.0-ios17.2/android-arm64"
-      ]
-    },
-    {
-      "code": "NU1100",
-      "level": "Error",
-      "message": "Unable to resolve 'SQLitePCLRaw.lib.e_sqlite3.ios (>= 2.1.6)' for 'net8.0-ios17.2/android-x64'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, JBM, Microsoft Visual Studio Offline Packages, nuget.org.",
-      "libraryId": "SQLitePCLRaw.lib.e_sqlite3.ios",
-      "targetGraphs": [
-        "net8.0-ios17.2/android-x64"
-      ]
-    },
-    {
-      "code": "NU1100",
-      "level": "Error",
-      "message": "Unable to resolve 'SQLitePCLRaw.provider.internal (>= 2.1.6)' for 'net8.0-ios17.2/android-x64'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, JBM, Microsoft Visual Studio Offline Packages, nuget.org.",
-      "libraryId": "SQLitePCLRaw.provider.internal",
-      "targetGraphs": [
-        "net8.0-ios17.2/android-x64"
-      ]
-    },
-    {
-      "code": "NU1100",
-      "level": "Error",
-      "message": "Unable to resolve 'System.Runtime.Handles (>= 4.3.0)' for 'net8.0-ios17.2/android-x64'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, JBM, Microsoft Visual Studio Offline Packages, nuget.org.",
-      "libraryId": "System.Runtime.Handles",
-      "targetGraphs": [
-        "net8.0-ios17.2/android-x64"
-      ]
-    },
-    {
-      "code": "NU1100",
-      "level": "Error",
-      "message": "Unable to resolve 'System.Runtime.InteropServices (>= 4.3.0)' for 'net8.0-ios17.2/android-x64'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, JBM, Microsoft Visual Studio Offline Packages, nuget.org.",
-      "libraryId": "System.Runtime.InteropServices",
-      "targetGraphs": [
-        "net8.0-ios17.2/android-x64"
-      ]
-    },
-    {
-      "code": "NU1100",
-      "level": "Error",
-      "message": "Unable to resolve 'System.Security.Cryptography.Primitives (>= 4.3.0)' for 'net8.0-ios17.2/android-x64'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, JBM, Microsoft Visual Studio Offline Packages, nuget.org.",
-      "libraryId": "System.Security.Cryptography.Primitives",
-      "targetGraphs": [
-        "net8.0-ios17.2/android-x64"
-      ]
-    },
-    {
-      "code": "NU1100",
-      "level": "Error",
-      "message": "Unable to resolve 'System.Threading (>= 4.3.0)' for 'net8.0-ios17.2/android-x64'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, JBM, Microsoft Visual Studio Offline Packages, nuget.org.",
-      "libraryId": "System.Threading",
-      "targetGraphs": [
-        "net8.0-ios17.2/android-x64"
-      ]
-    },
-    {
-      "code": "NU1100",
-      "level": "Error",
-      "message": "Unable to resolve 'runtime.any.System.Runtime.Handles (>= 4.3.0)' for 'net8.0-ios17.2/android-x64'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, JBM, Microsoft Visual Studio Offline Packages, nuget.org.",
-      "libraryId": "runtime.any.System.Runtime.Handles",
-      "targetGraphs": [
-        "net8.0-ios17.2/android-x64"
-      ]
-    },
-    {
-      "code": "NU1100",
-      "level": "Error",
-      "message": "Unable to resolve 'runtime.any.System.Runtime.InteropServices (>= 4.3.0)' for 'net8.0-ios17.2/android-x64'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, JBM, Microsoft Visual Studio Offline Packages, nuget.org.",
-      "libraryId": "runtime.any.System.Runtime.InteropServices",
-      "targetGraphs": [
-        "net8.0-ios17.2/android-x64"
-      ]
-    },
-    {
-      "code": "NU1100",
-      "level": "Error",
-      "message": "Unable to resolve 'SQLitePCLRaw.lib.e_sqlite3.ios (>= 2.1.6)' for 'net8.0-ios17.2/android-x86'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, JBM, Microsoft Visual Studio Offline Packages, nuget.org.",
-      "libraryId": "SQLitePCLRaw.lib.e_sqlite3.ios",
-      "targetGraphs": [
-        "net8.0-ios17.2/android-x86"
-      ]
-    },
-    {
-      "code": "NU1100",
-      "level": "Error",
-      "message": "Unable to resolve 'SQLitePCLRaw.provider.internal (>= 2.1.6)' for 'net8.0-ios17.2/android-x86'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, JBM, Microsoft Visual Studio Offline Packages, nuget.org.",
-      "libraryId": "SQLitePCLRaw.provider.internal",
-      "targetGraphs": [
-        "net8.0-ios17.2/android-x86"
-      ]
-    },
-    {
-      "code": "NU1100",
-      "level": "Error",
-      "message": "Unable to resolve 'System.Runtime.Handles (>= 4.3.0)' for 'net8.0-ios17.2/android-x86'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, JBM, Microsoft Visual Studio Offline Packages, nuget.org.",
-      "libraryId": "System.Runtime.Handles",
-      "targetGraphs": [
-        "net8.0-ios17.2/android-x86"
-      ]
-    },
-    {
-      "code": "NU1100",
-      "level": "Error",
-      "message": "Unable to resolve 'System.Runtime.InteropServices (>= 4.3.0)' for 'net8.0-ios17.2/android-x86'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, JBM, Microsoft Visual Studio Offline Packages, nuget.org.",
-      "libraryId": "System.Runtime.InteropServices",
-      "targetGraphs": [
-        "net8.0-ios17.2/android-x86"
-      ]
-    },
-    {
-      "code": "NU1100",
-      "level": "Error",
-      "message": "Unable to resolve 'System.Security.Cryptography.Primitives (>= 4.3.0)' for 'net8.0-ios17.2/android-x86'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, JBM, Microsoft Visual Studio Offline Packages, nuget.org.",
-      "libraryId": "System.Security.Cryptography.Primitives",
-      "targetGraphs": [
-        "net8.0-ios17.2/android-x86"
-      ]
-    },
-    {
-      "code": "NU1100",
-      "level": "Error",
-      "message": "Unable to resolve 'System.Threading (>= 4.3.0)' for 'net8.0-ios17.2/android-x86'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, JBM, Microsoft Visual Studio Offline Packages, nuget.org.",
-      "libraryId": "System.Threading",
-      "targetGraphs": [
-        "net8.0-ios17.2/android-x86"
-      ]
-    },
-    {
-      "code": "NU1100",
-      "level": "Error",
-      "message": "Unable to resolve 'runtime.any.System.Runtime.Handles (>= 4.3.0)' for 'net8.0-ios17.2/android-x86'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, JBM, Microsoft Visual Studio Offline Packages, nuget.org.",
-      "libraryId": "runtime.any.System.Runtime.Handles",
-      "targetGraphs": [
-        "net8.0-ios17.2/android-x86"
-      ]
-    },
-    {
-      "code": "NU1100",
-      "level": "Error",
-      "message": "Unable to resolve 'runtime.any.System.Runtime.InteropServices (>= 4.3.0)' for 'net8.0-ios17.2/android-x86'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, JBM, Microsoft Visual Studio Offline Packages, nuget.org.",
-      "libraryId": "runtime.any.System.Runtime.InteropServices",
-      "targetGraphs": [
-        "net8.0-ios17.2/android-x86"
-      ]
-    },
-    {
-      "code": "NU1100",
-      "level": "Error",
-      "message": "Unable to resolve 'SQLitePCLRaw.lib.e_sqlite3.ios (>= 2.1.6)' for 'net8.0-ios17.2/iossimulator-x64'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, JBM, Microsoft Visual Studio Offline Packages, nuget.org.",
-      "libraryId": "SQLitePCLRaw.lib.e_sqlite3.ios",
-      "targetGraphs": [
-        "net8.0-ios17.2/iossimulator-x64"
-      ]
-    },
-    {
-      "code": "NU1100",
-      "level": "Error",
-      "message": "Unable to resolve 'SQLitePCLRaw.provider.internal (>= 2.1.6)' for 'net8.0-ios17.2/iossimulator-x64'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, JBM, Microsoft Visual Studio Offline Packages, nuget.org.",
-      "libraryId": "SQLitePCLRaw.provider.internal",
-      "targetGraphs": [
-        "net8.0-ios17.2/iossimulator-x64"
-      ]
-    },
-    {
-      "code": "NU1100",
-      "level": "Error",
-      "message": "Unable to resolve 'System.Runtime.Handles (>= 4.3.0)' for 'net8.0-ios17.2/iossimulator-x64'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, JBM, Microsoft Visual Studio Offline Packages, nuget.org.",
-      "libraryId": "System.Runtime.Handles",
-      "targetGraphs": [
-        "net8.0-ios17.2/iossimulator-x64"
-      ]
-    },
-    {
-      "code": "NU1100",
-      "level": "Error",
-      "message": "Unable to resolve 'System.Runtime.InteropServices (>= 4.3.0)' for 'net8.0-ios17.2/iossimulator-x64'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, JBM, Microsoft Visual Studio Offline Packages, nuget.org.",
-      "libraryId": "System.Runtime.InteropServices",
-      "targetGraphs": [
-        "net8.0-ios17.2/iossimulator-x64"
-      ]
-    },
-    {
-      "code": "NU1100",
-      "level": "Error",
-      "message": "Unable to resolve 'System.Security.Cryptography.Primitives (>= 4.3.0)' for 'net8.0-ios17.2/iossimulator-x64'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, JBM, Microsoft Visual Studio Offline Packages, nuget.org.",
-      "libraryId": "System.Security.Cryptography.Primitives",
-      "targetGraphs": [
-        "net8.0-ios17.2/iossimulator-x64"
-      ]
-    },
-    {
-      "code": "NU1100",
-      "level": "Error",
-      "message": "Unable to resolve 'System.Threading (>= 4.3.0)' for 'net8.0-ios17.2/iossimulator-x64'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, JBM, Microsoft Visual Studio Offline Packages, nuget.org.",
-      "libraryId": "System.Threading",
-      "targetGraphs": [
-        "net8.0-ios17.2/iossimulator-x64"
-      ]
-    },
-    {
-      "code": "NU1100",
-      "level": "Error",
-      "message": "Unable to resolve 'runtime.any.System.Runtime.Handles (>= 4.3.0)' for 'net8.0-ios17.2/iossimulator-x64'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, JBM, Microsoft Visual Studio Offline Packages, nuget.org.",
-      "libraryId": "runtime.any.System.Runtime.Handles",
-      "targetGraphs": [
-        "net8.0-ios17.2/iossimulator-x64"
-      ]
-    },
-    {
-      "code": "NU1100",
-      "level": "Error",
-      "message": "Unable to resolve 'runtime.any.System.Runtime.InteropServices (>= 4.3.0)' for 'net8.0-ios17.2/iossimulator-x64'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, JBM, Microsoft Visual Studio Offline Packages, nuget.org.",
-      "libraryId": "runtime.any.System.Runtime.InteropServices",
-      "targetGraphs": [
-        "net8.0-ios17.2/iossimulator-x64"
-      ]
-    },
-    {
-      "code": "NU1100",
-      "level": "Error",
-      "message": "Unable to resolve 'SQLitePCLRaw.lib.e_sqlite3.ios (>= 2.1.6)' for 'net8.0-ios17.2/maccatalyst-x64'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, JBM, Microsoft Visual Studio Offline Packages, nuget.org.",
-      "libraryId": "SQLitePCLRaw.lib.e_sqlite3.ios",
-      "targetGraphs": [
-        "net8.0-ios17.2/maccatalyst-x64"
-      ]
-    },
-    {
-      "code": "NU1100",
-      "level": "Error",
-      "message": "Unable to resolve 'SQLitePCLRaw.provider.internal (>= 2.1.6)' for 'net8.0-ios17.2/maccatalyst-x64'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, JBM, Microsoft Visual Studio Offline Packages, nuget.org.",
-      "libraryId": "SQLitePCLRaw.provider.internal",
-      "targetGraphs": [
-        "net8.0-ios17.2/maccatalyst-x64"
-      ]
-    },
-    {
-      "code": "NU1100",
-      "level": "Error",
-      "message": "Unable to resolve 'System.Runtime.Handles (>= 4.3.0)' for 'net8.0-ios17.2/maccatalyst-x64'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, JBM, Microsoft Visual Studio Offline Packages, nuget.org.",
-      "libraryId": "System.Runtime.Handles",
-      "targetGraphs": [
-        "net8.0-ios17.2/maccatalyst-x64"
-      ]
-    },
-    {
-      "code": "NU1100",
-      "level": "Error",
-      "message": "Unable to resolve 'System.Runtime.InteropServices (>= 4.3.0)' for 'net8.0-ios17.2/maccatalyst-x64'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, JBM, Microsoft Visual Studio Offline Packages, nuget.org.",
-      "libraryId": "System.Runtime.InteropServices",
-      "targetGraphs": [
-        "net8.0-ios17.2/maccatalyst-x64"
-      ]
-    },
-    {
-      "code": "NU1100",
-      "level": "Error",
-      "message": "Unable to resolve 'System.Security.Cryptography.Primitives (>= 4.3.0)' for 'net8.0-ios17.2/maccatalyst-x64'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, JBM, Microsoft Visual Studio Offline Packages, nuget.org.",
-      "libraryId": "System.Security.Cryptography.Primitives",
-      "targetGraphs": [
-        "net8.0-ios17.2/maccatalyst-x64"
-      ]
-    },
-    {
-      "code": "NU1100",
-      "level": "Error",
-      "message": "Unable to resolve 'System.Threading (>= 4.3.0)' for 'net8.0-ios17.2/maccatalyst-x64'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, JBM, Microsoft Visual Studio Offline Packages, nuget.org.",
-      "libraryId": "System.Threading",
-      "targetGraphs": [
-        "net8.0-ios17.2/maccatalyst-x64"
-      ]
-    },
-    {
-      "code": "NU1100",
-      "level": "Error",
-      "message": "Unable to resolve 'runtime.any.System.Runtime.Handles (>= 4.3.0)' for 'net8.0-ios17.2/maccatalyst-x64'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, JBM, Microsoft Visual Studio Offline Packages, nuget.org.",
-      "libraryId": "runtime.any.System.Runtime.Handles",
-      "targetGraphs": [
-        "net8.0-ios17.2/maccatalyst-x64"
-      ]
-    },
-    {
-      "code": "NU1100",
-      "level": "Error",
-      "message": "Unable to resolve 'runtime.any.System.Runtime.InteropServices (>= 4.3.0)' for 'net8.0-ios17.2/maccatalyst-x64'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, JBM, Microsoft Visual Studio Offline Packages, nuget.org.",
-      "libraryId": "runtime.any.System.Runtime.InteropServices",
-      "targetGraphs": [
-        "net8.0-ios17.2/maccatalyst-x64"
-      ]
-    },
-    {
-      "code": "NU1100",
-      "level": "Error",
-      "message": "Unable to resolve 'SQLitePCLRaw.lib.e_sqlite3.ios (>= 2.1.6)' for 'net8.0-ios17.2/win10-x64'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, JBM, Microsoft Visual Studio Offline Packages, nuget.org.",
-      "libraryId": "SQLitePCLRaw.lib.e_sqlite3.ios",
-      "targetGraphs": [
-        "net8.0-ios17.2/win10-x64"
-      ]
-    },
-    {
-      "code": "NU1100",
-      "level": "Error",
-      "message": "Unable to resolve 'SQLitePCLRaw.provider.internal (>= 2.1.6)' for 'net8.0-ios17.2/win10-x64'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, JBM, Microsoft Visual Studio Offline Packages, nuget.org.",
-      "libraryId": "SQLitePCLRaw.provider.internal",
-      "targetGraphs": [
-        "net8.0-ios17.2/win10-x64"
-      ]
-    },
-    {
-      "code": "NU1100",
-      "level": "Error",
-      "message": "Unable to resolve 'System.Runtime.Handles (>= 4.3.0)' for 'net8.0-ios17.2/win10-x64'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, JBM, Microsoft Visual Studio Offline Packages, nuget.org.",
-      "libraryId": "System.Runtime.Handles",
-      "targetGraphs": [
-        "net8.0-ios17.2/win10-x64"
-      ]
-    },
-    {
-      "code": "NU1100",
-      "level": "Error",
-      "message": "Unable to resolve 'System.Runtime.InteropServices (>= 4.3.0)' for 'net8.0-ios17.2/win10-x64'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, JBM, Microsoft Visual Studio Offline Packages, nuget.org.",
-      "libraryId": "System.Runtime.InteropServices",
-      "targetGraphs": [
-        "net8.0-ios17.2/win10-x64"
-      ]
-    },
-    {
-      "code": "NU1100",
-      "level": "Error",
-      "message": "Unable to resolve 'System.Security.Cryptography.Primitives (>= 4.3.0)' for 'net8.0-ios17.2/win10-x64'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, JBM, Microsoft Visual Studio Offline Packages, nuget.org.",
-      "libraryId": "System.Security.Cryptography.Primitives",
-      "targetGraphs": [
-        "net8.0-ios17.2/win10-x64"
-      ]
-    },
-    {
-      "code": "NU1100",
-      "level": "Error",
-      "message": "Unable to resolve 'System.Threading (>= 4.3.0)' for 'net8.0-ios17.2/win10-x64'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, JBM, Microsoft Visual Studio Offline Packages, nuget.org.",
-      "libraryId": "System.Threading",
-      "targetGraphs": [
-        "net8.0-ios17.2/win10-x64"
-      ]
-    },
-    {
-      "code": "NU1100",
-      "level": "Error",
-      "message": "Unable to resolve 'runtime.any.System.Runtime.Handles (>= 4.3.0)' for 'net8.0-ios17.2/win10-x64'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, JBM, Microsoft Visual Studio Offline Packages, nuget.org.",
-      "libraryId": "runtime.any.System.Runtime.Handles",
-      "targetGraphs": [
-        "net8.0-ios17.2/win10-x64"
-      ]
-    },
-    {
-      "code": "NU1100",
-      "level": "Error",
-      "message": "Unable to resolve 'runtime.any.System.Runtime.InteropServices (>= 4.3.0)' for 'net8.0-ios17.2/win10-x64'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, JBM, Microsoft Visual Studio Offline Packages, nuget.org.",
-      "libraryId": "runtime.any.System.Runtime.InteropServices",
-      "targetGraphs": [
-        "net8.0-ios17.2/win10-x64"
-      ]
-    },
-    {
-      "code": "NU1100",
-      "level": "Error",
-      "message": "Unable to resolve 'Microsoft.Identity.Client.NativeInterop (>= 0.13.8)' for 'net8.0-windows10.0.19041/android-arm'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, JBM, Microsoft Visual Studio Offline Packages, nuget.org.",
-      "libraryId": "Microsoft.Identity.Client.NativeInterop",
-      "targetGraphs": [
-        "net8.0-windows10.0.19041/android-arm"
-      ]
-    },
-    {
-      "code": "NU1100",
-      "level": "Error",
-      "message": "Unable to resolve 'Microsoft.Identity.Client.NativeInterop (>= 0.13.8)' for 'net8.0-windows10.0.19041/android-arm64'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, JBM, Microsoft Visual Studio Offline Packages, nuget.org.",
-      "libraryId": "Microsoft.Identity.Client.NativeInterop",
-      "targetGraphs": [
-        "net8.0-windows10.0.19041/android-arm64"
-      ]
-    },
-    {
-      "code": "NU1100",
-      "level": "Error",
-      "message": "Unable to resolve 'Microsoft.Identity.Client.NativeInterop (>= 0.13.8)' for 'net8.0-windows10.0.19041/android-x64'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, JBM, Microsoft Visual Studio Offline Packages, nuget.org.",
-      "libraryId": "Microsoft.Identity.Client.NativeInterop",
-      "targetGraphs": [
-        "net8.0-windows10.0.19041/android-x64"
-      ]
-    },
-    {
-      "code": "NU1100",
-      "level": "Error",
-      "message": "Unable to resolve 'Microsoft.Identity.Client.NativeInterop (>= 0.13.8)' for 'net8.0-windows10.0.19041/android-x86'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, JBM, Microsoft Visual Studio Offline Packages, nuget.org.",
-      "libraryId": "Microsoft.Identity.Client.NativeInterop",
-      "targetGraphs": [
-        "net8.0-windows10.0.19041/android-x86"
-      ]
-    },
-    {
-      "code": "NU1100",
-      "level": "Error",
-      "message": "Unable to resolve 'Microsoft.Identity.Client.NativeInterop (>= 0.13.8)' for 'net8.0-windows10.0.19041/iossimulator-x64'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, JBM, Microsoft Visual Studio Offline Packages, nuget.org.",
-      "libraryId": "Microsoft.Identity.Client.NativeInterop",
-      "targetGraphs": [
-        "net8.0-windows10.0.19041/iossimulator-x64"
-      ]
-    },
-    {
-      "code": "NU1100",
-      "level": "Error",
-      "message": "Unable to resolve 'Microsoft.Identity.Client.NativeInterop (>= 0.13.8)' for 'net8.0-windows10.0.19041/maccatalyst-x64'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, JBM, Microsoft Visual Studio Offline Packages, nuget.org.",
-      "libraryId": "Microsoft.Identity.Client.NativeInterop",
-      "targetGraphs": [
-        "net8.0-windows10.0.19041/maccatalyst-x64"
-      ]
-    },
-    {
-      "code": "NU1100",
-      "level": "Error",
-      "message": "Unable to resolve 'Microsoft.Identity.Client.NativeInterop (>= 0.13.8)' for 'net8.0-windows10.0.19041/win10-x64'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, JBM, Microsoft Visual Studio Offline Packages, nuget.org.",
-      "libraryId": "Microsoft.Identity.Client.NativeInterop",
-      "targetGraphs": [
-        "net8.0-windows10.0.19041/win10-x64"
-      ]
-    }
-  ]
+  "logs": []
 }

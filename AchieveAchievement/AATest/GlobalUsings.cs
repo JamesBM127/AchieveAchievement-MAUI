@@ -1,0 +1,14 @@
+﻿global using System;
+global using System.Collections.Generic;
+global using System.Linq;
+global using System.Text;
+global using System.Threading.Tasks;
+global using AchieveAchievementLibrary.Entity;
+global using Microsoft.Extensions.Configuration;
+global using JBM.DeserializeJson;
+global using JBMDatabase.UnitOfWork;
+global using Microsoft.Extensions.DependencyInjection;
+global using AchieveAchievementLibrary.Data;
+global using JBMDatabase;
+global using JBMDatabase.Enum;
+global using Microsoft.EntityFrameworkCore;
