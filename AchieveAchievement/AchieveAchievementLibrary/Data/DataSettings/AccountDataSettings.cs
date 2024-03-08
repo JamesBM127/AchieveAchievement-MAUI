@@ -16,6 +16,7 @@ namespace AchieveAchievementLibrary.Data.DataSettings
 
                 model.Property(x => x.Login)
                      .HasColumnName("Login")
+                     .HasColumnType("varchar(20)")
                      .IsRequired();
 
                 model.Property(x => x.BirthDate)
@@ -28,6 +29,10 @@ namespace AchieveAchievementLibrary.Data.DataSettings
 
                 model.Property(x => x.Password)
                      .HasColumnName("Password")
+                     .IsRequired();
+
+                model.Property(x => x.PlayerId)
+                     .HasColumnName("Player Id")
                      .IsRequired();
 
                 model.HasOne(x => x.Player)

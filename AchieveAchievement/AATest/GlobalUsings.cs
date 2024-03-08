@@ -12,3 +12,4 @@ global using AchieveAchievementLibrary.Data;
 global using JBMDatabase;
 global using JBMDatabase.Enum;
 global using Microsoft.EntityFrameworkCore;
+global using AchieveAchievementLibrary.EntitySettings;

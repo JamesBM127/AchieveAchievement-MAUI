@@ -16,6 +16,7 @@ namespace AchieveAchievementLibrary.Data.DataSettings
 
                 model.Property(x => x.Name)
                      .HasColumnName("Name")
+                     .HasColumnType("varchar(15)")
                      .IsRequired();
 
                 model.Property(x => x.ShowContacts)
