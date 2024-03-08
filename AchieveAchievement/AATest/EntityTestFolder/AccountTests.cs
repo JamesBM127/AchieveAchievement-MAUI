@@ -16,7 +16,7 @@
         {
             string connectionString = "Server=.;Database=AADBTest;TrustServerCertificate=True;Trusted_Connection=True;";
             //string connectionString = "AADBTest";
-            Uow = new UoW(AAConfigSettings.GetAndCreateDbContext(DatabaseOptions.InMemoryDatabase, connectionString));
+            Uow = new UoW(AAConfigSettings.GetAndCreateDbContext(DatabaseOptions.SqlServer, connectionString));
         }
 
         #region Validation Account
@@ -207,6 +207,49 @@
             Assert.That(accFromDb.BirthDate, Is.EqualTo(account.BirthDate));
             Assert.That(accFromDb.Email, Is.EqualTo(account.Email));
             Assert.That(accFromDb.PlayerId, Is.EqualTo(account.PlayerId));
+            #endregion
+        }
+
+        [Test]
+        public async Task Get_Player_Success()
+        {
+            #region Arrange
+            Account account = await CreateAccountAndPlayer();
+            #endregion
+
+            #region Act
+            Player playerFromDb = await Uow.GetAsync<Player>(x => x.Id == account.Player.Id);
+            #endregion
+
+            #region Assert
+            Assert.That(playerFromDb.Id, Is.EqualTo(account.Player.Id));
+            Assert.That(playerFromDb.ShowContacts, Is.EqualTo(account.Player.ShowContacts));
+            Assert.That(playerFromDb.AccountId, Is.EqualTo(account.Player.AccountId));
+            #endregion
+        }
+        
+        [Test]
+        public async Task Delete_AccountPlayerContactsInCascade_Success()
+        {
+            #region Arrange
+            Account account = await CreateAccountAndPlayer();
+            Contact contact = Configuration.GetEntity<Contact>("Contact");
+            Contact contact2 = Configuration.GetEntity<Contact>("Contact");
+            contact.PlayerId = account.Player.Id;
+            contact2.PlayerId = account.Player.Id;
+            bool addedContact = await Uow.AddAsync(contact);
+            bool addedContact2 = await Uow.AddAsync(contact2);
+            await Uow.CommitAsync(addedContact && addedContact2);
+            #endregion
+
+            #region Act
+            bool deleted = Uow.Delete(account);
+            bool successfullyDeleted = await Uow.CommitAsync(deleted);
+            #endregion
+
+            #region Assert
+            Assert.That(deleted, Is.True);
+            Assert.That(successfullyDeleted, Is.True);
             #endregion
         }
 
