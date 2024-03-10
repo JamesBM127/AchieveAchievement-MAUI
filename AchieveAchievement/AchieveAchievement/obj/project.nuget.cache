@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "VsNpxxbwuGW9a3E4G17gmm3TIZ/y5SupGm1NnboJBhCuNSjrpB+g+X9xYUtWkFv1yua9tuwsCEpVfJiFtVo+EA==",
+  "dgSpecHash": "/3wX540tWbJANL6Ph3X4bZUW5F7D0fOmAfpu0MBV+U7xH95L8zKqxHE/C0EJSmBPynSKK9fdzNcYQkYlkeVY6w==",
   "success": true,
   "projectFilePath": "C:\\Users\\james\\source\\repos\\Achieve Achievement\\AchieveAchievement\\AchieveAchievement\\AchieveAchievement.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\james\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\james\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",
+    "C:\\Users\\james\\.nuget\\packages\\communitytoolkit.mvvm\\8.2.2\\communitytoolkit.mvvm.8.2.2.nupkg.sha512",
     "C:\\Users\\james\\.nuget\\packages\\googlegson\\2.10.1.4\\googlegson.2.10.1.4.nupkg.sha512",
     "C:\\Users\\james\\.nuget\\packages\\jbmdatabase\\8.0.0\\jbmdatabase.8.0.0.nupkg.sha512",
     "C:\\Users\\james\\.nuget\\packages\\jbmdeserializejson\\8.0.0\\jbmdeserializejson.8.0.0.nupkg.sha512",
