@@ -1,12 +1,15 @@
-﻿namespace AchieveAchievement
+﻿using AchieveAchievement.View;
+using AchieveAchievement.ViewModel;
+
+namespace AchieveAchievement
 {
     public partial class App : Application
     {
-        public App()
+        public App(LoginViewModel viewModel)
         {
             InitializeComponent();
 
-            MainPage = new AppShell();
+            MainPage = new LoginPage(viewModel);
         }
     }
 }

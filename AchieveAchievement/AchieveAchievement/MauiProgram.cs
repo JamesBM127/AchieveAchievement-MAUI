@@ -19,6 +19,8 @@ namespace AchieveAchievement
     		builder.Logging.AddDebug();
 #endif
 
+            builder.Services.AADependencyInjection();
+
             return builder.Build();
         }
     }

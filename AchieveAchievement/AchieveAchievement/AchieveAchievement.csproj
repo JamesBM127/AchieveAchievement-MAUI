@@ -58,9 +58,12 @@
 
 	<ItemGroup>
 	  <None Remove="Resources\Images\aa_logo.png" />
+	  <None Remove="Resources\Images\closed_eye.png" />
+	  <None Remove="Resources\Images\open_eye.png" />
 	</ItemGroup>
 
 	<ItemGroup>
+		<PackageReference Include="CommunityToolkit.Mvvm" Version="8.2.2" />
 		<PackageReference Include="Microsoft.Maui.Controls" Version="8.0.7" />
 		<PackageReference Include="Microsoft.Maui.Controls.Compatibility" Version="8.0.7" />
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="8.0.0" />
@@ -68,6 +71,12 @@
 
 	<ItemGroup>
 	  <ProjectReference Include="..\AchieveAchievementLibrary\AchieveAchievementLibrary.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <MauiXaml Update="View\LoginPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	</ItemGroup>
 
 </Project>

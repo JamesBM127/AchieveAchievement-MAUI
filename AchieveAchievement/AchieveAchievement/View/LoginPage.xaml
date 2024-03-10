@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewmodel="clr-namespace:AchieveAchievement.ViewModel"
+             x:DataType="viewmodel:LoginViewModel"
+             x:Class="AchieveAchievement.View.LoginPage"
+             Title="LoginPage">
+
+    <Grid
+        RowDefinitions="Auto, Auto, Auto"
+        ColumnDefinitions="*,*"
+        BackgroundColor="#252525"
+        Padding="30">
+
+        <Image
+             Grid.Row="0"
+             Grid.ColumnSpan="2"
+             Source="aa_logo.png"
+             HeightRequest="185"
+             Aspect="AspectFit"
+             SemanticProperties.Description="dot net bot in a race car number eight" />
+
+        <Grid 
+            Grid.Row="1"
+            Grid.ColumnSpan="{OnPlatform WinUI=1, Default=2}"
+            RowDefinitions="Auto,*,Auto"
+            ColumnDefinitions="*,*"
+            RowSpacing="30"
+            Padding="30" >
+
+            <Grid
+                ColumnDefinitions="*,*">
+
+                <Button 
+                    Text="SIGN IN"
+                    FontSize="15" 
+                    CornerRadius="0"
+                    TextColor="White"
+                    BackgroundColor="Transparent"
+                    />
+                
+                <Button
+                    Grid.Column="1"
+                    Text="SIGN UP"
+                    FontSize="15"
+                    CornerRadius="0"
+                    TextColor="White"
+                    BackgroundColor="Transparent"
+                        />
+            </Grid>
+
+            <Grid
+                Grid.Row="1"
+                Grid.ColumnSpan="2"
+                RowDefinitions="*,*"
+                RowSpacing="20">
+
+                <StackLayout >
+                    
+                    <Label
+                        Text="Login"
+                        Style="{StaticResource Headline}"
+                        HorizontalOptions="Start" />
+
+                    <Entry
+                        Grid.Row="1"
+                        Text="{Binding Login}"
+                        TextColor="Black"
+                        Placeholder="Type your login"
+                        PlaceholderColor="#606060"
+                        Style="{StaticResource SubHeadline}" 
+                        HorizontalOptions="FillAndExpand"
+                        HeightRequest="50"
+                        BackgroundColor="#b2b2b2"/>
+                </StackLayout>
+
+                <StackLayout
+                    Grid.Row="2"
+                    HorizontalOptions="FillAndExpand" >
+                    
+                    <Label
+                        Text="Password"
+                        Style="{StaticResource Headline}"
+                        HorizontalOptions="Start" />
+
+                    <Grid
+                        Grid.Row="3"
+                        ColumnDefinitions="*,Auto">
+                        
+                        <Entry
+                            x:Name="PasswordEntry"
+                            Text="{Binding Password}"
+                            TextColor="Black"
+                            Placeholder="Type your password"
+                            PlaceholderColor="#606060"
+                            Style="{StaticResource SubHeadline}" 
+                            HorizontalOptions="FillAndExpand"
+                            BackgroundColor="#b2b2b2"
+                            HeightRequest="50"
+                            Margin="0,0,10,0"
+                            IsPassword="True"/>
+
+                        <Image 
+                            x:Name="PasswordEye"
+                            Grid.Column="1"
+                            Source="closed_eye_w.png"
+                            HorizontalOptions="End"
+                            VerticalOptions="Center"
+                            HeightRequest="24"
+                            WidthRequest="24">
+
+                            <Image.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="ShowHidePassword"/>
+                            </Image.GestureRecognizers>
+                            
+                        </Image>
+                               
+                    </Grid>
+                </StackLayout>
+            </Grid>
+
+        </Grid>
+        
+        <Grid
+            Grid.Row="2">
+            <Button
+                Text="SIGN IN" 
+                HorizontalOptions="EndAndExpand" />
+        </Grid>
+    </Grid>
+
+</ContentPage>
