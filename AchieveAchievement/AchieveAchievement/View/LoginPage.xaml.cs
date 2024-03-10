@@ -19,4 +19,24 @@ public partial class LoginPage : ContentPage
         else
             PasswordEye.Source = "open_eye_w.png";
     }
+
+    private void SignInBttClicked(object sender, EventArgs e)
+    {
+        lineSignBttSelected.SetValue(Grid.ColumnProperty, 0);
+    }
+
+    private void SignUpBttClicked(object sender, EventArgs e)
+    {
+        lineSignBttSelected.SetValue(Grid.ColumnProperty, 1);
+    }
+
+    private void UpdateBtnColor(bool signInSelecionado)
+    {
+        Color selectedColor = Color.FromRgb(0, 128, 0);
+        Color notSelectedColor = Color.FromRgb(0, 128, 0).MultiplyAlpha(0f); // Using MultiplyAlpha to define transparency
+
+        SignInBtt.BackgroundColor = signInSelecionado ? selectedColor : notSelectedColor;
+        SignUpBtt.BackgroundColor = signInSelecionado ? notSelectedColor : selectedColor;
+    }
+
 }

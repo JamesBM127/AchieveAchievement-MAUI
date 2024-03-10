@@ -7,7 +7,7 @@
              Title="LoginPage">
 
     <Grid
-        RowDefinitions="Auto, Auto, Auto"
+        RowDefinitions="Auto, *, Auto"
         ColumnDefinitions="*,*"
         BackgroundColor="#252525"
         Padding="30">
@@ -16,7 +16,7 @@
              Grid.Row="0"
              Grid.ColumnSpan="2"
              Source="aa_logo.png"
-             HeightRequest="185"
+             HeightRequest="125"
              Aspect="AspectFit"
              SemanticProperties.Description="dot net bot in a race car number eight" />
 
@@ -29,24 +29,37 @@
             Padding="30" >
 
             <Grid
+                RowDefinitions="*,*"
                 ColumnDefinitions="*,*">
 
-                <Button 
+                <Button
+                    x:Name="SignInBtt"
                     Text="SIGN IN"
-                    FontSize="15" 
+                    FontSize="20" 
                     CornerRadius="0"
                     TextColor="White"
                     BackgroundColor="Transparent"
+                    Clicked="SignInBttClicked"
                     />
                 
                 <Button
                     Grid.Column="1"
+                    x:Name="SignUpBtt"
                     Text="SIGN UP"
-                    FontSize="15"
+                    FontSize="20"
                     CornerRadius="0"
                     TextColor="White"
                     BackgroundColor="Transparent"
+                    Clicked="SignUpBttClicked"
                         />
+
+                <BoxView
+                    x:Name="lineSignBttSelected"
+                    Grid.Row="1"
+                    Grid.Column="0"
+                    HeightRequest="4"
+                    BackgroundColor="Green"
+                    />
             </Grid>
 
             <Grid
@@ -55,11 +68,13 @@
                 RowDefinitions="*,*"
                 RowSpacing="20">
 
+                <!--LOGIN -->
                 <StackLayout >
-                    
+
                     <Label
                         Text="Login"
                         Style="{StaticResource Headline}"
+                        FontSize="20"
                         HorizontalOptions="Start" />
 
                     <Entry
@@ -74,19 +89,21 @@
                         BackgroundColor="#b2b2b2"/>
                 </StackLayout>
 
+                <!--PASSWORD-->
                 <StackLayout
                     Grid.Row="2"
                     HorizontalOptions="FillAndExpand" >
-                    
+
                     <Label
                         Text="Password"
                         Style="{StaticResource Headline}"
+                        FontSize="20"
                         HorizontalOptions="Start" />
 
                     <Grid
                         Grid.Row="3"
                         ColumnDefinitions="*,Auto">
-                        
+
                         <Entry
                             x:Name="PasswordEntry"
                             Text="{Binding Password}"
@@ -112,19 +129,23 @@
                             <Image.GestureRecognizers>
                                 <TapGestureRecognizer Tapped="ShowHidePassword"/>
                             </Image.GestureRecognizers>
-                            
+
                         </Image>
-                               
+
                     </Grid>
                 </StackLayout>
             </Grid>
 
         </Grid>
-        
+
         <Grid
-            Grid.Row="2">
+            Grid.Row="2"
+            Margin="0,0,30,20">
             <Button
-                Text="SIGN IN" 
+                Text="SIGN IN"
+                CornerRadius="4"
+                BackgroundColor="Green"
+                TextColor="White"
                 HorizontalOptions="EndAndExpand" />
         </Grid>
     </Grid>
