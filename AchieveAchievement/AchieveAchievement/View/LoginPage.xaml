@@ -29,6 +29,7 @@
             Padding="30" >
 
             <Grid
+                RowDefinitions="*,*"
                 ColumnDefinitions="*,*">
 
                 <Button 
@@ -37,6 +38,7 @@
                     CornerRadius="0"
                     TextColor="White"
                     BackgroundColor="Transparent"
+                    Clicked="SignInBtnClicked"
                     />
                 
                 <Button
@@ -46,7 +48,15 @@
                     CornerRadius="0"
                     TextColor="White"
                     BackgroundColor="Transparent"
+                    Clicked="SignUpBtnClicked"
                         />
+
+                <BoxView
+                    x:Name="LineSignBtnSelected"
+                    Grid.Row="1"
+                    HeightRequest="4"
+                    BackgroundColor="Green"
+                    />
             </Grid>
 
             <Grid
@@ -60,6 +70,7 @@
                     <Label
                         Text="Login"
                         Style="{StaticResource Headline}"
+                        FontSize="17"
                         HorizontalOptions="Start" />
 
                     <Entry
@@ -81,6 +92,7 @@
                     <Label
                         Text="Password"
                         Style="{StaticResource Headline}"
+                        FontSize="17"
                         HorizontalOptions="Start" />
 
                     <Grid
@@ -120,12 +132,111 @@
             </Grid>
 
         </Grid>
+
+        <Label
+            Grid.Row="1"
+            Grid.Column="1"
+            Padding="30"
+            FontSize="20"
+            Text="Login with"/>
+
+        <Grid
+            Grid.Column="1"
+            Grid.Row="1"
+            ColumnDefinitions="*,*"
+            Padding="30"
+            >
+
+            <!--SOCIAL MEDIA LOGIN-->
+            <Frame 
+                HeightRequest="200"
+                BorderColor="White"
+                BackgroundColor="Transparent"
+                >
+
+                <Grid
+                    RowDefinitions="*,*"
+                    RowSpacing="10">
+
+                    <!--GOOGLE-->
+                    <Frame 
+                        BackgroundColor="White"
+                        CornerRadius="40"
+                        >
+
+                        <Grid
+                            ColumnDefinitions="Auto, *"
+                            >
+
+                            <Image
+                                Source="google_logo.png" />
+                        
+                            <Label 
+                                Grid.Column="1"
+                                Text="Google"
+                                TextColor="Black"
+                                FontSize="17"
+                                HorizontalOptions="Center"
+                                VerticalOptions="Center"
+                                HorizontalTextAlignment="Center"/>
+                        </Grid>
+                    </Frame>
+                    
+                    <!--FACEBOOK-->
+                    <Frame 
+                        Grid.Row="1"
+                        BackgroundColor="White"
+                        CornerRadius="40"
+                        >
+                        
+                        <Grid
+                            ColumnDefinitions="Auto, *"
+                            >
+
+                            <Image
+                                Source="facebook_logo.png" />
+
+                            <Label 
+                                Grid.Column="1"
+                                Text="Facebook"
+                                TextColor="Black"
+                                FontSize="17"
+                                HorizontalOptions="Center"
+                                VerticalOptions="Center"
+                                HorizontalTextAlignment="Center"/>
+                        </Grid>
+                    </Frame>
+                </Grid>
+            </Frame>
+            
+        </Grid>
         
         <Grid
-            Grid.Row="2">
-            <Button
-                Text="SIGN IN" 
-                HorizontalOptions="EndAndExpand" />
+            Grid.Row="2"
+            Padding="30">
+
+            <HorizontalStackLayout
+                HorizontalOptions="End" >
+
+                <Button 
+                    x:Name="ForgotPasswordBtn"
+                    Text="   Forgot&#10;password?"
+                    Margin="0,0,65,0"
+                    BackgroundColor="Transparent"
+                    CornerRadius="3"
+                    TextColor="White"
+                    HorizontalOptions="Center"
+                    Pressed="ForgotPasswordBtnPressed"
+                    Released="ForgotPasswordBtnReleased"
+                    />
+
+                <Button
+                    Text="SIGN IN" 
+                    BackgroundColor="Green"
+                    CornerRadius="3"
+                    TextColor="White"
+                    HorizontalOptions="EndAndExpand" />
+            </HorizontalStackLayout>
         </Grid>
     </Grid>
 

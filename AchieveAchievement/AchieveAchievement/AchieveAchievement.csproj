@@ -59,6 +59,8 @@
 	<ItemGroup>
 	  <None Remove="Resources\Images\aa_logo.png" />
 	  <None Remove="Resources\Images\closed_eye.png" />
+	  <None Remove="Resources\Images\facebook_logo.png" />
+	  <None Remove="Resources\Images\google_logo.png" />
 	  <None Remove="Resources\Images\open_eye.png" />
 	</ItemGroup>
 
