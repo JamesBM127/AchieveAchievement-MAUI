@@ -23,6 +23,7 @@ public partial class LoginPage : ContentPage
     private void SignInBtnClicked(object sender, EventArgs e)
     {
         LineSignBtnSelected.SetValue(Grid.ColumnProperty, 0);
+
     }
 
     private void SignUpBtnClicked(object sender, EventArgs e)

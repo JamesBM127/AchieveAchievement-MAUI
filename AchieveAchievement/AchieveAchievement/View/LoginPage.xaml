@@ -40,7 +40,7 @@
                     BackgroundColor="Transparent"
                     Clicked="SignInBtnClicked"
                     />
-                
+
                 <Button
                     Grid.Column="1"
                     Text="SIGN UP"
