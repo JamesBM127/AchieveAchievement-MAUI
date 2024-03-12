@@ -5,11 +5,12 @@ namespace AchieveAchievement
 {
     public partial class App : Application
     {
-        public App(LoginViewModel viewModel)
+        public App()
         {
             InitializeComponent();
 
-            MainPage = new LoginPage(viewModel);
+            MainPage = new AppShell();
+
         }
     }
 }

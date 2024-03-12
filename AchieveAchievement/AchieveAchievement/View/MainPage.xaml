@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:viewmodel="clr-namespace:AchieveAchievement.ViewModel"
              x:DataType="viewmodel:LoginViewModel"
-             x:Class="AchieveAchievement.MainPage">
+             x:Class="AchieveAchievement.View.MainPage">
 
     <Grid 
         BackgroundColor="Black">

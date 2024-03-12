@@ -1,4 +1,5 @@
-﻿using AchieveAchievement.ViewModel;
+﻿using AchieveAchievement.View;
+using AchieveAchievement.ViewModel;
 
 namespace AchieveAchievement
 {
@@ -7,6 +8,8 @@ namespace AchieveAchievement
         public static void AADependencyInjection(this IServiceCollection services)
         {
             services.AddScoped<LoginViewModel>();
+
+            services.AddSingleton<LoginPage>();
         }
     }
 }

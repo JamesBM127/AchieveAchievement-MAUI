@@ -23,6 +23,10 @@ namespace AchieveAchievementLibrary.Data.DataSettings
                      .HasColumnName("Show Contacts")
                      .IsRequired();
 
+                model.Property(x => x.Languages)
+                     .HasColumnName("Languages")
+                     .IsRequired();
+
                 model.HasMany(x => x.Games);
 
                 model.HasMany(x => x.Contacts)

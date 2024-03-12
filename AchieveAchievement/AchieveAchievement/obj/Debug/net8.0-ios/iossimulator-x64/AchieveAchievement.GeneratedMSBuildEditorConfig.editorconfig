@@ -28,12 +28,6 @@ build_metadata.AdditionalFiles.ManifestResourceName = AchieveAchievement.AppShel
 build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
 build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
 
-[C:/Users/james/source/repos/Achieve Achievement/AchieveAchievement/AchieveAchievement/MainPage.xaml]
-build_metadata.AdditionalFiles.GenKind = Xaml
-build_metadata.AdditionalFiles.ManifestResourceName = AchieveAchievement.MainPage.xaml
-build_metadata.AdditionalFiles.TargetPath = MainPage.xaml
-build_metadata.AdditionalFiles.RelativePath = MainPage.xaml
-
 [C:/Users/james/source/repos/Achieve Achievement/AchieveAchievement/AchieveAchievement/Resources/Styles/Colors.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = AchieveAchievement.Resources.Styles.Colors.xaml
@@ -46,8 +40,14 @@ build_metadata.AdditionalFiles.ManifestResourceName = AchieveAchievement.Resourc
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml
 
-[C:/Users/james/source/repos/Achieve Achievement/AchieveAchievement/AchieveAchievement/View/LoginPage.xaml]
+[C:/Users/james/source/repos/Achieve Achievement/AchieveAchievement/AchieveAchievement/View/LoginDesktopPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
-build_metadata.AdditionalFiles.ManifestResourceName = AchieveAchievement.View.LoginPage.xaml
-build_metadata.AdditionalFiles.TargetPath = View\LoginPage.xaml
-build_metadata.AdditionalFiles.RelativePath = View\LoginPage.xaml
+build_metadata.AdditionalFiles.ManifestResourceName = AchieveAchievement.View.LoginDesktopPage.xaml
+build_metadata.AdditionalFiles.TargetPath = View\LoginDesktopPage.xaml
+build_metadata.AdditionalFiles.RelativePath = View\LoginDesktopPage.xaml
+
+[C:/Users/james/source/repos/Achieve Achievement/AchieveAchievement/AchieveAchievement/View/MainPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = AchieveAchievement.View.MainPage.xaml
+build_metadata.AdditionalFiles.TargetPath = View\MainPage.xaml
+build_metadata.AdditionalFiles.RelativePath = View\MainPage.xaml

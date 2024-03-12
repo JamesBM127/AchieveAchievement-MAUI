@@ -8,6 +8,7 @@ namespace AchieveAchievementLibrary.Entity
         public bool ShowContacts { get; set; }
         public Guid AccountId { get; set; }
         public Account Account { get; set; }
+        public string Languages { get; set; }
         public IEnumerable<Game> Games { get; set; }
         public IEnumerable<Contact> Contacts { get; set; }
         public IEnumerable<PlayerFriend> Friends { get; set; }

@@ -3,8 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:viewmodel="clr-namespace:AchieveAchievement.ViewModel"
              x:DataType="viewmodel:LoginViewModel"
-             x:Class="AchieveAchievement.View.LoginPage"
-             Title="LoginPage">
+             x:Class="AchieveAchievement.View.LoginPage" >
 
     <Grid
         RowDefinitions="Auto, Auto, Auto"
@@ -12,6 +11,7 @@
         BackgroundColor="#252525"
         Padding="30">
 
+        <!--LOGO-->
         <Image
              Grid.Row="0"
              Grid.ColumnSpan="2"
@@ -20,6 +20,7 @@
              Aspect="AspectFit"
              SemanticProperties.Description="dot net bot in a race car number eight" />
 
+        <!--LEFT BODY-->
         <Grid 
             Grid.Row="1"
             Grid.ColumnSpan="{OnPlatform WinUI=1, Default=2}"
@@ -28,6 +29,7 @@
             RowSpacing="30"
             Padding="30" >
 
+            <!--SIGN BUTTONS-->
             <Grid
                 RowDefinitions="*,*"
                 ColumnDefinitions="*,*">
@@ -38,7 +40,7 @@
                     CornerRadius="0"
                     TextColor="White"
                     BackgroundColor="Transparent"
-                    Clicked="SignInBtnClicked"
+                    Clicked="SignInBtnSelectionClicked"
                     />
 
                 <Button
@@ -48,7 +50,7 @@
                     CornerRadius="0"
                     TextColor="White"
                     BackgroundColor="Transparent"
-                    Clicked="SignUpBtnClicked"
+                    Clicked="SignUpBtnSelectionClicked"
                         />
 
                 <BoxView
@@ -59,6 +61,7 @@
                     />
             </Grid>
 
+            <!--LOGIN ENTRIES-->
             <Grid
                 Grid.Row="1"
                 Grid.ColumnSpan="2"
@@ -136,10 +139,12 @@
         <Label
             Grid.Row="1"
             Grid.Column="1"
+            HorizontalOptions="Center"
             Padding="30"
             FontSize="20"
             Text="Login with"/>
 
+        <!--RIGHT BODY-->
         <Grid
             Grid.Column="1"
             Grid.Row="1"
@@ -149,6 +154,9 @@
 
             <!--SOCIAL MEDIA LOGIN-->
             <Frame 
+                Grid.ColumnSpan="2"
+                HorizontalOptions="CenterAndExpand"
+                WidthRequest="300"
                 HeightRequest="200"
                 BorderColor="White"
                 BackgroundColor="Transparent"
@@ -163,8 +171,11 @@
                         BackgroundColor="White"
                         CornerRadius="40"
                         >
+                        <Frame.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="GoogleFrameLoginTapped" />
+                        </Frame.GestureRecognizers>
 
-                        <Grid
+                            <Grid
                             ColumnDefinitions="Auto, *"
                             >
 
@@ -188,7 +199,10 @@
                         BackgroundColor="White"
                         CornerRadius="40"
                         >
-                        
+                        <Frame.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="FacebookFrameLoginTapped" />
+                        </Frame.GestureRecognizers>
+
                         <Grid
                             ColumnDefinitions="Auto, *"
                             >
@@ -211,6 +225,7 @@
             
         </Grid>
         
+        <!--FOOTER BUTTONS-->
         <Grid
             Grid.Row="2"
             Padding="30">
@@ -231,10 +246,13 @@
                     />
 
                 <Button
-                    Text="SIGN IN" 
+                    x:Name="SignBtnConfirmed"
+                    Text="LOG IN" 
                     BackgroundColor="Green"
                     CornerRadius="3"
                     TextColor="White"
+                    WidthRequest="100"
+                    Clicked="SignBtnConfirmedClicked"
                     HorizontalOptions="EndAndExpand" />
             </HorizontalStackLayout>
         </Grid>
