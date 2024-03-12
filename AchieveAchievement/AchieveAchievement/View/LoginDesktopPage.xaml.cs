@@ -28,6 +28,10 @@ public partial class LoginPage : ContentPage
         LineSignBtnSelected.SetValue(Grid.ColumnProperty, 0);
         SignBtnConfirmed.Text = "LOG IN";
         SignBtnConfirmed.BackgroundColor = Color.FromRgb(0, 128, 0);
+
+        AccountCreateGrid.IsVisible = false;
+        SocialMediaFrame.IsVisible = true;
+        RightBodyLabelText.IsVisible = true;
     }
 
     private void SignUpBtnSelectionClicked(object sender, EventArgs e)
@@ -35,6 +39,10 @@ public partial class LoginPage : ContentPage
         LineSignBtnSelected.SetValue(Grid.ColumnProperty, 1);
         SignBtnConfirmed.Text = "CREATE";
         SignBtnConfirmed.BackgroundColor = Color.FromRgb(85, 0, 255);
+
+        SocialMediaFrame.IsVisible = false;
+        AccountCreateGrid.IsVisible = true;
+        RightBodyLabelText.IsVisible = false;
     }
 
     private void ForgotPasswordBtnPressed(object sender, EventArgs e)
@@ -55,7 +63,6 @@ public partial class LoginPage : ContentPage
         else
             await _viewModel.LogInAAAccountAsync();
     }
-
 
     private async void FacebookFrameLoginTapped(object sender, TappedEventArgs e)
     {

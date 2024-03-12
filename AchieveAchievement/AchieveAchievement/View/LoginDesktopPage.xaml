@@ -77,7 +77,6 @@
                         HorizontalOptions="Start" />
 
                     <Entry
-                        Grid.Row="1"
                         Text="{Binding Login}"
                         TextColor="Black"
                         Placeholder="Type your login"
@@ -99,7 +98,6 @@
                         HorizontalOptions="Start" />
 
                     <Grid
-                        Grid.Row="3"
                         ColumnDefinitions="*,Auto">
                         
                         <Entry
@@ -136,13 +134,15 @@
 
         </Grid>
 
+        <!--LOGIN WITH LABEL-->
         <Label
+            x:Name="RightBodyLabelText"
+            Text="Login with"
             Grid.Row="1"
             Grid.Column="1"
             HorizontalOptions="Center"
             Padding="30"
-            FontSize="20"
-            Text="Login with"/>
+            FontSize="20" />
 
         <!--RIGHT BODY-->
         <Grid
@@ -154,6 +154,7 @@
 
             <!--SOCIAL MEDIA LOGIN-->
             <Frame 
+                x:Name="SocialMediaFrame"
                 Grid.ColumnSpan="2"
                 HorizontalOptions="CenterAndExpand"
                 WidthRequest="300"
@@ -222,6 +223,82 @@
                     </Frame>
                 </Grid>
             </Frame>
+
+            <!--ACCOUNT CREATE-->
+            <Grid 
+                x:Name="AccountCreateGrid"
+                Grid.ColumnSpan="2"
+                IsVisible="False"
+                >
+                
+                <Grid
+                    Grid.Row="2"
+                    Grid.ColumnSpan="2"
+                    RowDefinitions="*,*"
+                    RowSpacing="20">
+
+                    <!--EMAIL-->
+                    <StackLayout 
+                        >
+
+                        <Label
+                            Text="Email"
+                            Style="{StaticResource Headline}"
+                            FontSize="17"
+                            HorizontalOptions="Start" />
+
+                        <Entry
+                            Text="{Binding Login}"
+                            TextColor="Black"
+                            Placeholder="mail@example.com"
+                            PlaceholderColor="#606060"
+                            Style="{StaticResource SubHeadline}" 
+                            HorizontalOptions="FillAndExpand"
+                            HeightRequest="50"
+                            Keyboard="Email"
+                            BackgroundColor="#b2b2b2"/>
+                    </StackLayout>
+
+                    <!--NICKNAME / BIRTHDATE-->
+                    <Grid
+                        Grid.Row="2"
+                        ColumnDefinitions="*,*" >
+
+                        <Label
+                            Text="Nickname"
+                            Style="{StaticResource Headline}"
+                            FontSize="17"
+                            HorizontalOptions="Start" />
+
+                        <Entry
+                            Text="{Binding Password}"
+                            TextColor="Black"
+                            Placeholder="nickname"
+                            PlaceholderColor="#606060"
+                            Style="{StaticResource SubHeadline}" 
+                            HorizontalOptions="FillAndExpand"
+                            BackgroundColor="#b2b2b2"
+                            HeightRequest="50"
+                            MaxLength="15"
+                            Margin="0,0,10,0" />
+
+                        <Label
+                            Grid.Column="1"
+                            Text="Birthdate"
+                            Style="{StaticResource Headline}"
+                            FontSize="17"
+                            HorizontalOptions="Center" />
+
+                        <DatePicker 
+                            Grid.Column="1"
+                            BackgroundColor="#b2b2b2"
+                            TextColor="Black"
+                            HorizontalOptions="Center"
+                            Format="(mmm/dd/yyyy)"
+                            />
+                    </Grid>
+                </Grid>
+            </Grid>
             
         </Grid>
         
