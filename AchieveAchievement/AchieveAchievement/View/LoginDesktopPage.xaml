@@ -77,7 +77,7 @@
                         HorizontalOptions="Start" />
 
                     <Entry
-                        Text="{Binding Login}"
+                        Text="{Binding Account.Login}"
                         TextColor="Black"
                         Placeholder="Type your login"
                         PlaceholderColor="#606060"
@@ -102,7 +102,7 @@
 
                         <Entry
                             x:Name="PasswordEntry"
-                            Text="{Binding Password}"
+                            Text="{Binding Account.Password}"
                             TextColor="Black"
                             Placeholder="Type your password"
                             PlaceholderColor="#606060"
@@ -253,7 +253,7 @@
                             HorizontalOptions="Start" />
 
                         <Entry
-                            Text="{Binding Login}"
+                            Text="{Binding Account.Email}"
                             TextColor="Black"
                             Placeholder="mail@example.com"
                             PlaceholderColor="#606060"
@@ -276,7 +276,7 @@
                             HorizontalOptions="Start" />
 
                         <Entry
-                            Text="{Binding Password}"
+                            Text="{Binding Player.Name}"
                             TextColor="Black"
                             Placeholder="nickname"
                             PlaceholderColor="#606060"
@@ -296,6 +296,7 @@
 
                         <DatePicker 
                             Grid.Column="1"
+                            Date="{Binding Account.BirthDate}"
                             BackgroundColor="#b2b2b2"
                             TextColor="Black"
                             HorizontalOptions="Center"

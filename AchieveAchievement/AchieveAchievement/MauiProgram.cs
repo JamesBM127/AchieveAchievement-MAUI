@@ -1,4 +1,7 @@
-﻿using Microsoft.Extensions.Logging;
+﻿using AchieveAchievementLibrary.Data;
+using JBMDatabase;
+using JBMDatabase.Enum;
+using Microsoft.Extensions.Logging;
 
 namespace AchieveAchievement
 {
@@ -16,8 +19,21 @@ namespace AchieveAchievement
                 });
 
 #if DEBUG
-    		builder.Logging.AddDebug();
+            builder.Logging.AddDebug();
 #endif
+
+            string connectionString = "Server=.;Database=AADBTest;TrustServerCertificate=True;Trusted_Connection=True;Integrated Security=true;";
+            try
+            {
+                builder.Services.EnsureCreateAsync<AchieveAchievementContext>
+                (connectionString, DatabaseOptions.SqlServer);
+                //builder.Services.JustAddDbContext<AchieveAchievementContext>
+                //    (connectionString, DatabaseOptions.SqlServer);
+            }
+            catch (Exception ex)
+            {
+
+            }
 
             builder.Services.AADependencyInjection();
 

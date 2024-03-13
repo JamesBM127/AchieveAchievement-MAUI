@@ -59,7 +59,7 @@ public partial class LoginPage : ContentPage
     private async void SignBtnConfirmedClicked(object sender, EventArgs e)
     {
         if(SignBtnConfirmed.Text == "CREATE")
-            await _viewModel.CreateAccountAsync();
+            await _viewModel.CreateAAAccountAsync();
         else
             await _viewModel.LogInAAAccountAsync();
     }

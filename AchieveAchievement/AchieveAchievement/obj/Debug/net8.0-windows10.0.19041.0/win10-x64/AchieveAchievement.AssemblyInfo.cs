@@ -18,7 +18,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AchieveAchievement")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+b517dd6f2f3acc8407aa9e698a86021b6ded9007")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+137e280b565049b84c9bf93c537d5c362065f2e7")]
 [assembly: System.Reflection.AssemblyProductAttribute("AchieveAchievement")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AchieveAchievement")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

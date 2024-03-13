@@ -1,5 +1,9 @@
-﻿using CommunityToolkit.Mvvm.ComponentModel;
+﻿using AchieveAchievement.Data;
+using AchieveAchievementLibrary.Entity;
+using AchieveAchievementLibrary.EntitySettings;
+using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
+using JBMDatabase.UnitOfWork;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,25 +15,69 @@ namespace AchieveAchievement.ViewModel
     public partial class LoginViewModel : BaseViewModel
     {
         [ObservableProperty]
-        public string login, password;
+        public Account account = new();
+        [ObservableProperty]
+        public Player player = new();
 
-        public LoginViewModel()
+        private readonly IAAUoW _uow;
+
+        public LoginViewModel(IAAUoW uow)
         {
+            _uow = uow;
         }
 
+        //public LoginViewModel()
+        //{
+
+        //}
+
+        #region CRUD
+        public async Task CreateAAAccountAsync()
+        {
+            IsBusy = true;
+
+            try
+            {
+                bool added = false;
+
+                if (Player.IsValid())
+                {
+                    added = await _uow.AddAsync(Player);
+                }
+
+                if (added)
+                {
+                    Account.PlayerId = Player.Id;
+
+                    if (Account.IsValid())
+                    {
+                        added = await _uow.AddAsync(Account);
+                        Player.AccountId = Account.Id;
+                    }
+
+                    bool saved = await _uow.CommitAsync(added);
+
+                    if (saved)
+                    {
+                        await Shell.Current.DisplayAlert("Success", "CREATED!", "Ok");
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                await Shell.Current.DisplayAlert("FAIL", ex.Message, "Ok");
+            }
+            finally
+            {
+                IsBusy = false;
+            }
+        }
+        #endregion
+
+        #region Log In
         public async Task LogInAAAccountAsync()
         {
             await Shell.Current.DisplayAlert("CLICKED", "LOG IN AA Acc!", "OK");
-        }
-
-        public async Task CreateAccountAsync()
-        {
-            await Shell.Current.DisplayAlert("CLICKED", "CREATE ACCOUNT!", "OK");
-        }
-        
-        public async Task ForgotPasswordAsync()
-        {
-            await Shell.Current.DisplayAlert("CLICKED", "FORGOT PASSWORD!", "OK");
         }
 
         [RelayCommand]
@@ -43,5 +91,12 @@ namespace AchieveAchievement.ViewModel
         {
             await Shell.Current.DisplayAlert("CLICKED", "LOG IN Facebook Acc!", "OK");
         }
+
+        public async Task ForgotPasswordAsync()
+        {
+            await Shell.Current.DisplayAlert("CLICKED", "FORGOT PASSWORD!", "OK");
+        }
+
+        #endregion
     }
 }

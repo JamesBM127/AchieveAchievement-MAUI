@@ -30,7 +30,6 @@
 
             <Entry
                 Grid.Row="2"
-                Text="{Binding Login}"
                 Style="{StaticResource SubHeadline}"
                 SemanticProperties.HeadingLevel="Level2"
                 SemanticProperties.Description="Login" />

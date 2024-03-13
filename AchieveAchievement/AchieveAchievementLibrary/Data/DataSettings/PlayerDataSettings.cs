@@ -25,7 +25,7 @@ namespace AchieveAchievementLibrary.Data.DataSettings
 
                 model.Property(x => x.Languages)
                      .HasColumnName("Languages")
-                     .IsRequired();
+                     .IsRequired(false);
 
                 model.HasMany(x => x.Games);
 

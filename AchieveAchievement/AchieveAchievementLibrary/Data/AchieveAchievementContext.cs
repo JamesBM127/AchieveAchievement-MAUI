@@ -1,5 +1,4 @@
 ﻿using AchieveAchievementLibrary.Data.DataSettings;
-using AchieveAchievementLibrary.Entity;
 using Microsoft.EntityFrameworkCore;
 
 namespace AchieveAchievementLibrary.Data
