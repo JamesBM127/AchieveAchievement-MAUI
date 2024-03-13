@@ -1,6 +1,7 @@
 ﻿using AchieveAchievement.Data;
 using AchieveAchievementLibrary.Entity;
 using AchieveAchievementLibrary.EntitySettings;
+using AchieveAchievementLibrary.JBMException;
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
 using JBMDatabase.UnitOfWork;
@@ -36,14 +37,18 @@ namespace AchieveAchievement.ViewModel
         {
             try
             {
-                AppIsBusy();
                 IsBusy = true;
+                AppIsBusy();
 
                 bool added = false;
 
                 if (Player.IsValid())
                 {
                     added = await _uow.AddAsync(Player);
+                }
+                else
+                {
+                    throw new NotAddedException();
                 }
 
                 if (added)

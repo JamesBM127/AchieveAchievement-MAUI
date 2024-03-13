@@ -8,7 +8,7 @@ namespace AchieveAchievementLibrary.EntitySettings
         public static bool IsValid(this Player player)
         {
             StringBuilder errors = new StringBuilder();
-            errors.Append("Invalid ");
+            errors.Append("[B00002] Invalid properties");
             byte i = 0;
 
             if (string.IsNullOrWhiteSpace(player.Name) || player.Name.Length > 15)

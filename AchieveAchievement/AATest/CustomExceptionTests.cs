@@ -1,14 +1,10 @@
 ﻿using AchieveAchievementLibrary.JBMException;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace AATest
 {
     public class CustomExceptionTests
     {
+        #region IsBusyException
         [Test]
         public void IsBusyException_ThrowDefaultMessage_Success()
         {
@@ -34,5 +30,47 @@ namespace AATest
             Assert.That(expectedMessage, Is.EqualTo(ex.Message));
             #endregion
         }
+        #endregion
+
+        #region NotAddedException
+        [Test]
+        public void NotAddedException_ThrowDefaultMessage_Success()
+        {
+            #region Arrange
+            string expectedMessage = "Entity not added on database!";
+            #endregion
+
+            #region Act && Assert
+            NotAddedException? ex = Assert.Throws<NotAddedException>(() => { throw new NotAddedException(); });
+            Assert.That(expectedMessage, Is.EqualTo(ex.Message));
+            #endregion
+        }
+
+        [Test]
+        public void NotAddedException_ThrowCustomMessage_Success()
+        {
+            #region Arrange
+            string expectedMessage = $"{nameof(Account)} not added on database!";
+            #endregion
+
+            #region Act && Assert
+            NotAddedException? ex = Assert.Throws<NotAddedException>(() => { throw new NotAddedException(expectedMessage); });
+            Assert.That(expectedMessage, Is.EqualTo(ex.Message));
+            #endregion
+        }
+
+        [Test]
+        public void NotAddedException_ThrowDefaultMessageCustomEntity_Success()
+        {
+            #region Arrange
+            string expectedMessage = $"{nameof(Account)} not added on database!";
+            #endregion
+
+            #region Act && Assert
+            NotAddedException? ex = Assert.Throws<NotAddedException>(() => { throw new NotAddedException(nameof(Account), NotAddedException.defaultMessage); });
+            Assert.That(expectedMessage, Is.EqualTo(ex.Message));
+            #endregion
+        }
+        #endregion
     }
 }

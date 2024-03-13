@@ -9,7 +9,7 @@ namespace AchieveAchievementLibrary.EntitySettings
         public static bool IsValid(this Account account)
         {
             StringBuilder errors = new StringBuilder();
-            errors.Append("Invalid ");
+            errors.Append("[B00001] Invalid properties");
             byte i = 0;
 
             if (string.IsNullOrWhiteSpace(account.Login) || account.Login.Length > 20)
