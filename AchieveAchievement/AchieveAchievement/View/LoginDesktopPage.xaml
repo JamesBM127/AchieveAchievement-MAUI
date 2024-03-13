@@ -6,7 +6,7 @@
              x:Class="AchieveAchievement.View.LoginPage" >
 
     <Grid
-        RowDefinitions="Auto, Auto, Auto"
+        RowDefinitions="Auto, *, Auto"
         ColumnDefinitions="*,*"
         BackgroundColor="#252525"
         Padding="30">
@@ -24,7 +24,7 @@
         <Grid 
             Grid.Row="1"
             Grid.ColumnSpan="{OnPlatform WinUI=1, Default=2}"
-            RowDefinitions="Auto,*,Auto"
+            RowDefinitions="60,*"
             ColumnDefinitions="*,*"
             RowSpacing="30"
             Padding="30" >
@@ -69,7 +69,7 @@
                 RowSpacing="20">
 
                 <StackLayout >
-                    
+
                     <Label
                         Text="Login"
                         Style="{StaticResource Headline}"
@@ -90,7 +90,7 @@
                 <StackLayout
                     Grid.Row="2"
                     HorizontalOptions="FillAndExpand" >
-                    
+
                     <Label
                         Text="Password"
                         Style="{StaticResource Headline}"
@@ -99,7 +99,7 @@
 
                     <Grid
                         ColumnDefinitions="*,Auto">
-                        
+
                         <Entry
                             x:Name="PasswordEntry"
                             Text="{Binding Password}"
@@ -125,36 +125,40 @@
                             <Image.GestureRecognizers>
                                 <TapGestureRecognizer Tapped="ShowHidePassword"/>
                             </Image.GestureRecognizers>
-                            
+
                         </Image>
-                               
+
                     </Grid>
                 </StackLayout>
             </Grid>
 
         </Grid>
 
-        <!--LOGIN WITH LABEL-->
-        <Label
-            x:Name="RightBodyLabelText"
-            Text="Login with"
-            Grid.Row="1"
-            Grid.Column="1"
-            HorizontalOptions="Center"
-            Padding="30"
-            FontSize="20" />
-
         <!--RIGHT BODY-->
         <Grid
             Grid.Column="1"
             Grid.Row="1"
             ColumnDefinitions="*,*"
+            RowDefinitions="60,*"
             Padding="30"
+            RowSpacing="30"
             >
 
+            <!--LOGIN WITH LABEL-->
+            <Label
+                x:Name="RightBodyLabelText"
+                Text="Login with"
+                Grid.Row="0"
+                Grid.Column="0"
+                Grid.ColumnSpan="2"
+                HorizontalOptions="Center"
+                Padding="30"
+                FontSize="20" />
+            
             <!--SOCIAL MEDIA LOGIN-->
             <Frame 
                 x:Name="SocialMediaFrame"
+                Grid.Row="1"
                 Grid.ColumnSpan="2"
                 HorizontalOptions="CenterAndExpand"
                 WidthRequest="300"
@@ -227,6 +231,7 @@
             <!--ACCOUNT CREATE-->
             <Grid 
                 x:Name="AccountCreateGrid"
+                Grid.Row="1"
                 Grid.ColumnSpan="2"
                 IsVisible="False"
                 >
