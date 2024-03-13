@@ -11,7 +11,5 @@ namespace AchieveAchievementLibrary.JBMException
         public IsBusyException() : base("Another operation is running, try again if the problem persist, restart the app!") { }
 
         public IsBusyException(string message) : base(message) { }
-        
-        public IsBusyException(string message, Exception innerException) : base(message, innerException) { }
     }
 }
