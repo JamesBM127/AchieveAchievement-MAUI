@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AchieveAchievementLibrary")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+137e280b565049b84c9bf93c537d5c362065f2e7")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1151559f870743c9e55d9d20fc740d770655c20f")]
 [assembly: System.Reflection.AssemblyProductAttribute("AchieveAchievementLibrary")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AchieveAchievementLibrary")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

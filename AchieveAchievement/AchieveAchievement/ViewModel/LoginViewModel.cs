@@ -34,10 +34,11 @@ namespace AchieveAchievement.ViewModel
         #region CRUD
         public async Task CreateAAAccountAsync()
         {
-            IsBusy = true;
-
             try
             {
+                AppIsBusy();
+                IsBusy = true;
+
                 bool added = false;
 
                 if (Player.IsValid())

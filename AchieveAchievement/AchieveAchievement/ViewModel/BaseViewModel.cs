@@ -1,4 +1,5 @@
-﻿using CommunityToolkit.Mvvm.ComponentModel;
+﻿using AchieveAchievementLibrary.JBMException;
+using CommunityToolkit.Mvvm.ComponentModel;
 
 namespace AchieveAchievement.ViewModel
 {
@@ -9,6 +10,12 @@ namespace AchieveAchievement.ViewModel
 
         public BaseViewModel()
         {
+        }
+
+        protected void AppIsBusy()
+        {
+            if (IsBusy)
+                throw new IsBusyException();
         }
     }
 }
