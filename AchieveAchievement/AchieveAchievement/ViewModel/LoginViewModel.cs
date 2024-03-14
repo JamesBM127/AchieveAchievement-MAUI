@@ -4,12 +4,6 @@ using AchieveAchievementLibrary.EntitySettings;
 using AchieveAchievementLibrary.JBMException;
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
-using JBMDatabase.UnitOfWork;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace AchieveAchievement.ViewModel
 {
@@ -27,45 +21,40 @@ namespace AchieveAchievement.ViewModel
             _uow = uow;
         }
 
-        //public LoginViewModel()
-        //{
-
-        //}
-
         #region CRUD
         public async Task CreateAAAccountAsync()
         {
             try
             {
-                IsBusy = true;
                 AppIsBusy();
+                IsBusy = true;
 
                 bool added = false;
 
                 if (Player.IsValid())
                 {
                     added = await _uow.AddAsync(Player);
-                }
-                else
-                {
-                    throw new NotAddedException();
-                }
 
-                if (added)
-                {
-                    Account.PlayerId = Player.Id;
-
-                    if (Account.IsValid())
+                    if (added)
                     {
-                        added = await _uow.AddAsync(Account);
-                        Player.AccountId = Account.Id;
+                        Account.PlayerId = Player.Id;
+
+                        if (Account.IsValid())
+                        {
+                            added = await _uow.AddAsync(Account);
+                            Player.AccountId = Account.Id;
+                        }
+
+                        bool saved = await _uow.CommitAsync(added);
+
+                        if (saved)
+                            await Shell.Current.DisplayAlert("Success", "CREATED!", "Ok");
+                        else
+                            throw new NotAddedException(typeof(Account).Name, NotAddedException.defaultMessage);
                     }
-
-                    bool saved = await _uow.CommitAsync(added);
-
-                    if (saved)
+                    else
                     {
-                        await Shell.Current.DisplayAlert("Success", "CREATED!", "Ok");
+                        throw new NotAddedException(typeof(Player).Name, NotAddedException.defaultMessage);
                     }
                 }
             }
@@ -83,7 +72,32 @@ namespace AchieveAchievement.ViewModel
         #region Log In
         public async Task LogInAAAccountAsync()
         {
-            await Shell.Current.DisplayAlert("CLICKED", "LOG IN AA Acc!", "OK");
+            Account? accountFromDb;
+            try
+            {
+                AppIsBusy();
+                IsBusy = true;
+
+                accountFromDb = await _uow.GetAsync<Account>(x => x.Login == Account.Login);
+
+                if(Account.Password == accountFromDb.Password)
+                {
+                    SuccessLogin();
+                }
+                else
+                {
+                    FailLogin();
+                }
+            }
+            catch(Exception ex)
+            {
+
+            }
+            finally
+            {
+                accountFromDb = null;
+                IsBusy = false;
+            }
         }
 
         [RelayCommand]
@@ -103,6 +117,15 @@ namespace AchieveAchievement.ViewModel
             await Shell.Current.DisplayAlert("CLICKED", "FORGOT PASSWORD!", "OK");
         }
 
+        private async void SuccessLogin()
+        {
+            await Shell.Current.DisplayAlert("Success", "Login success", "Ok");
+        }
+
+        private async void FailLogin()
+        {
+            await Shell.Current.DisplayAlert("Fail", "Login or Password invalid!", "Ok");
+        }
         #endregion
     }
 }
