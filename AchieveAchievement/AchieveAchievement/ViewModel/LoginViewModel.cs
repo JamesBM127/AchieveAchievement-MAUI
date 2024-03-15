@@ -1,10 +1,13 @@
 ﻿using AchieveAchievement.Data;
+using AchieveAchievement.Resources.Languages;
 using AchieveAchievement.ViewPage;
 using AchieveAchievementLibrary.Entity;
 using AchieveAchievementLibrary.EntitySettings;
 using AchieveAchievementLibrary.JBMException;
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
+using Microsoft.Maui.Platform;
+using System.Globalization;
 
 namespace AchieveAchievement.ViewModel
 {
@@ -16,6 +19,8 @@ namespace AchieveAchievement.ViewModel
         public Account account = new();
         [ObservableProperty]
         public Player player = new() { BirthDate = DateTime.Now};
+
+        public LocalizationResourceManager LocalizationResourceManager => LocalizationResourceManager.Instance;
 
         private readonly IAAUoW _uow;
 
@@ -132,8 +137,14 @@ namespace AchieveAchievement.ViewModel
         [RelayCommand]
         public async void FakeLogin()
         {
+            var switchToCulture = AppResources.Culture.TwoLetterISOLanguageName
+                .Equals("pt", StringComparison.InvariantCultureIgnoreCase)?
+                new CultureInfo("en-US") : new CultureInfo("pt-BR");
+
+            LocalizationResourceManager.Instance.SetCulture(switchToCulture);
+
 #if DEBUG
-            SuccessLogin();
+            //SuccessLogin();
 #endif
         }
 

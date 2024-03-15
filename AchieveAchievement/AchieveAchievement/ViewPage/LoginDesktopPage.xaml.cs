@@ -13,7 +13,7 @@ public partial class LoginPage : ContentPage
         BindingContext = viewModel;
 
 #if DEBUG
-        AutoLogin();
+        //AutoLogin();
 #endif
     }
 
