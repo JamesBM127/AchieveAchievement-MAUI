@@ -3,12 +3,19 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:viewmodel="clr-namespace:AchieveAchievement.ViewModel"
              x:DataType="viewmodel:LoginViewModel"
-             x:Class="AchieveAchievement.View.LoginPage" >
+             x:Class="AchieveAchievement.ViewPage.LoginPage" 
+             Shell.FlyoutBehavior="Disabled"
+             >
+    
+    <Shell.BackButtonBehavior>
+        <BackButtonBehavior IsEnabled="False"
+                            IsVisible="False" />
+    </Shell.BackButtonBehavior>
 
     <Grid
         RowDefinitions="Auto, *, Auto"
         ColumnDefinitions="*,*"
-        BackgroundColor="#252525"
+        BackgroundColor="#202020"
         Padding="30">
 
         <!--LOGO-->
@@ -17,8 +24,7 @@
              Grid.ColumnSpan="2"
              Source="aa_logo.png"
              HeightRequest="185"
-             Aspect="AspectFit"
-             SemanticProperties.Description="dot net bot in a race car number eight" />
+             Aspect="AspectFit" />
 
         <!--LEFT BODY-->
         <Grid 
@@ -146,6 +152,7 @@
 
             <!--LOGIN WITH LABEL-->
             <Label
+                IsVisible="False"
                 x:Name="RightBodyLabelText"
                 Text="Login with"
                 Grid.Row="0"
@@ -157,6 +164,7 @@
             
             <!--SOCIAL MEDIA LOGIN-->
             <Frame 
+                IsVisible="False"
                 x:Name="SocialMediaFrame"
                 Grid.Row="1"
                 Grid.ColumnSpan="2"
@@ -329,6 +337,7 @@
                     />
 
                 <Button
+                    IsVisible="False"
                     x:Name="SignBtnConfirmed"
                     Text="LOG IN" 
                     BackgroundColor="Green"
@@ -336,6 +345,15 @@
                     TextColor="White"
                     WidthRequest="100"
                     Clicked="SignBtnConfirmedClicked"
+                    HorizontalOptions="EndAndExpand" />
+
+                <Button
+                    Text="FAKE LOG"
+                    BackgroundColor="Green"
+                    CornerRadius="3"
+                    TextColor="White"
+                    WidthRequest="100"
+                    Command="{Binding FakeLoginCommand}"
                     HorizontalOptions="EndAndExpand" />
             </HorizontalStackLayout>
         </Grid>

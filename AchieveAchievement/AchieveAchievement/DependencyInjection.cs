@@ -1,6 +1,6 @@
 ﻿using AchieveAchievement.Data;
-using AchieveAchievement.View;
 using AchieveAchievement.ViewModel;
+using AchieveAchievement.ViewPage;
 using AchieveAchievementLibrary.Data;
 
 namespace AchieveAchievement
@@ -12,9 +12,14 @@ namespace AchieveAchievement
             services.AddScoped<AchieveAchievementContext>();
             services.AddScoped<IAAUoW, AAUoW>();
 
+            services.AddScoped<AppShellViewModel>();
             services.AddScoped<LoginViewModel>();
+            services.AddScoped<AppShellViewModel>();
+            services.AddScoped<SettingsViewModel>();
 
             services.AddSingleton<LoginPage>();
+            services.AddSingleton<InitialPage>();
+            services.AddSingleton<SettingsPage>();
         }
     }
 }

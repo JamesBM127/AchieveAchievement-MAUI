@@ -3,13 +3,85 @@
     x:Class="AchieveAchievement.AppShell"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    xmlns:local="clr-namespace:AchieveAchievement.View"
-    Shell.FlyoutBehavior="Disabled"
-    Title="AchieveAchievement">
+    xmlns:local="clr-namespace:AchieveAchievement.ViewPage"
+    xmlns:model="clr-namespace:AchieveAchievement.ViewModel"
+    x:DataType="model:AppShellViewModel"
+    Shell.FlyoutBehavior="{OnPlatform WinUI=Locked, Default=Flyout}"
+    FlyoutVerticalScrollMode="Auto"
+    Title="Achieve Achievement">
 
     <ShellContent
         Title="Home"
         ContentTemplate="{DataTemplate local:MainPage}"
         Route="MainPage" />
 
+    <!--BODY-->
+    <Shell.FlyoutContent>
+        <ScrollView BackgroundColor="#151515">
+            <VerticalStackLayout Padding="10" Spacing="20">
+
+                <Frame BackgroundColor="White">
+                    <VerticalStackLayout Spacing="15">
+
+                        <Label Text="Assunto" />
+
+                        <Button Text="Pessoas"
+                                FontSize="20"
+                                IsVisible="False"
+                                BackgroundColor="Black"
+                                TextColor="White"
+                                HeightRequest="40"/>
+
+                        <Button Text="Emprestimos"
+                                FontSize="20"
+                                BackgroundColor="Black"
+                                TextColor="White"
+                                HeightRequest="40"/>
+                    </VerticalStackLayout>
+                </Frame>
+
+                <Frame BackgroundColor="White">
+                    <VerticalStackLayout Spacing="15">
+
+                        <Label Text="Criar Novo" />
+
+                        <Button Text="Pessoa"
+                                FontSize="20"
+                                BackgroundColor="Black"
+                                TextColor="White"
+                                HeightRequest="40"/>
+                    </VerticalStackLayout>
+                </Frame>
+
+            </VerticalStackLayout>
+        </ScrollView>
+    </Shell.FlyoutContent>
+
+    <!--FOOTER-->
+    <Shell.FlyoutFooter>
+        <Frame
+            Padding="0"
+            BackgroundColor="Black"
+            HeightRequest="100">
+
+            <Grid
+                ColumnDefinitions="*, Auto">
+                <ImageButton 
+                    Grid.Column="1"
+                    Command="{Binding GoToSettingsCommand}"
+                    BackgroundColor="Transparent"
+                    HeightRequest="32"
+                    WidthRequest="32"
+                    Source="settings_icon.png"/>
+                
+                <!--<Button 
+                    Grid.Column="1"
+                    Command="{Binding GoToSettingsCommand}"
+                    BackgroundColor="Red"
+                    Clicked="SettingsBtnClicked"
+                    HeightRequest="32"
+                    WidthRequest="32" />-->
+            </Grid>
+        </Frame>
+    </Shell.FlyoutFooter>
 </Shell>

@@ -1,7 +1,6 @@
-﻿using AchieveAchievement.View;
-using AchieveAchievement.ViewModel;
+﻿using AchieveAchievement.ViewModel;
 
-namespace AchieveAchievement.View
+namespace AchieveAchievement.ViewPage
 {
     public partial class MainPage : ContentPage
     {
@@ -9,6 +8,7 @@ namespace AchieveAchievement.View
         {
             InitializeComponent();
             DesktopLogin();
+            //FakeLogin();
         }
 
         private async void OnCounterClicked(object sender, EventArgs e)
@@ -19,6 +19,11 @@ namespace AchieveAchievement.View
         private async void DesktopLogin()
         {
             await Shell.Current.GoToAsync(nameof(LoginPage), false);
+        }
+
+        private async void FakeLogin()
+        {
+            await Shell.Current.GoToAsync(nameof(InitialPage), false);
         }
     }
 

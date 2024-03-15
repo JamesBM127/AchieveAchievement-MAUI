@@ -62,6 +62,7 @@
 	  <None Remove="Resources\Images\facebook_logo.png" />
 	  <None Remove="Resources\Images\google_logo.png" />
 	  <None Remove="Resources\Images\open_eye.png" />
+	  <None Remove="Resources\Images\settings_icon.png" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -76,15 +77,25 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <Compile Update="View\LoginDesktopPage.xaml.cs">
+	  <Compile Update="ViewPage\LoginDesktopPage.xaml.cs">
 	    <DependentUpon>LoginDesktopPage.xaml</DependentUpon>
 	  </Compile>
 	</ItemGroup>
 
 	<ItemGroup>
-	  <MauiXaml Update="View\LoginDesktopPage.xaml">
+	  <MauiXaml Update="ViewPage\InitialPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	  <MauiXaml Update="ViewPage\LoginDesktopPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="ViewPage\SettingsPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Folder Include="View\" />
 	</ItemGroup>
 
 </Project>

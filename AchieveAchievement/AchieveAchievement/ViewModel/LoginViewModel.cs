@@ -1,10 +1,10 @@
 ﻿using AchieveAchievement.Data;
+using AchieveAchievement.ViewPage;
 using AchieveAchievementLibrary.Entity;
 using AchieveAchievementLibrary.EntitySettings;
 using AchieveAchievementLibrary.JBMException;
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
-using JBMSecurePassword;
 
 namespace AchieveAchievement.ViewModel
 {
@@ -95,7 +95,7 @@ namespace AchieveAchievement.ViewModel
             }
             catch(Exception ex)
             {
-
+                await Shell.Current.DisplayAlert("ERROR", ex.Message, "Ok");
             }
             finally
             {
@@ -123,7 +123,18 @@ namespace AchieveAchievement.ViewModel
 
         private async void SuccessLogin()
         {
-            await Shell.Current.DisplayAlert("Success", "Login success", "Ok");
+            Page currentPage = Shell.Current.CurrentPage;
+            await Shell.Current.GoToAsync(nameof(InitialPage), true);
+            RemovePage(currentPage);
+        }
+
+        //DELETE
+        [RelayCommand]
+        public async void FakeLogin()
+        {
+#if DEBUG
+            SuccessLogin();
+#endif
         }
 
         private async void FailLogin()
