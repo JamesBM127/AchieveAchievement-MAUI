@@ -4,15 +4,18 @@ using AchieveAchievementLibrary.EntitySettings;
 using AchieveAchievementLibrary.JBMException;
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
+using JBMSecurePassword;
 
 namespace AchieveAchievement.ViewModel
 {
     public partial class LoginViewModel : BaseViewModel
     {
         [ObservableProperty]
+        public string inputPassword;
+        [ObservableProperty]
         public Account account = new();
         [ObservableProperty]
-        public Player player = new();
+        public Player player = new() { BirthDate = DateTime.Now};
 
         private readonly IAAUoW _uow;
 
@@ -38,6 +41,7 @@ namespace AchieveAchievement.ViewModel
                     if (added)
                     {
                         Account.PlayerId = Player.Id;
+                        (Account.Salt, Account.HashedPassword) = AccountSettings.GetSaltAndHashPassword(InputPassword);
 
                         if (Account.IsValid())
                         {
@@ -80,7 +84,7 @@ namespace AchieveAchievement.ViewModel
 
                 accountFromDb = await _uow.GetAsync<Account>(x => x.Login == Account.Login);
 
-                if(Account.Password == accountFromDb.Password)
+                if (AccountSettings.AuthLogin(InputPassword, accountFromDb.Salt, accountFromDb.HashedPassword))
                 {
                     SuccessLogin();
                 }

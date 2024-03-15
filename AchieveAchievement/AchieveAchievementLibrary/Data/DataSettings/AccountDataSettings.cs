@@ -15,24 +15,19 @@ namespace AchieveAchievementLibrary.Data.DataSettings
                 model.ToTable("Account");
 
                 model.Property(x => x.Login)
-                     .HasColumnName("Login")
                      .HasColumnType("varchar(20)")
                      .IsRequired();
 
-                model.Property(x => x.BirthDate)
-                     .HasColumnName("Birth Date")
-                     .IsRequired();
-
                 model.Property(x => x.Email)
-                     .HasColumnName("Email")
                      .IsRequired();
 
-                model.Property(x => x.Password)
-                     .HasColumnName("Password")
+                model.Property(x => x.Salt)
+                     .IsRequired();
+
+                model.Property(x => x.HashedPassword)
                      .IsRequired();
 
                 model.Property(x => x.PlayerId)
-                     .HasColumnName("Player Id")
                      .IsRequired();
 
                 model.HasOne(x => x.Player)

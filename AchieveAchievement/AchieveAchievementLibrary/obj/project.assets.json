@@ -1254,6 +1254,16 @@
             "rid": "win"
           }
         }
+      },
+      "JBMSecurePassword/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/JBMSecurePassword.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/JBMSecurePassword.dll": {}
+        }
       }
     }
   },
@@ -3290,11 +3300,17 @@
         "system.windows.extensions.nuspec",
         "useSharedDesignerContext.txt"
       ]
+    },
+    "JBMSecurePassword/1.0.0": {
+      "type": "project",
+      "path": "../../../Personal Nuggets - GitHub/JBMSecurePassword/JBMSecurePassword.csproj",
+      "msbuildProject": "../../../Personal Nuggets - GitHub/JBMSecurePassword/JBMSecurePassword.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net8.0": [
-      "JBMDatabase >= 8.0.0"
+      "JBMDatabase >= 8.0.0",
+      "JBMSecurePassword >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -3330,7 +3346,11 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\james\\source\\repos\\Personal Nuggets - GitHub\\JBMSecurePassword\\JBMSecurePassword.csproj": {
+              "projectPath": "C:\\Users\\james\\source\\repos\\Personal Nuggets - GitHub\\JBMSecurePassword\\JBMSecurePassword.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

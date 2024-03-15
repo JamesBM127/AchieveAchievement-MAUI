@@ -14,10 +14,13 @@ namespace AchieveAchievementLibrary.EntitySettings
             if (string.IsNullOrWhiteSpace(player.Name) || player.Name.Length > 15)
                 errors.Append($" [{++i}]Name");
 
+            if (player.BirthDate > DateTime.Now || player.BirthDate == new DateTime())
+                errors.Append($" [{++i}]BirthDate");
+
             if (i != 0)
                 throw new ArgumentException(errors.ToString());
             else
                 return true;
-        } 
+        }
     }
 }

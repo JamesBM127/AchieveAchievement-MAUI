@@ -10,4 +10,8 @@
     <PackageReference Include="JBMDatabase" Version="8.0.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Personal Nuggets - GitHub\JBMSecurePassword\JBMSecurePassword.csproj" />
+  </ItemGroup>
+
 </Project>

@@ -11,3 +11,6 @@ C:\Users\james\source\repos\Achieve Achievement\AchieveAchievement\AchieveAchiev
 C:\Users\james\source\repos\Achieve Achievement\AchieveAchievement\AchieveAchievementLibrary\obj\Debug\net8.0\refint\AchieveAchievementLibrary.dll
 C:\Users\james\source\repos\Achieve Achievement\AchieveAchievement\AchieveAchievementLibrary\obj\Debug\net8.0\AchieveAchievementLibrary.pdb
 C:\Users\james\source\repos\Achieve Achievement\AchieveAchievement\AchieveAchievementLibrary\obj\Debug\net8.0\ref\AchieveAchievementLibrary.dll
+C:\Users\james\source\repos\Achieve Achievement\AchieveAchievement\AchieveAchievementLibrary\bin\Debug\net8.0\JBMSecurePassword.dll
+C:\Users\james\source\repos\Achieve Achievement\AchieveAchievement\AchieveAchievementLibrary\bin\Debug\net8.0\JBMSecurePassword.pdb
+C:\Users\james\source\repos\Achieve Achievement\AchieveAchievement\AchieveAchievementLibrary\obj\Debug\net8.0\AchieveA.805C2CE1.Up2Date

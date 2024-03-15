@@ -20,23 +20,18 @@ namespace AchieveAchievementLibrary.Data.DataSettings
                 model.ToTable("Game");
 
                 model.Property(x => x.Name)
-                     .HasColumnName("Name")
                      .IsRequired();
 
                 model.Property(x => x.CrossPlataformGameplay)
-                     .HasColumnName("Cross Plataform Gameplay")
                      .IsRequired();
 
                 model.Property(x => x.ObtainablePlatinum)
-                     .HasColumnName("Obtainable Platinum")
                      .IsRequired();
 
                 model.Property(x => x.HideGame)
-                     .HasColumnName("Hide Game")
                      .IsRequired();
 
                 model.Property(x => x.PlataformsString)
-                     .HasColumnName("Plataforms String")
                      .IsRequired();
 
                 model.HasMany(x => x.Achievements)

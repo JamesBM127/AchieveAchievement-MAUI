@@ -3254,13 +3254,24 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
-          "JBMDatabase": "8.0.0"
+          "JBMDatabase": "8.0.0",
+          "JBMSecurePassword": "1.0.0"
         },
         "compile": {
           "bin/placeholder/AchieveAchievementLibrary.dll": {}
         },
         "runtime": {
           "bin/placeholder/AchieveAchievementLibrary.dll": {}
+        }
+      },
+      "JBMSecurePassword/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/JBMSecurePassword.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/JBMSecurePassword.dll": {}
         }
       }
     },
@@ -6405,13 +6416,24 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
-          "JBMDatabase": "8.0.0"
+          "JBMDatabase": "8.0.0",
+          "JBMSecurePassword": "1.0.0"
         },
         "compile": {
           "bin/placeholder/AchieveAchievementLibrary.dll": {}
         },
         "runtime": {
           "bin/placeholder/AchieveAchievementLibrary.dll": {}
+        }
+      },
+      "JBMSecurePassword/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/JBMSecurePassword.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/JBMSecurePassword.dll": {}
         }
       }
     },
@@ -9556,13 +9578,24 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
-          "JBMDatabase": "8.0.0"
+          "JBMDatabase": "8.0.0",
+          "JBMSecurePassword": "1.0.0"
         },
         "compile": {
           "bin/placeholder/AchieveAchievementLibrary.dll": {}
         },
         "runtime": {
           "bin/placeholder/AchieveAchievementLibrary.dll": {}
+        }
+      },
+      "JBMSecurePassword/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/JBMSecurePassword.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/JBMSecurePassword.dll": {}
         }
       }
     },
@@ -12707,13 +12740,24 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
-          "JBMDatabase": "8.0.0"
+          "JBMDatabase": "8.0.0",
+          "JBMSecurePassword": "1.0.0"
         },
         "compile": {
           "bin/placeholder/AchieveAchievementLibrary.dll": {}
         },
         "runtime": {
           "bin/placeholder/AchieveAchievementLibrary.dll": {}
+        }
+      },
+      "JBMSecurePassword/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/JBMSecurePassword.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/JBMSecurePassword.dll": {}
         }
       }
     },
@@ -15858,13 +15902,24 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
-          "JBMDatabase": "8.0.0"
+          "JBMDatabase": "8.0.0",
+          "JBMSecurePassword": "1.0.0"
         },
         "compile": {
           "bin/placeholder/AchieveAchievementLibrary.dll": {}
         },
         "runtime": {
           "bin/placeholder/AchieveAchievementLibrary.dll": {}
+        }
+      },
+      "JBMSecurePassword/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/JBMSecurePassword.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/JBMSecurePassword.dll": {}
         }
       }
     },
@@ -19009,13 +19064,24 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
-          "JBMDatabase": "8.0.0"
+          "JBMDatabase": "8.0.0",
+          "JBMSecurePassword": "1.0.0"
         },
         "compile": {
           "bin/placeholder/AchieveAchievementLibrary.dll": {}
         },
         "runtime": {
           "bin/placeholder/AchieveAchievementLibrary.dll": {}
+        }
+      },
+      "JBMSecurePassword/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/JBMSecurePassword.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/JBMSecurePassword.dll": {}
         }
       }
     },
@@ -22160,13 +22226,24 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
-          "JBMDatabase": "8.0.0"
+          "JBMDatabase": "8.0.0",
+          "JBMSecurePassword": "1.0.0"
         },
         "compile": {
           "bin/placeholder/AchieveAchievementLibrary.dll": {}
         },
         "runtime": {
           "bin/placeholder/AchieveAchievementLibrary.dll": {}
+        }
+      },
+      "JBMSecurePassword/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/JBMSecurePassword.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/JBMSecurePassword.dll": {}
         }
       }
     },
@@ -25311,13 +25388,24 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
-          "JBMDatabase": "8.0.0"
+          "JBMDatabase": "8.0.0",
+          "JBMSecurePassword": "1.0.0"
         },
         "compile": {
           "bin/placeholder/AchieveAchievementLibrary.dll": {}
         },
         "runtime": {
           "bin/placeholder/AchieveAchievementLibrary.dll": {}
+        }
+      },
+      "JBMSecurePassword/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/JBMSecurePassword.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/JBMSecurePassword.dll": {}
         }
       }
     },
@@ -27002,13 +27090,24 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
-          "JBMDatabase": "8.0.0"
+          "JBMDatabase": "8.0.0",
+          "JBMSecurePassword": "1.0.0"
         },
         "compile": {
           "bin/placeholder/AchieveAchievementLibrary.dll": {}
         },
         "runtime": {
           "bin/placeholder/AchieveAchievementLibrary.dll": {}
+        }
+      },
+      "JBMSecurePassword/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/JBMSecurePassword.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/JBMSecurePassword.dll": {}
         }
       }
     },
@@ -28736,13 +28835,24 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
-          "JBMDatabase": "8.0.0"
+          "JBMDatabase": "8.0.0",
+          "JBMSecurePassword": "1.0.0"
         },
         "compile": {
           "bin/placeholder/AchieveAchievementLibrary.dll": {}
         },
         "runtime": {
           "bin/placeholder/AchieveAchievementLibrary.dll": {}
+        }
+      },
+      "JBMSecurePassword/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/JBMSecurePassword.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/JBMSecurePassword.dll": {}
         }
       }
     },
@@ -30470,13 +30580,24 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
-          "JBMDatabase": "8.0.0"
+          "JBMDatabase": "8.0.0",
+          "JBMSecurePassword": "1.0.0"
         },
         "compile": {
           "bin/placeholder/AchieveAchievementLibrary.dll": {}
         },
         "runtime": {
           "bin/placeholder/AchieveAchievementLibrary.dll": {}
+        }
+      },
+      "JBMSecurePassword/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/JBMSecurePassword.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/JBMSecurePassword.dll": {}
         }
       }
     },
@@ -32204,13 +32325,24 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
-          "JBMDatabase": "8.0.0"
+          "JBMDatabase": "8.0.0",
+          "JBMSecurePassword": "1.0.0"
         },
         "compile": {
           "bin/placeholder/AchieveAchievementLibrary.dll": {}
         },
         "runtime": {
           "bin/placeholder/AchieveAchievementLibrary.dll": {}
+        }
+      },
+      "JBMSecurePassword/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/JBMSecurePassword.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/JBMSecurePassword.dll": {}
         }
       }
     },
@@ -33938,13 +34070,24 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
-          "JBMDatabase": "8.0.0"
+          "JBMDatabase": "8.0.0",
+          "JBMSecurePassword": "1.0.0"
         },
         "compile": {
           "bin/placeholder/AchieveAchievementLibrary.dll": {}
         },
         "runtime": {
           "bin/placeholder/AchieveAchievementLibrary.dll": {}
+        }
+      },
+      "JBMSecurePassword/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/JBMSecurePassword.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/JBMSecurePassword.dll": {}
         }
       }
     },
@@ -35672,13 +35815,24 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
-          "JBMDatabase": "8.0.0"
+          "JBMDatabase": "8.0.0",
+          "JBMSecurePassword": "1.0.0"
         },
         "compile": {
           "bin/placeholder/AchieveAchievementLibrary.dll": {}
         },
         "runtime": {
           "bin/placeholder/AchieveAchievementLibrary.dll": {}
+        }
+      },
+      "JBMSecurePassword/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/JBMSecurePassword.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/JBMSecurePassword.dll": {}
         }
       }
     },
@@ -37406,13 +37560,24 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
-          "JBMDatabase": "8.0.0"
+          "JBMDatabase": "8.0.0",
+          "JBMSecurePassword": "1.0.0"
         },
         "compile": {
           "bin/placeholder/AchieveAchievementLibrary.dll": {}
         },
         "runtime": {
           "bin/placeholder/AchieveAchievementLibrary.dll": {}
+        }
+      },
+      "JBMSecurePassword/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/JBMSecurePassword.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/JBMSecurePassword.dll": {}
         }
       }
     },
@@ -39124,13 +39289,24 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
-          "JBMDatabase": "8.0.0"
+          "JBMDatabase": "8.0.0",
+          "JBMSecurePassword": "1.0.0"
         },
         "compile": {
           "bin/placeholder/AchieveAchievementLibrary.dll": {}
         },
         "runtime": {
           "bin/placeholder/AchieveAchievementLibrary.dll": {}
+        }
+      },
+      "JBMSecurePassword/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/JBMSecurePassword.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/JBMSecurePassword.dll": {}
         }
       }
     },
@@ -40698,13 +40874,24 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
-          "JBMDatabase": "8.0.0"
+          "JBMDatabase": "8.0.0",
+          "JBMSecurePassword": "1.0.0"
         },
         "compile": {
           "bin/placeholder/AchieveAchievementLibrary.dll": {}
         },
         "runtime": {
           "bin/placeholder/AchieveAchievementLibrary.dll": {}
+        }
+      },
+      "JBMSecurePassword/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/JBMSecurePassword.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/JBMSecurePassword.dll": {}
         }
       }
     },
@@ -42150,13 +42337,24 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
-          "JBMDatabase": "8.0.0"
+          "JBMDatabase": "8.0.0",
+          "JBMSecurePassword": "1.0.0"
         },
         "compile": {
           "bin/placeholder/AchieveAchievementLibrary.dll": {}
         },
         "runtime": {
           "bin/placeholder/AchieveAchievementLibrary.dll": {}
+        }
+      },
+      "JBMSecurePassword/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/JBMSecurePassword.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/JBMSecurePassword.dll": {}
         }
       }
     },
@@ -43602,13 +43800,24 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
-          "JBMDatabase": "8.0.0"
+          "JBMDatabase": "8.0.0",
+          "JBMSecurePassword": "1.0.0"
         },
         "compile": {
           "bin/placeholder/AchieveAchievementLibrary.dll": {}
         },
         "runtime": {
           "bin/placeholder/AchieveAchievementLibrary.dll": {}
+        }
+      },
+      "JBMSecurePassword/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/JBMSecurePassword.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/JBMSecurePassword.dll": {}
         }
       }
     },
@@ -45054,13 +45263,24 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
-          "JBMDatabase": "8.0.0"
+          "JBMDatabase": "8.0.0",
+          "JBMSecurePassword": "1.0.0"
         },
         "compile": {
           "bin/placeholder/AchieveAchievementLibrary.dll": {}
         },
         "runtime": {
           "bin/placeholder/AchieveAchievementLibrary.dll": {}
+        }
+      },
+      "JBMSecurePassword/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/JBMSecurePassword.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/JBMSecurePassword.dll": {}
         }
       }
     },
@@ -46506,13 +46726,24 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
-          "JBMDatabase": "8.0.0"
+          "JBMDatabase": "8.0.0",
+          "JBMSecurePassword": "1.0.0"
         },
         "compile": {
           "bin/placeholder/AchieveAchievementLibrary.dll": {}
         },
         "runtime": {
           "bin/placeholder/AchieveAchievementLibrary.dll": {}
+        }
+      },
+      "JBMSecurePassword/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/JBMSecurePassword.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/JBMSecurePassword.dll": {}
         }
       }
     },
@@ -47955,13 +48186,24 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
-          "JBMDatabase": "8.0.0"
+          "JBMDatabase": "8.0.0",
+          "JBMSecurePassword": "1.0.0"
         },
         "compile": {
           "bin/placeholder/AchieveAchievementLibrary.dll": {}
         },
         "runtime": {
           "bin/placeholder/AchieveAchievementLibrary.dll": {}
+        }
+      },
+      "JBMSecurePassword/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/JBMSecurePassword.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/JBMSecurePassword.dll": {}
         }
       }
     },
@@ -49407,13 +49649,24 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
-          "JBMDatabase": "8.0.0"
+          "JBMDatabase": "8.0.0",
+          "JBMSecurePassword": "1.0.0"
         },
         "compile": {
           "bin/placeholder/AchieveAchievementLibrary.dll": {}
         },
         "runtime": {
           "bin/placeholder/AchieveAchievementLibrary.dll": {}
+        }
+      },
+      "JBMSecurePassword/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/JBMSecurePassword.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/JBMSecurePassword.dll": {}
         }
       }
     },
@@ -50846,13 +51099,24 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
-          "JBMDatabase": "8.0.0"
+          "JBMDatabase": "8.0.0",
+          "JBMSecurePassword": "1.0.0"
         },
         "compile": {
           "bin/placeholder/AchieveAchievementLibrary.dll": {}
         },
         "runtime": {
           "bin/placeholder/AchieveAchievementLibrary.dll": {}
+        }
+      },
+      "JBMSecurePassword/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/JBMSecurePassword.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/JBMSecurePassword.dll": {}
         }
       }
     },
@@ -52633,13 +52897,24 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
-          "JBMDatabase": "8.0.0"
+          "JBMDatabase": "8.0.0",
+          "JBMSecurePassword": "1.0.0"
         },
         "compile": {
           "bin/placeholder/AchieveAchievementLibrary.dll": {}
         },
         "runtime": {
           "bin/placeholder/AchieveAchievementLibrary.dll": {}
+        }
+      },
+      "JBMSecurePassword/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/JBMSecurePassword.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/JBMSecurePassword.dll": {}
         }
       }
     },
@@ -54242,13 +54517,24 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
-          "JBMDatabase": "8.0.0"
+          "JBMDatabase": "8.0.0",
+          "JBMSecurePassword": "1.0.0"
         },
         "compile": {
           "bin/placeholder/AchieveAchievementLibrary.dll": {}
         },
         "runtime": {
           "bin/placeholder/AchieveAchievementLibrary.dll": {}
+        }
+      },
+      "JBMSecurePassword/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/JBMSecurePassword.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/JBMSecurePassword.dll": {}
         }
       }
     },
@@ -55851,13 +56137,24 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
-          "JBMDatabase": "8.0.0"
+          "JBMDatabase": "8.0.0",
+          "JBMSecurePassword": "1.0.0"
         },
         "compile": {
           "bin/placeholder/AchieveAchievementLibrary.dll": {}
         },
         "runtime": {
           "bin/placeholder/AchieveAchievementLibrary.dll": {}
+        }
+      },
+      "JBMSecurePassword/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/JBMSecurePassword.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/JBMSecurePassword.dll": {}
         }
       }
     },
@@ -57460,13 +57757,24 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
-          "JBMDatabase": "8.0.0"
+          "JBMDatabase": "8.0.0",
+          "JBMSecurePassword": "1.0.0"
         },
         "compile": {
           "bin/placeholder/AchieveAchievementLibrary.dll": {}
         },
         "runtime": {
           "bin/placeholder/AchieveAchievementLibrary.dll": {}
+        }
+      },
+      "JBMSecurePassword/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/JBMSecurePassword.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/JBMSecurePassword.dll": {}
         }
       }
     },
@@ -59069,13 +59377,24 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
-          "JBMDatabase": "8.0.0"
+          "JBMDatabase": "8.0.0",
+          "JBMSecurePassword": "1.0.0"
         },
         "compile": {
           "bin/placeholder/AchieveAchievementLibrary.dll": {}
         },
         "runtime": {
           "bin/placeholder/AchieveAchievementLibrary.dll": {}
+        }
+      },
+      "JBMSecurePassword/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/JBMSecurePassword.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/JBMSecurePassword.dll": {}
         }
       }
     },
@@ -60675,13 +60994,24 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
-          "JBMDatabase": "8.0.0"
+          "JBMDatabase": "8.0.0",
+          "JBMSecurePassword": "1.0.0"
         },
         "compile": {
           "bin/placeholder/AchieveAchievementLibrary.dll": {}
         },
         "runtime": {
           "bin/placeholder/AchieveAchievementLibrary.dll": {}
+        }
+      },
+      "JBMSecurePassword/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/JBMSecurePassword.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/JBMSecurePassword.dll": {}
         }
       }
     },
@@ -62284,13 +62614,24 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
-          "JBMDatabase": "8.0.0"
+          "JBMDatabase": "8.0.0",
+          "JBMSecurePassword": "1.0.0"
         },
         "compile": {
           "bin/placeholder/AchieveAchievementLibrary.dll": {}
         },
         "runtime": {
           "bin/placeholder/AchieveAchievementLibrary.dll": {}
+        }
+      },
+      "JBMSecurePassword/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/JBMSecurePassword.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/JBMSecurePassword.dll": {}
         }
       }
     },
@@ -63892,13 +64233,24 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
-          "JBMDatabase": "8.0.0"
+          "JBMDatabase": "8.0.0",
+          "JBMSecurePassword": "1.0.0"
         },
         "compile": {
           "bin/placeholder/AchieveAchievementLibrary.dll": {}
         },
         "runtime": {
           "bin/placeholder/AchieveAchievementLibrary.dll": {}
+        }
+      },
+      "JBMSecurePassword/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/JBMSecurePassword.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/JBMSecurePassword.dll": {}
         }
       }
     }
@@ -71119,6 +71471,11 @@
       "type": "project",
       "path": "../AchieveAchievementLibrary/AchieveAchievementLibrary.csproj",
       "msbuildProject": "../AchieveAchievementLibrary/AchieveAchievementLibrary.csproj"
+    },
+    "JBMSecurePassword/1.0.0": {
+      "type": "project",
+      "path": "../../../Personal Nuggets - GitHub/JBMSecurePassword/JBMSecurePassword.csproj",
+      "msbuildProject": "../../../Personal Nuggets - GitHub/JBMSecurePassword/JBMSecurePassword.csproj"
     }
   },
   "projectFileDependencyGroups": {

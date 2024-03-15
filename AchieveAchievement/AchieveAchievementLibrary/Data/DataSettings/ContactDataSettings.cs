@@ -20,19 +20,15 @@ namespace AchieveAchievementLibrary.Data.DataSettings
                 model.ToTable("Contact");
 
                 model.Property(x => x.Link)
-                     .HasColumnName("Link")
                      .IsRequired();
 
                 model.Property(x => x.App)
-                     .HasColumnName("App")
                      .IsRequired();
 
                 model.Property(x => x.NameInApp)
-                     .HasColumnName("Name In App")
                      .IsRequired();
 
                 model.Property(x => x.PlayerId)
-                     .HasColumnName("Player Id")
                      .IsRequired();
 
                 model.HasOne(x => x.Player)

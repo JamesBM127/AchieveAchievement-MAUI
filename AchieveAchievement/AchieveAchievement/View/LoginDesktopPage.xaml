@@ -102,7 +102,7 @@
 
                         <Entry
                             x:Name="PasswordEntry"
-                            Text="{Binding Account.Password}"
+                            Text="{Binding InputPassword}"
                             TextColor="Black"
                             Placeholder="Type your password"
                             PlaceholderColor="#606060"
@@ -296,7 +296,7 @@
 
                         <DatePicker 
                             Grid.Column="1"
-                            Date="{Binding Account.BirthDate}"
+                            Date="{Binding Player.BirthDate}"
                             BackgroundColor="#b2b2b2"
                             TextColor="Black"
                             HorizontalOptions="Center"

@@ -15,17 +15,17 @@ namespace AchieveAchievementLibrary.Data.DataSettings
                 model.ToTable("Player");
 
                 model.Property(x => x.Name)
-                     .HasColumnName("Name")
                      .HasColumnType("varchar(15)")
                      .IsRequired();
 
                 model.Property(x => x.ShowContacts)
-                     .HasColumnName("Show Contacts")
                      .IsRequired();
 
                 model.Property(x => x.Languages)
-                     .HasColumnName("Languages")
                      .IsRequired(false);
+
+                model.Property(x => x.BirthDate)
+                     .IsRequired();
 
                 model.HasMany(x => x.Games);
 
