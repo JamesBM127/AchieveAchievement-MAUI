@@ -4,12 +4,18 @@
     <IsFirstTimeProjectOpen>False</IsFirstTimeProjectOpen>
     <ActiveDebugFramework>net8.0-windows10.0.19041.0</ActiveDebugFramework>
     <ActiveDebugProfile>Windows Machine</ActiveDebugProfile>
-    <SelectedPlatformGroup>Emulator</SelectedPlatformGroup>
+    <SelectedPlatformGroup>PhysicalDevice</SelectedPlatformGroup>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net8.0-android|AnyCPU'">
     <DebuggerFlavor>ProjectDebugger</DebuggerFlavor>
   </PropertyGroup>
   <ItemGroup>
+    <MauiXaml Update="Resources\Styles\AAStyles.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
+    <MauiXaml Update="Resources\Styles\AAColors.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
     <MauiXaml Update="ViewPage\InitialPage.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
@@ -17,6 +23,12 @@
       <SubType>Designer</SubType>
     </MauiXaml>
     <MauiXaml Update="ViewPage\SettingsPage.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
+    <MauiXaml Update="View\SettingsView\AccountSettingsView.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
+    <MauiXaml Update="View\SettingsView\ProfileSettingsView.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
   </ItemGroup>

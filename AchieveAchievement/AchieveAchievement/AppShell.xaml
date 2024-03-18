@@ -25,14 +25,7 @@
 
                         <Label Text="Assunto" />
 
-                        <Button Text="Pessoas"
-                                FontSize="20"
-                                IsVisible="False"
-                                BackgroundColor="Black"
-                                TextColor="White"
-                                HeightRequest="40"/>
-
-                        <Button Text="Emprestimos"
+                        <Button Text="BTN 1"
                                 FontSize="20"
                                 BackgroundColor="Black"
                                 TextColor="White"
@@ -45,7 +38,7 @@
 
                         <Label Text="Criar Novo" />
 
-                        <Button Text="Pessoa"
+                        <Button Text="BTN 2"
                                 FontSize="20"
                                 BackgroundColor="Black"
                                 TextColor="White"

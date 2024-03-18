@@ -14,7 +14,7 @@ namespace AchieveAchievement.ViewModel
     public partial class LoginViewModel : BaseViewModel
     {
         [ObservableProperty]
-        public string inputPassword;
+        public string? inputPassword;
         [ObservableProperty]
         public Account account = new();
         [ObservableProperty]
@@ -22,11 +22,9 @@ namespace AchieveAchievement.ViewModel
 
         public LocalizationResourceManager LocalizationResourceManager => LocalizationResourceManager.Instance;
 
-        private readonly IAAUoW _uow;
-
         public LoginViewModel(IAAUoW uow)
+            : base(uow)
         {
-            _uow = uow;
         }
 
         #region CRUD
@@ -137,14 +135,8 @@ namespace AchieveAchievement.ViewModel
         [RelayCommand]
         public async void FakeLogin()
         {
-            var switchToCulture = AppResources.Culture.TwoLetterISOLanguageName
-                .Equals("pt", StringComparison.InvariantCultureIgnoreCase)?
-                new CultureInfo("en-US") : new CultureInfo("pt-BR");
-
-            LocalizationResourceManager.Instance.SetCulture(switchToCulture);
-
 #if DEBUG
-            //SuccessLogin();
+            SuccessLogin();
 #endif
         }
 

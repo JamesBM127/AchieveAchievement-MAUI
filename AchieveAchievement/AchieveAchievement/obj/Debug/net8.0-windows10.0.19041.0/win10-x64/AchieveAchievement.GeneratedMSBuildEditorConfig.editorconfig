@@ -24,6 +24,18 @@ build_metadata.AdditionalFiles.ManifestResourceName = AchieveAchievement.AppShel
 build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
 build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
 
+[C:/Users/james/source/repos/Achieve Achievement/AchieveAchievement/AchieveAchievement/Resources/Styles/AAColors.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = AchieveAchievement.Resources.Styles.AAColors.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\AAColors.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\AAColors.xaml
+
+[C:/Users/james/source/repos/Achieve Achievement/AchieveAchievement/AchieveAchievement/Resources/Styles/AAStyles.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = AchieveAchievement.Resources.Styles.AAStyles.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\AAStyles.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\AAStyles.xaml
+
 [C:/Users/james/source/repos/Achieve Achievement/AchieveAchievement/AchieveAchievement/Resources/Styles/Colors.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = AchieveAchievement.Resources.Styles.Colors.xaml
@@ -59,3 +71,15 @@ build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = AchieveAchievement.ViewPage.SettingsPage.xaml
 build_metadata.AdditionalFiles.TargetPath = ViewPage\SettingsPage.xaml
 build_metadata.AdditionalFiles.RelativePath = ViewPage\SettingsPage.xaml
+
+[C:/Users/james/source/repos/Achieve Achievement/AchieveAchievement/AchieveAchievement/View/SettingsView/AccountSettingsView.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = AchieveAchievement.View.SettingsView.AccountSettingsView.xaml
+build_metadata.AdditionalFiles.TargetPath = View\SettingsView\AccountSettingsView.xaml
+build_metadata.AdditionalFiles.RelativePath = View\SettingsView\AccountSettingsView.xaml
+
+[C:/Users/james/source/repos/Achieve Achievement/AchieveAchievement/AchieveAchievement/View/SettingsView/ProfileSettingsView.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = AchieveAchievement.View.SettingsView.ProfileSettingsView.xaml
+build_metadata.AdditionalFiles.TargetPath = View\SettingsView\ProfileSettingsView.xaml
+build_metadata.AdditionalFiles.RelativePath = View\SettingsView\ProfileSettingsView.xaml

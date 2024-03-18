@@ -22,11 +22,12 @@ namespace AchieveAchievement
             builder.Logging.AddDebug();
 #endif
 
-            string connectionString = "Server=.;Database=AADBTest;TrustServerCertificate=True;Trusted_Connection=True;Integrated Security=true;";
+            string connectionString = ConnectionStringSettings.GetSqliteConnectionString("aatest");
+            //string connectionString = "server=.;database=aadbtest;trustservercertificate=true;trusted_connection=true;integrated security=true;";
             try
             {
                 builder.Services.EnsureCreateAsync<AchieveAchievementContext>
-                (connectionString, DatabaseOptions.SqlServer);
+                (connectionString, DatabaseOptions.Sqlite);
                 //builder.Services.JustAddDbContext<AchieveAchievementContext>
                 //    (connectionString, DatabaseOptions.SqlServer);
             }

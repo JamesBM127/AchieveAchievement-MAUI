@@ -17,7 +17,7 @@
     <Grid
         RowDefinitions="Auto, *, Auto"
         ColumnDefinitions="*,*"
-        BackgroundColor="#202020"
+        BackgroundColor="{StaticResource BackgroundDark}"
         Padding="30">
 
         <!--LOGO-->
@@ -86,8 +86,8 @@
 
                     <Entry
                         Text="{Binding Account.Login}"
+                        Placeholder="Login"
                         TextColor="Black"
-                        Placeholder="Type your login"
                         PlaceholderColor="#606060"
                         Style="{StaticResource SubHeadline}" 
                         HorizontalOptions="FillAndExpand"
@@ -100,7 +100,7 @@
                     HorizontalOptions="FillAndExpand" >
 
                     <Label
-                        Text="Password"
+                        Text="{local:Translate Password}"
                         Style="{StaticResource Headline}"
                         FontSize="17"
                         HorizontalOptions="Start" />
@@ -112,7 +112,7 @@
                             x:Name="PasswordEntry"
                             Text="{Binding InputPassword}"
                             TextColor="Black"
-                            Placeholder="Type your password"
+                            Placeholder="{local:Translate Password}"
                             PlaceholderColor="#606060"
                             Style="{StaticResource SubHeadline}" 
                             HorizontalOptions="FillAndExpand"
@@ -339,7 +339,7 @@
                     />
 
                 <Button
-                    IsVisible="False"
+                    IsVisible="True"
                     x:Name="SignBtnConfirmed"
                     Text="LOG IN" 
                     BackgroundColor="Green"
@@ -350,6 +350,7 @@
                     HorizontalOptions="EndAndExpand" />
 
                 <Button
+                    IsVisible="False"
                     Text="FAKE LOG"
                     BackgroundColor="Green"
                     CornerRadius="3"

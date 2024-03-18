@@ -1,6 +1,9 @@
-﻿using AchieveAchievementLibrary.JBMException;
+﻿using AchieveAchievement.Data;
+using AchieveAchievement.Resources.Languages;
+using AchieveAchievementLibrary.JBMException;
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
+using System.Globalization;
 
 namespace AchieveAchievement.ViewModel
 {
@@ -9,9 +12,14 @@ namespace AchieveAchievement.ViewModel
         [ObservableProperty]
         bool isBusy, isRefreshing;
 
-        public BaseViewModel()
+        protected readonly IAAUoW? _uow;
+
+        public BaseViewModel(IAAUoW uow)
         {
+            _uow = uow;
         }
+
+        public BaseViewModel() { }
 
         protected void AppIsBusy()
         {
@@ -42,6 +50,24 @@ namespace AchieveAchievement.ViewModel
         protected void RemovePage(Page currentPage)
         {
             Shell.Current.Navigation.RemovePage(currentPage);
+        }
+        #endregion
+
+        #region Settings
+        protected void ChangeCulture(string culture)
+        {
+            CultureInfo switchToCulture = AppResources.Culture.TwoLetterISOLanguageName
+                .Equals("pt", StringComparison.InvariantCultureIgnoreCase) ?
+                new CultureInfo("en-US") : new CultureInfo("pt-BR");
+
+            LocalizationResourceManager.Instance.SetCulture(switchToCulture);
+            //LocalizationResourceManager.Instance.SetCulture(new CultureInfo(culture));
+        }
+
+        [RelayCommand]
+        public void TESTE()
+        {
+            ChangeCulture("pt-br");
         }
         #endregion
     }
