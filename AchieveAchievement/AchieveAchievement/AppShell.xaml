@@ -17,7 +17,7 @@
         ContentTemplate="{DataTemplate local:MainPage}"
         Route="MainPage" />
 
-    <!--<FlyoutItem FlyoutDisplayOptions="AsMultipleItems">
+    <FlyoutItem FlyoutDisplayOptions="AsMultipleItems">
         <Tab >
             <ShellContent
                 Title="Home"
@@ -29,7 +29,7 @@
                 ContentTemplate="{DataTemplate local:SettingsPage}"
                 Route="SettingsPage"/>
         </Tab>
-    </FlyoutItem>-->
+    </FlyoutItem>
 
     <!--BODY-->
     <Shell.FlyoutContent>

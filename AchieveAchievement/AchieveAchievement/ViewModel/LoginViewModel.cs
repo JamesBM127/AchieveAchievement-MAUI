@@ -1,13 +1,11 @@
 ﻿using AchieveAchievement.Data;
-using AchieveAchievement.Resources.Languages;
 using AchieveAchievement.ViewPage;
 using AchieveAchievementLibrary.Entity;
 using AchieveAchievementLibrary.EntitySettings;
 using AchieveAchievementLibrary.JBMException;
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
-using Microsoft.Maui.Platform;
-using System.Globalization;
+using Microsoft.EntityFrameworkCore;
 
 namespace AchieveAchievement.ViewModel
 {
@@ -85,10 +83,14 @@ namespace AchieveAchievement.ViewModel
                 AppIsBusy();
                 IsBusy = true;
 
-                accountFromDb = await _uow.GetAsync<Account>(x => x.Login == Account.Login);
+                accountFromDb = await _uow.GetAsync<Account>(x => x.Login == Account.Login, y => y.Include(p => p.Player));
 
                 if (AccountSettings.AuthLogin(InputPassword, accountFromDb.Salt, accountFromDb.HashedPassword))
                 {
+                    Player = accountFromDb.Player;
+                    Account = accountFromDb;
+                    Account.Email = accountFromDb.Email;
+                    Account.Login = accountFromDb.Login;
                     SuccessLogin();
                 }
                 else
@@ -126,6 +128,7 @@ namespace AchieveAchievement.ViewModel
 
         private async void SuccessLogin()
         {
+            Preferences.Set("AccId", Account.Id.ToString());
             Page currentPage = Shell.Current.CurrentPage;
             await Shell.Current.GoToAsync(nameof(InitialPage), true);
             RemovePage(currentPage);

@@ -27,7 +27,7 @@ namespace AchieveAchievement
             try
             {
                 builder.Services.EnsureCreateAsync<AchieveAchievementContext>
-                (connectionString, DatabaseOptions.Sqlite);
+                (connectionString, DatabaseOptions.SqlServer);
                 //builder.Services.JustAddDbContext<AchieveAchievementContext>
                 //    (connectionString, DatabaseOptions.SqlServer);
             }

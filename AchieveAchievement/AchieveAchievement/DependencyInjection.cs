@@ -2,6 +2,7 @@
 using AchieveAchievement.ViewModel;
 using AchieveAchievement.ViewPage;
 using AchieveAchievementLibrary.Data;
+using AchieveAchievementLibrary.Entity;
 
 namespace AchieveAchievement
 {
@@ -21,6 +22,7 @@ namespace AchieveAchievement
             services.AddSingleton<LoginMobilePage>();
             services.AddSingleton<InitialPage>();
             services.AddSingleton<SettingsPage>();
+
         }
     }
 }

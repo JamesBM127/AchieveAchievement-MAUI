@@ -17,7 +17,8 @@
 
     <ContentPage.ToolbarItems>
         <ToolbarItem
-            Text="SAVE" 
+            Text="SAVE"
+            Command="{Binding UpdateSomethingCommand}"
             IconImageSource="aa_logo.png"/>
     </ContentPage.ToolbarItems>
 

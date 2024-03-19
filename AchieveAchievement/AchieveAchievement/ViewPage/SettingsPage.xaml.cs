@@ -1,13 +1,17 @@
+using AchieveAchievement.Enum;
 using AchieveAchievement.ViewModel;
 
 namespace AchieveAchievement.ViewPage;
 
 public partial class SettingsPage : ContentPage
 {
+    private readonly SettingsViewModel _viewModel;
+
 	public SettingsPage(SettingsViewModel viewModel)
 	{
 		InitializeComponent();
 		BindingContext = viewModel;
+        _viewModel = viewModel;
 	}
 
     #region Menu
@@ -15,12 +19,14 @@ public partial class SettingsPage : ContentPage
     {
         SetAllMenuBtnUncliked();
         SetMenuBtnClicked(ref ProfileView, ref ProfileMenuBtn, Color.FromRgb(76, 76, 76));
+        _viewModel.SettingsMenu = SettingsMenu.Profile;
     }
 
     private void AccountBtnClicked(object sender, EventArgs e)
     {
         SetAllMenuBtnUncliked();
         SetMenuBtnClicked(ref AccountView, ref AccountMenuBtn, Color.FromRgb(76, 76, 76));
+        _viewModel.SettingsMenu = SettingsMenu.Account;
     }
 
     #endregion
