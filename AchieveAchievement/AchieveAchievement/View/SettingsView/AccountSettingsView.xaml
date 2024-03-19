@@ -1,27 +1,75 @@
 <?xml version="1.0" encoding="utf-8" ?>
+
 <ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:AchieveAchievement"
              x:Class="AchieveAchievement.View.SettingsView.AccountSettingsView">
-    <Grid
-        ColumnDefinitions="*, *">
+
+    <VerticalStackLayout
+        Spacing="10">
         
-        <VerticalStackLayout
-            Spacing="10">
-            <Label Text="{local:Translate DisplayName}" 
+        <Label Text="Email" 
+            FontSize="15" />
+
+        <Entry
+            Style="{StaticResource AAEntry}"
+            Keyboard="Email" />
+
+        <StackLayout
+            Orientation="Horizontal"
+            HorizontalOptions="FillAndExpand">
+            
+            <Label 
+                Text="Password" 
+                FontSize="15" 
+                VerticalTextAlignment="Center"
+                HorizontalTextAlignment="Start"/>
+
+            <Button
+                x:Name="EditPasswordBtn"
+                Text="Edit"
+                TextColor="White"
+                BackgroundColor="Blue"
+                HorizontalOptions="EndAndExpand"
+                Clicked="EditPasswordClicked"/>
+        </StackLayout>
+
+        <Grid
+            x:Name="PasswordChange"
+            IsVisible="False"
+            ColumnDefinitions="*, Auto"
+            RowDefinitions="*, *, *, *" >
+
+            <Label 
+                Text="Old Password" 
+                FontSize="15" />
+            
+            <Entry 
+                Grid.Row="1"
+                Style="{StaticResource AAEntry}"/>
+            
+            <ImageButton
+                Grid.Column="1"
+                Grid.Row="1"
+                Source="closed_eye_w" 
+                HeightRequest="32"
+                BorderWidth="32"/>
+
+            <Label 
+                Grid.Row="2"
+                Text="New Password" 
                 FontSize="15" />
 
             <Entry 
-                Style="{StaticResource AAEntry}"
-                MaxLength="15"
-            />
-            <Label Text="{local:Translate DisplayName}" 
-                FontSize="15" />
+                Grid.Row="3"
+                Style="{StaticResource AAEntry}"/>
 
-            <Entry 
-                Style="{StaticResource AAEntry}"
-                MaxLength="15"
-            />
-        </VerticalStackLayout>
-    </Grid>
+            <ImageButton
+                Grid.Column="1"
+                Grid.Row="3"
+                Source="closed_eye_w" 
+                HeightRequest="32"
+                BorderWidth="32"/>
+        </Grid>
+    </VerticalStackLayout>
 </ContentView>

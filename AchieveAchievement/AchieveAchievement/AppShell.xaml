@@ -7,13 +7,29 @@
     xmlns:model="clr-namespace:AchieveAchievement.ViewModel"
     x:DataType="model:AppShellViewModel"
     Shell.FlyoutBehavior="{OnPlatform WinUI=Locked, Default=Flyout}"
-    FlyoutVerticalScrollMode="Auto"
+    Shell.BackgroundColor="Black"
+    FlyoutVerticalScrollMode="Enabled"
+    FlyoutItem.IsVisible="True"
     Title="Achieve Achievement">
 
-    <ShellContent
-        Title="Home"
+    <FlyoutItem FlyoutDisplayOptions="AsMultipleItems">
+        <Tab >
+            <ShellContent
+                Title="Home"
+                ContentTemplate="{DataTemplate local:InitialPage}"
+                Route="InitialPage" />
+
+            <ShellContent 
+                Title="Settings"
+                ContentTemplate="{DataTemplate local:SettingsPage}"
+                Route="SettingsPage"/>
+        </Tab>
+    </FlyoutItem>
+
+    <!--<ShellContent
+        Title="MainPage"
         ContentTemplate="{DataTemplate local:MainPage}"
-        Route="MainPage" />
+        Route="MainPage" />-->
 
     <!--BODY-->
     <Shell.FlyoutContent>
@@ -66,7 +82,7 @@
                     HeightRequest="32"
                     WidthRequest="32"
                     Source="settings_icon.png"/>
-                
+
                 <!--<Button 
                     Grid.Column="1"
                     Command="{Binding GoToSettingsCommand}"

@@ -14,16 +14,28 @@
         <Setter Property="MaximumHeightRequest" Value="45"/>
     </Style>
     
-    <!--BUTTON-->
+    <!--ENTRY-->
     <Style x:Key="AAEntry" TargetType="Entry">
         <Setter Property="TextColor" Value="Black" />
-        <Setter Property="FontSize" Value="24" />
+        <Setter Property="FontSize" Value="15" />
         <Setter Property="HorizontalOptions" Value="Center" />
         <Setter Property="HorizontalTextAlignment" Value="Center"/>
         <Setter Property="PlaceholderColor" Value="#606060"/>
         <Setter Property="BackgroundColor" Value="#DDDDDD"/>
         <Setter Property="HorizontalOptions" Value="FillAndExpand"/>
         <Setter Property="HeightRequest" Value="50"/>
+    </Style>
+    
+    <!--DATE PICKER-->
+    <Style x:Key="AADatePicker" TargetType="DatePicker">
+        <Setter Property="TextColor" Value="Black" />
+        <Setter Property="FontSize" Value="15" />
+        <Setter Property="HorizontalOptions" Value="Center" />
+        <Setter Property="BackgroundColor" Value="#DDDDDD"/>
+        <Setter Property="HorizontalOptions" Value="CenterAndExpand"/>
+        <Setter Property="HeightRequest" Value="50"/>
+        <Setter Property="Format" Value="(MMM/dd/yyyy)"/>
+        <Setter Property="FontAttributes" Value="Bold"/>
     </Style>
     
 </ResourceDictionary>

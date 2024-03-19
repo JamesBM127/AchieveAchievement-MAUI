@@ -5,8 +5,7 @@
              xmlns:lang="clr-namespace:AchieveAchievement.Resources.Languages"
              xmlns:local="clr-namespace:AchieveAchievement"
              x:DataType="viewmodel:LoginViewModel"
-             x:Class="AchieveAchievement.ViewPage.LoginPage" 
-             Shell.FlyoutBehavior="Disabled"
+             x:Class="AchieveAchievement.ViewPage.LoginDesktopPage" 
              >
     
     <Shell.BackButtonBehavior>

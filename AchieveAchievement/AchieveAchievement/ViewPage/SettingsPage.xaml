@@ -6,20 +6,29 @@
              xmlns:view="clr-namespace:AchieveAchievement.View.SettingsView"
              x:Class="AchieveAchievement.ViewPage.SettingsPage"
              x:DataType="viewmodel:SettingsViewModel"
-             Shell.NavBarIsVisible="False"
-             Title="SettingsPage">
+             Shell.NavBarIsVisible="True"
+             
+             >
 
     <Shell.BackButtonBehavior>
         <BackButtonBehavior IsEnabled="False"
                             IsVisible="False" />
     </Shell.BackButtonBehavior>
 
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="SAVE" IconImageSource="aa_logo.png"/>
+        
+    </ContentPage.ToolbarItems>
+
     <Grid
-        ColumnDefinitions="Auto, *"
         BackgroundColor="#202020"
         ColumnSpacing="10"
-        Padding="10,30"
-        >
+        Padding="5,30">
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="{OnPlatform WinUI=Auto, Default=0.35*}"/>
+            <ColumnDefinition Width="{OnPlatform WinUI=*, Default=0.65*}"/>
+        </Grid.ColumnDefinitions>
 
         <!--MENU-->
         <Frame
@@ -27,9 +36,7 @@
             BorderColor="White"
             CornerRadius="3">
             
-            <Grid
-                RowDefinitions="*,*" >
-
+            <ScrollView >
                 <!--Settings MENU-->
                 <VerticalStackLayout
                     Spacing="10">
@@ -53,18 +60,18 @@
 
                     <Button 
                         Grid.Row="1"
-                        Text="TESTE"
+                        Text="Language"
                         Command="{Binding TESTECommand}"
                         Style="{StaticResource SettingsMenuButton}"
                         />
                 </VerticalStackLayout>
-            </Grid>
+            </ScrollView>
         </Frame>
 
         <!--BODY-->
         <Grid
             Grid.Column="2" 
-            Padding="30">
+            Padding="15">
 
             <ScrollView >
                 <Grid>

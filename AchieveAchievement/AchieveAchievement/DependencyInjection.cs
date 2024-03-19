@@ -17,7 +17,8 @@ namespace AchieveAchievement
             services.AddScoped<AppShellViewModel>();
             services.AddScoped<SettingsViewModel>();
 
-            services.AddSingleton<LoginPage>();
+            services.AddSingleton<LoginDesktopPage>();
+            services.AddSingleton<LoginMobilePage>();
             services.AddSingleton<InitialPage>();
             services.AddSingleton<SettingsPage>();
         }

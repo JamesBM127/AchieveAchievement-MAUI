@@ -11,7 +11,8 @@ namespace AchieveAchievement
 
             BindingContext = viewModel;
 
-            Routing.RegisterRoute(nameof(LoginPage), typeof(LoginPage));
+            Routing.RegisterRoute(nameof(LoginDesktopPage), typeof(LoginDesktopPage));
+            Routing.RegisterRoute(nameof(LoginMobilePage), typeof(LoginMobilePage));
             Routing.RegisterRoute(nameof(InitialPage), typeof(InitialPage));
             Routing.RegisterRoute(nameof(SettingsPage), typeof(SettingsPage));
         }

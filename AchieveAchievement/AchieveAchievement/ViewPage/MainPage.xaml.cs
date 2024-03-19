@@ -7,18 +7,24 @@ namespace AchieveAchievement.ViewPage
         public MainPage()
         {
             InitializeComponent();
-            DesktopLogin();
+            //DesktopLogin();
+            MobileLogin();
             //FakeLogin();
         }
 
         private async void OnCounterClicked(object sender, EventArgs e)
         {
-            await Shell.Current.GoToAsync(nameof(LoginPage), false);
+            await Shell.Current.GoToAsync(nameof(LoginDesktopPage), false);
         }
 
         private async void DesktopLogin()
         {
-            await Shell.Current.GoToAsync(nameof(LoginPage), false);
+            await Shell.Current.GoToAsync(nameof(LoginDesktopPage), false);
+        }
+
+        private async void MobileLogin()
+        {
+            await Shell.Current.GoToAsync(nameof(LoginMobilePage), false);
         }
 
         private async void FakeLogin()

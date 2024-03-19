@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:AchieveAchievement"
+             x:Class="AchieveAchievement.ViewPage.LoginMobilePage" >
+
+    <Shell.BackButtonBehavior>
+        <BackButtonBehavior IsEnabled="False"
+                        IsVisible="False" />
+    </Shell.BackButtonBehavior>
+
+    <Grid
+        RowDefinitions="Auto, *, Auto"
+        BackgroundColor="{StaticResource BackgroundDark}"
+        Padding="15">
+
+        <!--LOGO-->
+        <Image
+            Grid.Row="0"
+            Source="aa_logo.png"
+            HeightRequest="150"
+            Aspect="AspectFit" />
+
+        <!--BODY-->
+        <ScrollView
+            Grid.Row="1"
+            Padding="30">
+            
+            <VerticalStackLayout 
+                Spacing="20">
+
+                <!--SIGN BUTTONS-->
+                <Grid
+                    RowDefinitions="*,*"
+                    ColumnDefinitions="*,*">
+
+                    <Button 
+                        Text="{local:Translate SignIn}"
+                        FontSize="15" 
+                        CornerRadius="0"
+                        TextColor="White"
+                        BackgroundColor="Transparent"
+                        Clicked="SignInBtnSelectionClicked"
+                        />
+
+                    <Button
+                        Grid.Column="1"
+                        Text="{local:Translate SignUp}"
+                        FontSize="15"
+                        CornerRadius="0"
+                        TextColor="White"
+                        BackgroundColor="Transparent"
+                        Clicked="SignUpBtnSelectionClicked"
+                            />
+
+                    <BoxView
+                        x:Name="LineSignBtnSelected"
+                        Grid.Row="1"
+                        HeightRequest="4"
+                        BackgroundColor="Green"
+                        />
+                </Grid>
+
+                <!--LOGIN ENTRIES-->
+                <Grid
+                    Grid.Row="1"
+                    RowDefinitions="*,*"
+                    RowSpacing="20">
+
+                    <StackLayout >
+
+                        <Label
+                        Text="Login"
+                        Style="{StaticResource Headline}"
+                        FontSize="17"
+                        HorizontalOptions="Start" />
+
+                        <Entry
+                            Text="{Binding Account.Login}"
+                            Placeholder="Login"
+                            Style="{StaticResource AAEntry}" />
+                    </StackLayout>
+
+                    <StackLayout
+                    Grid.Row="2"
+                    HorizontalOptions="FillAndExpand" >
+
+                        <Label
+                        Text="{local:Translate Password}"
+                        Style="{StaticResource Headline}"
+                        FontSize="17"
+                        HorizontalOptions="Start" />
+
+                        <Grid
+                        ColumnDefinitions="*,Auto">
+
+                            <Entry
+                                x:Name="PasswordEntry"
+                                Text="{Binding InputPassword}"
+                                Placeholder="{local:Translate Password}"
+                                Style="{StaticResource AAEntry}" 
+                                Margin="0,0,10,0"
+                                IsPassword="True"/>
+
+                            <Image 
+                            x:Name="PasswordEye"
+                            Grid.Column="1"
+                            Source="closed_eye_w.png"
+                            HorizontalOptions="End"
+                            VerticalOptions="Center"
+                            HeightRequest="24"
+                            WidthRequest="24">
+
+                                <Image.GestureRecognizers>
+                                    <TapGestureRecognizer Tapped="ShowHidePassword"/>
+                                </Image.GestureRecognizers>
+
+                            </Image>
+
+                        </Grid>
+                    </StackLayout>
+                </Grid>
+
+                <!--ACCOUNT CREATE-->
+                <Grid 
+                    x:Name="AccountCreateGrid"
+                    IsVisible="False">
+
+                    <Grid
+                        RowDefinitions="*,*"
+                        RowSpacing="20">
+
+                        <!--EMAIL-->
+                        <StackLayout >
+                            <Label
+                                Text="Email"
+                                Style="{StaticResource Headline}"
+                                FontSize="17"
+                                HorizontalOptions="Start" />
+
+                            <Entry
+                                Text="{Binding Account.Email}"
+                                Placeholder="mail@example.com"
+                                Style="{StaticResource AAEntry}" 
+                                Keyboard="Email" />
+                        </StackLayout>
+
+                        <!--NICKNAME / BIRTHDATE-->
+                        <Grid
+                            Grid.Row="1"
+                            RowDefinitions="*,*"
+                            ColumnDefinitions="*,Auto" >
+
+                            <Label
+                                Text="Nickname"
+                                FontSize="17"
+                                HorizontalOptions="Start" />
+
+                            <Entry
+                                Grid.Row="1"
+                                Text="{Binding Player.Name}"
+                                Placeholder="nickname"
+                                MaxLength="15"
+                                Style="{StaticResource AAEntry}"
+                                Margin="0,0,10,0" />
+
+                            <Label
+                                Grid.Column="1"
+                                Text="Birthdate"
+                                FontSize="17"
+                                HorizontalOptions="Start" />
+
+                            <DatePicker 
+                                Grid.Row="1"
+                                Grid.Column="1"
+                                Date="{Binding Player.BirthDate}"
+                                Style="{StaticResource AADatePicker}" />
+                        </Grid>
+                    </Grid>
+                </Grid>
+                
+                <!--SOCIAL MEDIA LOGIN-->
+                <Frame 
+                    IsVisible="False"
+                    x:Name="SocialMediaFrame"
+                    Grid.Row="1"
+                    Grid.ColumnSpan="2"
+                    HorizontalOptions="CenterAndExpand"
+                    WidthRequest="300"
+                    HeightRequest="200"
+                    BorderColor="White"
+                    BackgroundColor="Transparent" >
+
+                    <Grid
+                    RowDefinitions="*,*"
+                    RowSpacing="10">
+
+                        <!--GOOGLE-->
+                        <Frame 
+                        BackgroundColor="White"
+                        CornerRadius="40"
+                        >
+                            <Frame.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="GoogleFrameLoginTapped" />
+                            </Frame.GestureRecognizers>
+
+                            <Grid
+                            ColumnDefinitions="Auto, *"
+                            >
+
+                                <Image
+                                Source="google_logo.png" />
+
+                                <Label 
+                                Grid.Column="1"
+                                Text="Google"
+                                TextColor="Black"
+                                FontSize="17"
+                                HorizontalOptions="Center"
+                                VerticalOptions="Center"
+                                HorizontalTextAlignment="Center"/>
+                            </Grid>
+                        </Frame>
+
+                        <!--FACEBOOK-->
+                        <Frame 
+                        Grid.Row="1"
+                        BackgroundColor="White"
+                        CornerRadius="40"
+                        >
+                            <Frame.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="FacebookFrameLoginTapped" />
+                            </Frame.GestureRecognizers>
+
+                            <Grid
+                            ColumnDefinitions="Auto, *"
+                            >
+
+                                <Image
+                                Source="facebook_logo.png" />
+
+                                <Label 
+                                Grid.Column="1"
+                                Text="Facebook"
+                                TextColor="Black"
+                                FontSize="17"
+                                HorizontalOptions="Center"
+                                VerticalOptions="Center"
+                                HorizontalTextAlignment="Center"/>
+                            </Grid>
+                        </Frame>
+                    </Grid>
+                </Frame>
+            </VerticalStackLayout>
+        </ScrollView>
+
+        <!--RIGHT BODY-->
+        <!--<Grid
+        Grid.Column="1"
+        Grid.Row="1"
+        ColumnDefinitions="*,*"
+        RowDefinitions="60,*"
+        Padding="30"
+        RowSpacing="30"
+        >
+
+
+        </Grid>-->
+
+        <!--FOOTER BUTTONS-->
+        <Grid
+        Grid.Row="2"
+        Padding="30">
+
+            <HorizontalStackLayout
+            HorizontalOptions="End" >
+
+                <Button 
+                x:Name="ForgotPasswordBtn"
+                Text="   Forgot&#10;password?"
+                Margin="0,0,65,0"
+                BackgroundColor="Transparent"
+                CornerRadius="3"
+                TextColor="White"
+                HorizontalOptions="Center"
+                Pressed="ForgotPasswordBtnPressed"
+                Released="ForgotPasswordBtnReleased"
+                />
+
+                <Button
+                IsVisible="True"
+                x:Name="SignBtnConfirmed"
+                Text="LOG IN" 
+                BackgroundColor="Green"
+                CornerRadius="3"
+                TextColor="White"
+                WidthRequest="100"
+                Clicked="SignBtnConfirmedClicked"
+                HorizontalOptions="EndAndExpand" />
+
+                <Button
+                IsVisible="False"
+                Text="FAKE LOG"
+                BackgroundColor="Green"
+                CornerRadius="3"
+                TextColor="White"
+                WidthRequest="100"
+                Command="{Binding FakeLoginCommand}"
+                HorizontalOptions="EndAndExpand" />
+            </HorizontalStackLayout>
+        </Grid>
+    </Grid>
+</ContentPage>

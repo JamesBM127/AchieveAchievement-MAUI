@@ -4,16 +4,21 @@
              xmlns:local="clr-namespace:AchieveAchievement"
              x:Class="AchieveAchievement.View.SettingsView.ProfileSettingsView">
 
-    <Grid
-        ColumnDefinitions="*, *">
-        <VerticalStackLayout
-            Spacing="10">
-            <Label Text="{local:Translate DisplayName}"
-                   FontSize="15" />
+    <VerticalStackLayout
+        Spacing="10">
+        
+        <Label Text="{local:Translate DisplayName}"
+                FontSize="15" />
 
-            <Entry
-                Style="{StaticResource AAEntry}"
-                MaxLength="15" />
-        </VerticalStackLayout>
-    </Grid>
+        <Entry
+            Style="{StaticResource AAEntry}"
+            MaxLength="15" />
+        
+        <Label Text="Birth Date"
+                FontSize="15" />
+
+        <DatePicker 
+            Style="{StaticResource AADatePicker}" 
+            HorizontalOptions="StartAndExpand"/>
+    </VerticalStackLayout>
 </ContentView>

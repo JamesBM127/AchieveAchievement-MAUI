@@ -3,28 +3,26 @@ using AchieveAchievement.ViewPage.PageSettings;
 
 namespace AchieveAchievement.ViewPage;
 
-public partial class LoginDesktopPage : ContentPage
+public partial class LoginMobilePage : ContentPage
 {
     private readonly LoginViewModel _viewModel;
 
-    public LoginDesktopPage(LoginViewModel viewModel)
+    public LoginMobilePage(LoginViewModel viewModel)
     {
         InitializeComponent();
         _viewModel = viewModel;
         BindingContext = viewModel;
 
-#if DEBUG
         AutoLogin();
-#endif
     }
 
     #region TEST 
-    private async void AutoLogin()
+    private void AutoLogin()
     {
         _viewModel.InputPassword = "sen123";
         _viewModel.Account.Login = "James";
 
-        await _viewModel.LogInAAAccountAsync();
+        //await _viewModel.LogInAAAccountAsync();
     }
     #endregion
 
