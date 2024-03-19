@@ -12,7 +12,12 @@
     FlyoutItem.IsVisible="True"
     Title="Achieve Achievement">
 
-    <FlyoutItem FlyoutDisplayOptions="AsMultipleItems">
+    <ShellContent
+        Title="MainPage"
+        ContentTemplate="{DataTemplate local:MainPage}"
+        Route="MainPage" />
+
+    <!--<FlyoutItem FlyoutDisplayOptions="AsMultipleItems">
         <Tab >
             <ShellContent
                 Title="Home"
@@ -24,12 +29,7 @@
                 ContentTemplate="{DataTemplate local:SettingsPage}"
                 Route="SettingsPage"/>
         </Tab>
-    </FlyoutItem>
-
-    <!--<ShellContent
-        Title="MainPage"
-        ContentTemplate="{DataTemplate local:MainPage}"
-        Route="MainPage" />-->
+    </FlyoutItem>-->
 
     <!--BODY-->
     <Shell.FlyoutContent>

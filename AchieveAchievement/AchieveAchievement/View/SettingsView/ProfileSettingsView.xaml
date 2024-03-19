@@ -2,6 +2,8 @@
 <ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:AchieveAchievement"
+             xmlns:viewmodel="clr-namespace:AchieveAchievement.ViewModel"
+             x:DataType="viewmodel:SettingsViewModel"
              x:Class="AchieveAchievement.View.SettingsView.ProfileSettingsView">
 
     <VerticalStackLayout
@@ -11,6 +13,7 @@
                 FontSize="15" />
 
         <Entry
+            Text="{Binding Player.Name}"
             Style="{StaticResource AAEntry}"
             MaxLength="15" />
         
@@ -18,6 +21,7 @@
                 FontSize="15" />
 
         <DatePicker 
+            Date="{Binding Player.BirthDate}"
             Style="{StaticResource AADatePicker}" 
             HorizontalOptions="StartAndExpand"/>
     </VerticalStackLayout>

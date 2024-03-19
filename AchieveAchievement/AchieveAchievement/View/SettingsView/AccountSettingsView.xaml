@@ -3,6 +3,8 @@
 <ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:AchieveAchievement"
+             xmlns:viewmodel="clr-namespace:AchieveAchievement.ViewModel"
+             x:DataType="viewmodel:SettingsViewModel"
              x:Class="AchieveAchievement.View.SettingsView.AccountSettingsView">
 
     <VerticalStackLayout
@@ -12,6 +14,7 @@
             FontSize="15" />
 
         <Entry
+            Text="{Binding Account.Email}"
             Style="{StaticResource AAEntry}"
             Keyboard="Email" />
 
@@ -46,14 +49,15 @@
             
             <Entry 
                 Grid.Row="1"
+                IsPassword="True"
+                Text="{Binding OldPassword}"
                 Style="{StaticResource AAEntry}"/>
-            
+
             <ImageButton
                 Grid.Column="1"
                 Grid.Row="1"
-                Source="closed_eye_w" 
-                HeightRequest="32"
-                BorderWidth="32"/>
+                Source="closed_eye_w.png"
+                Style="{StaticResource IconBtn32}"/>
 
             <Label 
                 Grid.Row="2"
@@ -62,14 +66,15 @@
 
             <Entry 
                 Grid.Row="3"
+                IsPassword="True"
+                Text="{Binding NewPassword}"
                 Style="{StaticResource AAEntry}"/>
 
             <ImageButton
                 Grid.Column="1"
                 Grid.Row="3"
-                Source="closed_eye_w" 
-                HeightRequest="32"
-                BorderWidth="32"/>
+                Source="closed_eye_w.png" 
+                Style="{StaticResource IconBtn32}"/>
         </Grid>
     </VerticalStackLayout>
 </ContentView>

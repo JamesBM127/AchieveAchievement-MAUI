@@ -22,8 +22,8 @@ namespace AchieveAchievement
             builder.Logging.AddDebug();
 #endif
 
-            string connectionString = ConnectionStringSettings.GetSqliteConnectionString("aatest");
-            //string connectionString = "server=.;database=aadbtest;trustservercertificate=true;trusted_connection=true;integrated security=true;";
+            //string connectionString = ConnectionStringSettings.GetSqliteConnectionString("aatest");
+            string connectionString = "server=.;database=aadbtest;trustservercertificate=true;trusted_connection=true;integrated security=true;";
             try
             {
                 builder.Services.EnsureCreateAsync<AchieveAchievementContext>

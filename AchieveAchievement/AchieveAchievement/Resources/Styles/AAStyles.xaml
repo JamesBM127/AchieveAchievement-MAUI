@@ -13,7 +13,7 @@
         <Setter Property="WidthRequest" Value="150"/>
         <Setter Property="MaximumHeightRequest" Value="45"/>
     </Style>
-    
+
     <!--ENTRY-->
     <Style x:Key="AAEntry" TargetType="Entry">
         <Setter Property="TextColor" Value="Black" />
@@ -38,4 +38,11 @@
         <Setter Property="FontAttributes" Value="Bold"/>
     </Style>
     
+    <!--IMAGE BUTTON-->
+    <Style x:Key="IconBtn32" TargetType="ImageButton">
+        <Setter Property="BackgroundColor" Value="Transparent"/>
+        <Setter Property="WidthRequest" Value="32"/>
+        <Setter Property="HeightRequest" Value="32"/>
+    </Style>
+
 </ResourceDictionary>

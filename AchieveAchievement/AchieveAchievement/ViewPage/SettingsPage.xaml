@@ -16,8 +16,9 @@
     </Shell.BackButtonBehavior>
 
     <ContentPage.ToolbarItems>
-        <ToolbarItem Text="SAVE" IconImageSource="aa_logo.png"/>
-        
+        <ToolbarItem
+            Text="SAVE" 
+            IconImageSource="aa_logo.png"/>
     </ContentPage.ToolbarItems>
 
     <Grid
@@ -26,8 +27,8 @@
         Padding="5,30">
 
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="{OnPlatform WinUI=Auto, Default=0.35*}"/>
-            <ColumnDefinition Width="{OnPlatform WinUI=*, Default=0.65*}"/>
+            <ColumnDefinition Width="{OnPlatform WinUI=Auto, Default=0.30*}"/>
+            <ColumnDefinition Width="{OnPlatform WinUI=*, Default=0.7*}"/>
         </Grid.ColumnDefinitions>
 
         <!--MENU-->

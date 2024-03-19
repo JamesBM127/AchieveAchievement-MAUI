@@ -14,6 +14,11 @@ namespace AchieveAchievement.ViewModel
     {
         [ObservableProperty]
         Player player = new();
+        [ObservableProperty]
+        Account account = new();
+
+        [ObservableProperty]
+        string oldPassword, newPassword;
 
         public SettingsViewModel(IAAUoW uow)
             : base(uow)

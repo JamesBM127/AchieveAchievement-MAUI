@@ -7,9 +7,16 @@ namespace AchieveAchievement.ViewPage
         public MainPage()
         {
             InitializeComponent();
-            //DesktopLogin();
-            MobileLogin();
-            //FakeLogin();
+
+            SOLogin();
+        }
+
+        private void SOLogin()
+        {
+            if (DeviceInfo.Platform == DevicePlatform.WinUI)
+                DesktopLogin();
+            else
+                MobileLogin();
         }
 
         private async void OnCounterClicked(object sender, EventArgs e)
