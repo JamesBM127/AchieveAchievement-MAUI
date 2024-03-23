@@ -3,7 +3,8 @@
     public enum SettingsMenu
     {
         Account,
-        Profile,
-        Language
+        Contact,
+        Language,
+        Profile
     }
 }

@@ -29,13 +29,14 @@
 
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="{OnPlatform WinUI=Auto, Default=0.30*}"/>
+            <ColumnDefinition Width="{OnPlatform WinUI=Auto, Default=Auto}"/>
             <ColumnDefinition Width="{OnPlatform WinUI=*, Default=0.7*}"/>
         </Grid.ColumnDefinitions>
 
         <!--MENU-->
         <Frame
             BackgroundColor="Transparent"
-            BorderColor="White"
+            BorderColor="Transparent"
             CornerRadius="3">
             
             <ScrollView >
@@ -50,6 +51,14 @@
                         Clicked="ProfileBtnClicked"
                         Style="{StaticResource SettingsMenuButton}"
                         BackgroundColor="#4C4C4C"
+                        />
+
+                    <!--Contact-->
+                    <Button 
+                        x:Name="ContactMenuBtn"
+                        Text="Contact"
+                        Clicked="ContactBtnClicked"
+                        Style="{StaticResource SettingsMenuButton}"
                         />
 
                     <!--Account-->
@@ -70,6 +79,12 @@
             </ScrollView>
         </Frame>
 
+        <!--VERTICAL LINE-->
+        <BoxView 
+            Grid.Column="1"
+            BackgroundColor="White"
+            WidthRequest="1"/>
+
         <!--BODY-->
         <Grid
             Grid.Column="2" 
@@ -80,6 +95,10 @@
                     <view:ProfileSettingsView
                         x:Name="ProfileView"
                         IsVisible="True"/>
+
+                    <view:ContactSettingsView
+                        x:Name="ContactView"
+                        IsVisible="False"/>
 
                     <view:AccountSettingsView
                         x:Name="AccountView"

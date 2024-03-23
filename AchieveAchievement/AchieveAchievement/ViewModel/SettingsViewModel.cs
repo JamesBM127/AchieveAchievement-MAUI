@@ -18,7 +18,7 @@ public partial class SettingsViewModel : BaseViewModel
     [ObservableProperty]
     string oldPassword, newPassword;
 
-    public SettingsMenu SettingsMenu { get; set; }
+    public SettingsMenu SettingsMenu { get; set; } = SettingsMenu.Profile;
 
     public SettingsViewModel(IAAUoW uow)
         : base(uow)

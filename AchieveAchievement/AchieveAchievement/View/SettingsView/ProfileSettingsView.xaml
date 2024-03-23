@@ -9,8 +9,9 @@
     <VerticalStackLayout
         Spacing="10">
         
-        <Label Text="{local:Translate DisplayName}"
-                FontSize="15" />
+        <Label 
+            Text="{local:Translate DisplayName}"
+            FontSize="15" />
 
         <Entry
             Text="{Binding Player.Name}"
@@ -24,5 +25,10 @@
             Date="{Binding Player.BirthDate}"
             Style="{StaticResource AADatePicker}" 
             HorizontalOptions="StartAndExpand"/>
+
+        <Label 
+            Text="Show Contacts"
+            FontSize="15" />
+        
     </VerticalStackLayout>
 </ContentView>

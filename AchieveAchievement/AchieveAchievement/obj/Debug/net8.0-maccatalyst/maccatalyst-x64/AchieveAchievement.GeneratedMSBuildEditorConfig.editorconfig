@@ -88,6 +88,12 @@ build_metadata.AdditionalFiles.ManifestResourceName = AchieveAchievement.View.Se
 build_metadata.AdditionalFiles.TargetPath = View\SettingsView\AccountSettingsView.xaml
 build_metadata.AdditionalFiles.RelativePath = View\SettingsView\AccountSettingsView.xaml
 
+[C:/Users/james/source/repos/Achieve Achievement/AchieveAchievement/AchieveAchievement/View/SettingsView/ContactSettingsView.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = AchieveAchievement.View.SettingsView.ContactSettingsView.xaml
+build_metadata.AdditionalFiles.TargetPath = View\SettingsView\ContactSettingsView.xaml
+build_metadata.AdditionalFiles.RelativePath = View\SettingsView\ContactSettingsView.xaml
+
 [C:/Users/james/source/repos/Achieve Achievement/AchieveAchievement/AchieveAchievement/View/SettingsView/ProfileSettingsView.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = AchieveAchievement.View.SettingsView.ProfileSettingsView.xaml

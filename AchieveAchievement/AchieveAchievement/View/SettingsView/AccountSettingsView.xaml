@@ -10,7 +10,8 @@
     <VerticalStackLayout
         Spacing="10">
         
-        <Label Text="Email" 
+        <Label 
+            Text="Email" 
             FontSize="15" />
 
         <Entry
