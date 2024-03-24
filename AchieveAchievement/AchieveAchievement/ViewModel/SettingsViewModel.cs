@@ -1,6 +1,7 @@
 ﻿using AchieveAchievement.Data;
 using AchieveAchievement.Enum;
 using AchieveAchievementLibrary.Entity;
+using AchieveAchievementLibrary.EntitySettings;
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
 using Microsoft.EntityFrameworkCore;
@@ -80,10 +81,30 @@ public partial class SettingsViewModel : BaseViewModel
     }
     #endregion
 
+    #region Settings
     [RelayCommand]
     void CreateNewContactListElement()
     {
-        Contacts.Add(new());
+        if(CanCreateMoreContact())
+            Contacts.Add(new());
     }
 
+    [RelayCommand]
+    void RemoveContactFromListElement(JbmEntity.Contact contact)
+    {
+        Contacts.Remove(contact);
+    }
+
+    private bool CanCreateMoreContact()
+    {
+        JbmEntity.Contact? lastContact = Contacts.LastOrDefault();
+
+        if (lastContact == null)
+            return true;
+        else if (lastContact.IsValid())
+            return true;
+        else
+            return false;
+    }
+    #endregion
 }

@@ -64,12 +64,12 @@
                                     <Grid
                                         RowDefinitions="*,*">
                                         <Label 
-                                            Text="Link"/>
+                                            Text="Profile Link"/>
 
                                         <Entry 
                                             Grid.Row="1"
                                             Grid.ColumnSpan="2"
-                                            IsEnabled="False"
+                                            x:Name="EntryLinkSettings"
                                             Text="{Binding Link}"
                                             HorizontalTextAlignment="Start"
                                             Style="{StaticResource AAEntry}"/>
@@ -86,16 +86,20 @@
 
                                         <Label
                                             Grid.Column="1"
-                                            Text="Name in App"/>
+                                            Text="Tag / Name in App"/>
 
                                         <Entry 
                                             Grid.Row="1"
+                                            x:Name="EntryAppSettings"
+                                            Text="{Binding App}"
                                             HorizontalTextAlignment="Start"
                                             Style="{StaticResource AAEntry}"/>
 
                                         <Entry 
                                             Grid.Row="1"
                                             Grid.Column="1"
+                                            x:Name="EntryNameSettings"
+                                            Text="{Binding NameInApp}"
                                             HorizontalTextAlignment="Start"
                                             Style="{StaticResource AAEntry}"/>
                                     </Grid>
@@ -107,15 +111,24 @@
                                 RowDefinitions="*,*"
                                 Margin="10,0">
                                 
-                                <Image
+                                <ImageButton
+                                    IsVisible="False"
+                                    IsEnabled="False"
                                     Source="edit_icon.png"
-                                    HeightRequest="25"
-                                    WidthRequest ="25"
-                                    BackgroundColor="Transparent"/>
+                                    BackgroundColor="Transparent"
+                                    Clicked="EditBtnClicked"/>
+                                
+                                <ImageButton
+                                    Source="trash_icon.png"
+                                    BackgroundColor="Transparent"
+                                    Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:SettingsViewModel}}, Path=RemoveContactFromListElementCommand}"
+                                    CommandParameter="{Binding .}"/>
                                 
                                 <ImageButton
                                     Grid.Row="1"
                                     Source="x_icon.png"
+                                    IsVisible="False"
+                                    IsEnabled="False"
                                     BackgroundColor="Transparent"/>
                             </Grid>
                             <BoxView 
