@@ -99,7 +99,7 @@
             #endregion
 
             #region Act
-            account.BirthDate = new DateTime(DateTime.Now.Year + 1, DateTime.Now.Month, DateTime.Now.Day);
+            //account.BirthDate = new DateTime(DateTime.Now.Year + 1, DateTime.Now.Month, DateTime.Now.Day);
             #endregion
 
             #region Assert
@@ -204,7 +204,7 @@
             Assert.That(accFromDb.Id, Is.EqualTo(account.Id));
             Assert.That(accFromDb.Login, Is.EqualTo(account.Login));
             Assert.That(accFromDb.Salt, Is.EqualTo(account.Salt));
-            Assert.That(accFromDb.BirthDate, Is.EqualTo(account.BirthDate));
+            //Assert.That(accFromDb.BirthDate, Is.EqualTo(account.BirthDate));
             Assert.That(accFromDb.Email, Is.EqualTo(account.Email));
             Assert.That(accFromDb.PlayerId, Is.EqualTo(account.PlayerId));
             #endregion

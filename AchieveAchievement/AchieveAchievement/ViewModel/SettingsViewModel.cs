@@ -4,6 +4,8 @@ using AchieveAchievementLibrary.Entity;
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
 using Microsoft.EntityFrameworkCore;
+using System.Collections.ObjectModel;
+using JbmEntity = AchieveAchievementLibrary.Entity;
 
 namespace AchieveAchievement.ViewModel;
 
@@ -17,6 +19,9 @@ public partial class SettingsViewModel : BaseViewModel
 
     [ObservableProperty]
     string oldPassword, newPassword;
+
+
+    public ObservableCollection<JbmEntity.Contact> Contacts { get; set; } = new();
 
     public SettingsMenu SettingsMenu { get; set; } = SettingsMenu.Profile;
 
@@ -74,4 +79,11 @@ public partial class SettingsViewModel : BaseViewModel
         }
     }
     #endregion
+
+    [RelayCommand]
+    void CreateNewContactListElement()
+    {
+        Contacts.Add(new());
+    }
+
 }

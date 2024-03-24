@@ -6,7 +6,8 @@
              x:DataType="viewmodel:SettingsViewModel"
              x:Class="AchieveAchievement.View.SettingsView.ProfileSettingsView">
 
-    <VerticalStackLayout
+    <ScrollView>
+        <VerticalStackLayout
         Spacing="10">
         
         <Label 
@@ -31,4 +32,5 @@
             FontSize="15" />
         
     </VerticalStackLayout>
+    </ScrollView>
 </ContentView>

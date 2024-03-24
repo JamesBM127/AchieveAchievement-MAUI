@@ -26,10 +26,10 @@
         </Tab>
     </FlyoutItem>
 
-    <!--<ShellContent
+    <ShellContent
         Title="MainPage"
         ContentTemplate="{DataTemplate local:MainPage}"
-        Route="MainPage" />-->
+        Route="MainPage" />
 
     <!--BODY-->
     <Shell.FlyoutContent>

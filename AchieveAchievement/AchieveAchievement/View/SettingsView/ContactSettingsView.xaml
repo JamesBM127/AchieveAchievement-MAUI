@@ -3,27 +3,130 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:AchieveAchievement"
              xmlns:viewmodel="clr-namespace:AchieveAchievement.ViewModel"
+             xmlns:model="clr-namespace:AchieveAchievementLibrary.Entity;assembly=AchieveAchievementLibrary"
              x:DataType="viewmodel:SettingsViewModel"
              x:Class="AchieveAchievement.View.SettingsView.ContactSettingsView">
-    
-    <VerticalStackLayout
-        Spacing="10">
 
-        <StackLayout 
-            Orientation="Horizontal">
+    <Grid 
+        RowDefinitions="Auto,*">
+
+        <Grid
+            RowDefinitions="*,*"
+            ColumnDefinitions="*,*"
+            RowSpacing="5">
+                
             <Label 
                 Text="Contact"
                 FontSize="15" 
                 VerticalTextAlignment="Center"
                 HorizontalOptions="StartAndExpand"/>
 
-            <Button 
+            <Button
+                Grid.Column="1"
                 Text="+ ADD"
                 BackgroundColor="Yellow"
                 TextColor="Black"
                 FontAttributes="Bold"
                 HorizontalOptions="End"
-                Clicked="AddContactSettingsBtn"/>
-        </StackLayout>
-    </VerticalStackLayout>
+                Command="{Binding CreateNewContactListElementCommand}" />
+
+            <BoxView 
+                Grid.Row="1"
+                Grid.ColumnSpan="2"
+                Margin="3,-1,67,-1"
+                BackgroundColor="White"
+                HeightRequest="1"
+                />
+
+        </Grid>
+
+        <ScrollView
+            Grid.Row="1"
+            VerticalScrollBarVisibility="Never">
+        
+            <CollectionView ItemsSource="{Binding Contacts}">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate x:DataType="model:Contact">
+
+                        <Grid 
+                            RowDefinitions="Auto,Auto"
+                            ColumnDefinitions="*,Auto">
+                            <Frame
+                                Padding="10"
+                                CornerRadius="5"
+                                BackgroundColor="Transparent"
+                                BorderColor="White">
+
+                                <Grid
+                                    RowDefinitions="*,*"
+                                    RowSpacing="10">
+
+                                    <Grid
+                                        RowDefinitions="*,*">
+                                        <Label 
+                                            Text="Link"/>
+
+                                        <Entry 
+                                            Grid.Row="1"
+                                            Grid.ColumnSpan="2"
+                                            IsEnabled="False"
+                                            Text="{Binding Link}"
+                                            HorizontalTextAlignment="Start"
+                                            Style="{StaticResource AAEntry}"/>
+                                    </Grid>
+
+                                    <Grid
+                                        Grid.Row="1"
+                                        RowDefinitions="*,*"
+                                        ColumnDefinitions="*,*"
+                                        ColumnSpacing="10">
+
+                                        <Label
+                                            Text="App"/>
+
+                                        <Label
+                                            Grid.Column="1"
+                                            Text="Name in App"/>
+
+                                        <Entry 
+                                            Grid.Row="1"
+                                            HorizontalTextAlignment="Start"
+                                            Style="{StaticResource AAEntry}"/>
+
+                                        <Entry 
+                                            Grid.Row="1"
+                                            Grid.Column="1"
+                                            HorizontalTextAlignment="Start"
+                                            Style="{StaticResource AAEntry}"/>
+                                    </Grid>
+                                </Grid>
+                            </Frame>
+
+                            <Grid
+                                Grid.Column="1"
+                                RowDefinitions="*,*"
+                                Margin="10,0">
+                                
+                                <Image
+                                    Source="edit_icon.png"
+                                    HeightRequest="25"
+                                    WidthRequest ="25"
+                                    BackgroundColor="Transparent"/>
+                                
+                                <ImageButton
+                                    Grid.Row="1"
+                                    Source="x_icon.png"
+                                    BackgroundColor="Transparent"/>
+                            </Grid>
+                            <BoxView 
+                                Grid.Row="1"
+                                HeightRequest="0"
+                                Margin="3"
+                                BackgroundColor="Transparent"/>
+                        </Grid>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </ScrollView>
+    </Grid>
 </ContentView>

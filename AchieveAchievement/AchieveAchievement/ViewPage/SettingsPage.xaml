@@ -90,21 +90,17 @@
             Grid.Column="2" 
             Padding="15">
 
-            <ScrollView >
-                <Grid>
-                    <view:ProfileSettingsView
-                        x:Name="ProfileView"
-                        IsVisible="True"/>
+            <view:ProfileSettingsView
+                x:Name="ProfileView"
+                IsVisible="True"/>
 
-                    <view:ContactSettingsView
-                        x:Name="ContactView"
-                        IsVisible="False"/>
+            <view:ContactSettingsView
+                x:Name="ContactView"
+                IsVisible="False"/>
 
-                    <view:AccountSettingsView
-                        x:Name="AccountView"
-                        IsVisible="False"/>
-                </Grid>
-            </ScrollView>
+            <view:AccountSettingsView
+                x:Name="AccountView"
+                IsVisible="False"/>
         </Grid>
     </Grid>
 </ContentPage>

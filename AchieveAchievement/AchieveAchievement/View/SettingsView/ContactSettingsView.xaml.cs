@@ -5,13 +5,10 @@ namespace AchieveAchievement.View.SettingsView;
 
 public partial class ContactSettingsView : ContentView
 {
-	private readonly SettingsViewModel _viewModel;
-
-	public ContactSettingsView(SettingsViewModel viewModel)
-	{
-		InitializeComponent();
-		_viewModel = viewModel;
-	}
+    public ContactSettingsView()
+    {
+        InitializeComponent();
+    }
 
     private void AddContactSettingsBtn(object sender, EventArgs e)
     {

@@ -7,75 +7,77 @@
              x:DataType="viewmodel:SettingsViewModel"
              x:Class="AchieveAchievement.View.SettingsView.AccountSettingsView">
 
-    <VerticalStackLayout
-        Spacing="10">
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="10">
         
-        <Label 
-            Text="Email" 
-            FontSize="15" />
-
-        <Entry
-            Text="{Binding Account.Email}"
-            Style="{StaticResource AAEntry}"
-            Keyboard="Email" />
-
-        <StackLayout
-            Orientation="Horizontal"
-            HorizontalOptions="FillAndExpand">
-            
             <Label 
-                Text="Password" 
-                FontSize="15" 
-                VerticalTextAlignment="Center"
-                HorizontalTextAlignment="Start"/>
-
-            <Button
-                x:Name="EditPasswordBtn"
-                Text="Edit"
-                TextColor="White"
-                BackgroundColor="Blue"
-                HorizontalOptions="EndAndExpand"
-                Clicked="EditPasswordClicked"/>
-        </StackLayout>
-
-        <Grid
-            x:Name="PasswordChange"
-            IsVisible="False"
-            ColumnDefinitions="*, Auto"
-            RowDefinitions="*, *, *, *" >
-
-            <Label 
-                Text="Old Password" 
-                FontSize="15" />
-            
-            <Entry 
-                Grid.Row="1"
-                IsPassword="True"
-                Text="{Binding OldPassword}"
-                Style="{StaticResource AAEntry}"/>
-
-            <ImageButton
-                Grid.Column="1"
-                Grid.Row="1"
-                Source="closed_eye_w.png"
-                Style="{StaticResource IconBtn32}"/>
-
-            <Label 
-                Grid.Row="2"
-                Text="New Password" 
+                Text="Email" 
                 FontSize="15" />
 
-            <Entry 
-                Grid.Row="3"
-                IsPassword="True"
-                Text="{Binding NewPassword}"
-                Style="{StaticResource AAEntry}"/>
+            <Entry
+                Text="{Binding Account.Email}"
+                Style="{StaticResource AAEntry}"
+                Keyboard="Email" />
 
-            <ImageButton
-                Grid.Column="1"
-                Grid.Row="3"
-                Source="closed_eye_w.png" 
-                Style="{StaticResource IconBtn32}"/>
-        </Grid>
-    </VerticalStackLayout>
+            <StackLayout
+                Orientation="Horizontal"
+                HorizontalOptions="FillAndExpand">
+            
+                <Label 
+                    Text="Password" 
+                    FontSize="15" 
+                    VerticalTextAlignment="Center"
+                    HorizontalTextAlignment="Start"/>
+
+                <Button
+                    x:Name="EditPasswordBtn"
+                    Text="Edit"
+                    TextColor="White"
+                    BackgroundColor="Blue"
+                    HorizontalOptions="EndAndExpand"
+                    Clicked="EditPasswordClicked"/>
+            </StackLayout>
+
+            <Grid
+                x:Name="PasswordChange"
+                IsVisible="False"
+                ColumnDefinitions="*, Auto"
+                RowDefinitions="*, *, *, *" >
+
+                <Label 
+                    Text="Old Password" 
+                    FontSize="15" />
+            
+                <Entry 
+                    Grid.Row="1"
+                    IsPassword="True"
+                    Text="{Binding OldPassword}"
+                    Style="{StaticResource AAEntry}"/>
+
+                <ImageButton
+                    Grid.Column="1"
+                    Grid.Row="1"
+                    Source="closed_eye_w.png"
+                    Style="{StaticResource IconBtn32}"/>
+
+                <Label 
+                    Grid.Row="2"
+                    Text="New Password" 
+                    FontSize="15" />
+
+                <Entry 
+                    Grid.Row="3"
+                    IsPassword="True"
+                    Text="{Binding NewPassword}"
+                    Style="{StaticResource AAEntry}"/>
+
+                <ImageButton
+                    Grid.Column="1"
+                    Grid.Row="3"
+                    Source="closed_eye_w.png" 
+                    Style="{StaticResource IconBtn32}"/>
+            </Grid>
+        </VerticalStackLayout>
+    </ScrollView>
 </ContentView>
