@@ -23,12 +23,16 @@ public partial class SettingsViewModel : BaseViewModel
 
     public ObservableCollection<JbmEntity.Contact> Contacts { get; set; } = new();
     public SettingsMenu SettingsMenu { get; set; } = SettingsMenu.Profile;
-    private byte OperationsCount = 0;
+
+    //Array positions
+    //0-Add | 1-Update
+    private bool[] CrudOperationsMade = new bool[2];
 
     public SettingsViewModel(IAAUoW uow)
         : base(uow)
     {
-        GetAccountAndPlayer();
+        GetAccountAndPlayerAsync();
+        GetContactsAsync();
     }
 
     #region CRUD
@@ -58,50 +62,53 @@ public partial class SettingsViewModel : BaseViewModel
         //split who's gonne be added and who's gonne be updated
         foreach (JbmEntity.Contact contact in Contacts)
         {
-            if (contact.Id == null)
+            if (contact.IsValid())
             {
-                if(contact.PlayerId == null ||
-                   contact.PlayerId == Guid.Empty)
+                if (contact.Id == null || contact.Id == Guid.Empty)
                 {
-                    string? playerStringId = Preferences.Get("AccId", null);
-                    Player = await _uow.GetAsync<Player>(new Guid(playerStringId));
-                }
-                contact.PlayerId = Player.Id;
-                addContacts.Add(contact);
-            }
-            else
-            {
-                //Modifie Nuggets to use a expression to get the track
-                var modifiedEntries = _uow.Track();
-                modifiedEntries = modifiedEntries.Where(x => x.State == EntityState.Modified);
-
-                foreach (var item in modifiedEntries)
-                {
-                    try
+                    if (contact.PlayerId == null || contact.PlayerId == Guid.Empty)
                     {
-                        JbmEntity.Contact itemContact = (JbmEntity.Contact)item.Entity;
-                        if(contact.Id == itemContact.Id)
+                        if (Player.Id == null ||
+                            Player.Id == Guid.Empty)
                         {
-                            updateContacts.Add(contact);
+                            string? playerStringId = Preferences.Get("PlayerId", null);
+                            Player = await _uow.GetAsync<Player>(new Guid(playerStringId));
                         }
                     }
-                    catch(InvalidCastException ex)
+                    contact.PlayerId = Player.Id;
+                    addContacts.Add(contact);
+                    CrudOperationsMade[0] = true;
+                }
+                else
+                {
+                    //Modifie Nuggets to use a expression to get the track
+                    var modifiedEntries = _uow.Track();
+                    modifiedEntries = modifiedEntries.Where(x => x.State == EntityState.Modified);
+
+                    foreach (var item in modifiedEntries)
                     {
+                        try
+                        {
+                            JbmEntity.Contact itemContact = (JbmEntity.Contact)item.Entity;
+                            if (contact.Id == itemContact.Id)
+                            {
+                                updateContacts.Add(contact);
+                                CrudOperationsMade[1] = true;
+                            }
+                        }
+                        catch (InvalidCastException ex)
+                        {
+                        }
                     }
                 }
             }
         }
 
+
         if (addContacts.Count > 0)
-        {
-            OperationsCount++;
             await CreateContactAsync(addContacts);
-        }
         if (updateContacts.Count > 0)
-        {
-            OperationsCount++;
             await UpdateContactAsync(updateContacts);
-        }
     }
 
     private async Task CreateContactAsync(List<JbmEntity.Contact> addContacts)
@@ -110,11 +117,14 @@ public partial class SettingsViewModel : BaseViewModel
         {
             AppIsBusy();
             IsBusy = true;
-            
+
             await _uow.AddAsync(addContacts);
             bool saved = await _uow.CommitAsync(true);
             if (saved)
+            {
+                CrudOperationsMade[0] = false;
                 await DisplayMessageAfterSaveContact();
+            }
         }
         catch (Exception ex)
         {
@@ -135,7 +145,10 @@ public partial class SettingsViewModel : BaseViewModel
             _uow.Update(updateContacts);
             bool saved = await _uow.CommitAsync(true);
             if (saved)
+            {
+                CrudOperationsMade[1] = false;
                 await DisplayMessageAfterSaveContact();
+            }
         }
         catch (Exception ex)
         {
@@ -169,7 +182,7 @@ public partial class SettingsViewModel : BaseViewModel
         }
     }
 
-    private async void GetAccountAndPlayer()
+    private async void GetAccountAndPlayerAsync()
     {
         if (Account == null || string.IsNullOrWhiteSpace(Account.Login))
         {
@@ -179,13 +192,27 @@ public partial class SettingsViewModel : BaseViewModel
         }
     }
 
+    private async void GetContactsAsync()
+    {
+        Contacts.Clear();
+
+        string? playerStringId = Preferences.Get("PlayerId", Guid.Empty.ToString());
+        Guid playerId = new Guid(playerStringId);
+
+        IReadOnlyCollection<JbmEntity.Contact> contactsFromDb = await _uow.ListAsync<JbmEntity.Contact>(x => x.PlayerId == playerId);
+
+        foreach (JbmEntity.Contact item in contactsFromDb)
+        {
+            Contacts.Add(item);
+        }
+    } 
     #endregion
 
     #region Settings
     [RelayCommand]
     async Task CreateNewContactListElement()
     {
-        if(await CanCreateMoreContact())
+        if (await CanCreateMoreContact())
             Contacts.Add(new());
     }
 
@@ -222,11 +249,10 @@ public partial class SettingsViewModel : BaseViewModel
 
     private async Task DisplayMessageAfterSaveContact()
     {
-        OperationsCount--;
-        if (OperationsCount == 0)
+        if (CrudOperationsMade[0] == false &&
+            CrudOperationsMade[1] == false)
         {
             await Shell.Current.DisplayAlert("SUCCESS", "Saved successfully", "Ok");
-            OperationsCount = 0;
         }
     }
     #endregion

@@ -4,6 +4,7 @@
              xmlns:viewmodel="clr-namespace:AchieveAchievement.ViewModel"
              xmlns:lang="clr-namespace:AchieveAchievement.Resources.Languages"
              xmlns:local="clr-namespace:AchieveAchievement"
+             xmlns:sys="clr-namespace:System;assembly=netstandard"
              x:DataType="viewmodel:LoginViewModel"
              x:Class="AchieveAchievement.ViewPage.LoginDesktopPage" 
              Shell.FlyoutBehavior="Disabled"
@@ -310,6 +311,7 @@
                             BackgroundColor="#b2b2b2"
                             TextColor="Black"
                             HorizontalOptions="Center"
+                            MaximumDate="{Static sys:DateTime.Now}"
                             Format="(mmm/dd/yyyy)"
                             />
                     </Grid>

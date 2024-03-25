@@ -20,13 +20,13 @@ namespace AchieveAchievementLibrary.Data.DataSettings
                 model.ToTable("Contact");
 
                 model.Property(x => x.Link)
-                     .IsRequired();
+                     .IsRequired(false);
 
                 model.Property(x => x.App)
-                     .IsRequired();
+                     .IsRequired(false);
 
                 model.Property(x => x.NameInApp)
-                     .IsRequired();
+                     .IsRequired(false);
 
                 model.Property(x => x.PlayerId)
                      .IsRequired();
