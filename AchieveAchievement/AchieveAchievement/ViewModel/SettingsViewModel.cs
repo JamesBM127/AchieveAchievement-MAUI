@@ -21,10 +21,9 @@ public partial class SettingsViewModel : BaseViewModel
     [ObservableProperty]
     string oldPassword, newPassword;
 
-
     public ObservableCollection<JbmEntity.Contact> Contacts { get; set; } = new();
-
     public SettingsMenu SettingsMenu { get; set; } = SettingsMenu.Profile;
+    private byte OperationsCount = 0;
 
     public SettingsViewModel(IAAUoW uow)
         : base(uow)
@@ -56,41 +55,62 @@ public partial class SettingsViewModel : BaseViewModel
         List<JbmEntity.Contact> addContacts = new();
         List<JbmEntity.Contact> updateContacts = new();
 
+        //split who's gonne be added and who's gonne be updated
         foreach (JbmEntity.Contact contact in Contacts)
         {
-            if(contact.Id == null)
-                addContacts.Add(contact);
-            else
-                updateContacts.Add(contact);
-        }
-
-        
-    }
-
-    private void PropChanged()
-    {
-        Contacts.CollectionChanged += (sender, e) =>
-        {
-            if (e.Action == System.Collections.Specialized.NotifyCollectionChangedAction.Add)
+            if (contact.Id == null)
             {
-                foreach (JbmEntity.Contact item in e.NewItems)
+                addContacts.Add(contact);
+            }
+            else
+            {
+                //Modifie Nuggets to use a expression to get the track
+                var modifiedEntries = _uow.Track();
+                modifiedEntries = modifiedEntries.Where(x => x.State == EntityState.Modified);
+
+                foreach (var item in modifiedEntries)
                 {
-                    //item.PropertyChanged
+                    try
+                    {
+                        JbmEntity.Contact itemContact = (JbmEntity.Contact)item.Entity;
+                        if(contact.Id == itemContact.Id)
+                        {
+                            updateContacts.Add(contact);
+                        }
+                    }
+                    catch(InvalidCastException ex)
+                    {
+                    }
                 }
             }
-        };
+        }
+
+        if (addContacts.Count > 0)
+        {
+            OperationsCount++;
+            await CreateContactAsync(addContacts);
+        }
+        if (updateContacts.Count > 0)
+        {
+            OperationsCount++;
+            await UpdateContactAsync(updateContacts);
+        }
     }
 
-    private async Task CreateContactAsync()
+    private async Task CreateContactAsync(List<JbmEntity.Contact> addContacts)
     {
         try
         {
             AppIsBusy();
             IsBusy = true;
+            
+            await _uow.AddAsync(addContacts);
+            bool saved = await _uow.CommitAsync(true);
+            if (saved)
+                await DisplayMessageAfterSaveContact();
         }
         catch (Exception ex)
         {
-
         }
         finally
         {
@@ -98,16 +118,20 @@ public partial class SettingsViewModel : BaseViewModel
         }
     }
 
-    private async Task UpdateContactAsync()
+    private async Task UpdateContactAsync(List<JbmEntity.Contact> updateContacts)
     {
         try
         {
             AppIsBusy();
             IsBusy = true;
+
+            _uow.Update(updateContacts);
+            bool saved = await _uow.CommitAsync(true);
+            if (saved)
+                await DisplayMessageAfterSaveContact();
         }
         catch (Exception ex)
         {
-
         }
         finally
         {
@@ -186,6 +210,16 @@ public partial class SettingsViewModel : BaseViewModel
         {
             await Shell.Current.DisplayAlert("Invalid Contact", "Last contact is invalid", "Ok");
             return false;
+        }
+    }
+
+    private async Task DisplayMessageAfterSaveContact()
+    {
+        OperationsCount--;
+        if (OperationsCount == 0)
+        {
+            await Shell.Current.DisplayAlert("SUCCESS", "Saved successfully", "Ok");
+            OperationsCount = 0;
         }
     }
     #endregion
