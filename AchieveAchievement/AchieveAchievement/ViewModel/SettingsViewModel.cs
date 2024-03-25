@@ -44,6 +44,74 @@ public partial class SettingsViewModel : BaseViewModel
             case SettingsMenu.Profile:
                 await UpdatePlayerAsync();
                 break;
+
+            case SettingsMenu.Contact:
+                await CheckIfContactAddOrUpdate();
+                break;
+        }
+    }
+
+    private async Task CheckIfContactAddOrUpdate()
+    {
+        List<JbmEntity.Contact> addContacts = new();
+        List<JbmEntity.Contact> updateContacts = new();
+
+        foreach (JbmEntity.Contact contact in Contacts)
+        {
+            if(contact.Id == null)
+                addContacts.Add(contact);
+            else
+                updateContacts.Add(contact);
+        }
+
+        
+    }
+
+    private void PropChanged()
+    {
+        Contacts.CollectionChanged += (sender, e) =>
+        {
+            if (e.Action == System.Collections.Specialized.NotifyCollectionChangedAction.Add)
+            {
+                foreach (JbmEntity.Contact item in e.NewItems)
+                {
+                    //item.PropertyChanged
+                }
+            }
+        };
+    }
+
+    private async Task CreateContactAsync()
+    {
+        try
+        {
+            AppIsBusy();
+            IsBusy = true;
+        }
+        catch (Exception ex)
+        {
+
+        }
+        finally
+        {
+            IsBusy = false;
+        }
+    }
+
+    private async Task UpdateContactAsync()
+    {
+        try
+        {
+            AppIsBusy();
+            IsBusy = true;
+        }
+        catch (Exception ex)
+        {
+
+        }
+        finally
+        {
+            IsBusy = false;
         }
     }
 
@@ -79,13 +147,14 @@ public partial class SettingsViewModel : BaseViewModel
             Player = Account.Player;
         }
     }
+
     #endregion
 
     #region Settings
     [RelayCommand]
-    void CreateNewContactListElement()
+    async Task CreateNewContactListElement()
     {
-        if(CanCreateMoreContact())
+        if(await CanCreateMoreContact())
             Contacts.Add(new());
     }
 
@@ -95,16 +164,29 @@ public partial class SettingsViewModel : BaseViewModel
         Contacts.Remove(contact);
     }
 
-    private bool CanCreateMoreContact()
+    private async Task<bool> CanCreateMoreContact()
     {
         JbmEntity.Contact? lastContact = Contacts.LastOrDefault();
+        byte maxContacts = 5;
 
         if (lastContact == null)
+        {
             return true;
-        else if (lastContact.IsValid())
-            return true;
-        else
+        }
+        else if (Contacts.Count >= maxContacts)
+        {
+            await Shell.Current.DisplayAlert("Contact Limit", $"Max contact limit: {maxContacts}", "Ok");
             return false;
+        }
+        else if (lastContact.IsValid())
+        {
+            return true;
+        }
+        else
+        {
+            await Shell.Current.DisplayAlert("Invalid Contact", "Last contact is invalid", "Ok");
+            return false;
+        }
     }
     #endregion
 }
