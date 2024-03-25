@@ -60,6 +60,13 @@ public partial class SettingsViewModel : BaseViewModel
         {
             if (contact.Id == null)
             {
+                if(contact.PlayerId == null ||
+                   contact.PlayerId == Guid.Empty)
+                {
+                    string? playerStringId = Preferences.Get("AccId", null);
+                    Player = await _uow.GetAsync<Player>(new Guid(playerStringId));
+                }
+                contact.PlayerId = Player.Id;
                 addContacts.Add(contact);
             }
             else

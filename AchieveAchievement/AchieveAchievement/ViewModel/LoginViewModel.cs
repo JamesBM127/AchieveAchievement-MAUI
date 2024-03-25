@@ -129,6 +129,7 @@ namespace AchieveAchievement.ViewModel
         private async void SuccessLogin()
         {
             Preferences.Set("AccId", Account.Id.ToString());
+            Preferences.Set("PlayerId", Account.Player.Id.ToString());
             Page currentPage = Shell.Current.CurrentPage;
             await Shell.Current.GoToAsync(nameof(InitialPage), true);
             RemovePage(currentPage);
