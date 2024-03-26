@@ -2,6 +2,7 @@
 using AchieveAchievement.Enum;
 using AchieveAchievementLibrary.Entity;
 using AchieveAchievementLibrary.EntitySettings;
+using Azure;
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
 using Microsoft.EntityFrameworkCore;
@@ -25,8 +26,8 @@ public partial class SettingsViewModel : BaseViewModel
     public SettingsMenu SettingsMenu { get; set; } = SettingsMenu.Profile;
 
     //Array positions
-    //0-Add | 1-Update
-    private bool[] CrudOperationsMade = new bool[2];
+    //0-Create(Added) | 1-Update(Modified) | 2-Delete
+    private EntityState[] CrudOperationsMade = new EntityState[3] { EntityState.Unchanged, EntityState.Unchanged, EntityState.Unchanged };
 
     public SettingsViewModel(IAAUoW uow)
         : base(uow)
@@ -39,18 +40,22 @@ public partial class SettingsViewModel : BaseViewModel
     [RelayCommand]
     async Task UpdateSomethingAsync()
     {
-        switch (SettingsMenu)
+        bool confirm = await Shell.Current.DisplayAlert("Confirm?", "", "Confirm", "Cancel");
+        if (confirm)
         {
-            case SettingsMenu.Account:
-                break;
+            switch (SettingsMenu)
+            {
+                case SettingsMenu.Account:
+                    break;
 
-            case SettingsMenu.Profile:
-                await UpdatePlayerAsync();
-                break;
+                case SettingsMenu.Profile:
+                    await UpdatePlayerAsync();
+                    break;
 
-            case SettingsMenu.Contact:
-                await CheckIfContactAddOrUpdate();
-                break;
+                case SettingsMenu.Contact:
+                    await CheckIfContactAddOrUpdate();
+                    break;
+            }
         }
     }
 
@@ -77,7 +82,7 @@ public partial class SettingsViewModel : BaseViewModel
                     }
                     contact.PlayerId = Player.Id;
                     addContacts.Add(contact);
-                    CrudOperationsMade[0] = true;
+                    CrudOperationsMade[0] = EntityState.Added;
                 }
                 else
                 {
@@ -93,7 +98,7 @@ public partial class SettingsViewModel : BaseViewModel
                             if (contact.Id == itemContact.Id)
                             {
                                 updateContacts.Add(contact);
-                                CrudOperationsMade[1] = true;
+                                CrudOperationsMade[1] = EntityState.Modified;
                             }
                         }
                         catch (InvalidCastException ex)
@@ -104,59 +109,45 @@ public partial class SettingsViewModel : BaseViewModel
             }
         }
 
+        //foreach (EntityState operation in CrudOperationsMade)
+        //{
+        //    switch (operation)
+        //    {
+        //        case EntityState.Added:
+        //            await CreateContactAsync(addContacts);
+        //            break;
+        //        case EntityState.Modified:
+        //            UpdateContact(updateContacts);
+        //            break;
+        //    }
+        //}
 
-        if (addContacts.Count > 0)
-            await CreateContactAsync(addContacts);
-        if (updateContacts.Count > 0)
-            await UpdateContactAsync(updateContacts);
+        for (int i = 0; i < CrudOperationsMade.Length; i++)
+        {
+            switch (CrudOperationsMade[i])
+            {
+                case EntityState.Added:
+                    await CreateContactAsync(addContacts);
+                    break;
+                case EntityState.Modified:
+                    UpdateContact(updateContacts);
+                    break;
+            }
+        }
+
+        bool commit = CrudOperationsMade.Any(x => x != EntityState.Unchanged);
+        if(commit)
+            await CommitContactAsync(commit);
     }
 
     private async Task CreateContactAsync(List<JbmEntity.Contact> addContacts)
     {
-        try
-        {
-            AppIsBusy();
-            IsBusy = true;
-
-            await _uow.AddAsync(addContacts);
-            bool saved = await _uow.CommitAsync(true);
-            if (saved)
-            {
-                CrudOperationsMade[0] = false;
-                await DisplayMessageAfterSaveContact();
-            }
-        }
-        catch (Exception ex)
-        {
-        }
-        finally
-        {
-            IsBusy = false;
-        }
+        await _uow.AddAsync(addContacts);
     }
 
-    private async Task UpdateContactAsync(List<JbmEntity.Contact> updateContacts)
+    private void UpdateContact(List<JbmEntity.Contact> updateContacts)
     {
-        try
-        {
-            AppIsBusy();
-            IsBusy = true;
-
-            _uow.Update(updateContacts);
-            bool saved = await _uow.CommitAsync(true);
-            if (saved)
-            {
-                CrudOperationsMade[1] = false;
-                await DisplayMessageAfterSaveContact();
-            }
-        }
-        catch (Exception ex)
-        {
-        }
-        finally
-        {
-            IsBusy = false;
-        }
+        _uow.Update(updateContacts);
     }
 
     private async Task UpdatePlayerAsync()
@@ -179,6 +170,42 @@ public partial class SettingsViewModel : BaseViewModel
         finally
         {
             IsBusy = false;
+        }
+    }
+
+    private async Task<bool> DeleteContactAsync(JbmEntity.Contact contact)
+    {
+        bool deleted = false;
+        try
+        {
+            AppIsBusy();
+            IsBusy = true;
+
+            deleted = _uow.Delete(contact);
+        }
+        catch (Exception ex)
+        {
+            await Shell.Current.DisplayAlert("Fail", ex.Message, "OK");
+        }
+        finally
+        {
+            IsBusy = false;
+        }
+
+        return deleted;
+    }
+
+    private async Task CommitContactAsync(bool commit)
+    {
+        bool saved = await _uow.CommitAsync(commit);
+        if (saved)
+        {
+            await Shell.Current.DisplayAlert("Success", "Saved successfully", "Ok");
+
+            for (int i = 0; i < CrudOperationsMade.Length; i++)
+            {
+                CrudOperationsMade[i] = EntityState.Unchanged;
+            }
         }
     }
 
@@ -205,7 +232,7 @@ public partial class SettingsViewModel : BaseViewModel
         {
             Contacts.Add(item);
         }
-    } 
+    }
     #endregion
 
     #region Settings
@@ -217,9 +244,13 @@ public partial class SettingsViewModel : BaseViewModel
     }
 
     [RelayCommand]
-    void RemoveContactFromListElement(JbmEntity.Contact contact)
+    async Task RemoveContactFromListElement(JbmEntity.Contact contact)
     {
-        Contacts.Remove(contact);
+        if (await DeleteContactAsync(contact))
+        {
+            Contacts.Remove(contact);
+            CrudOperationsMade[2] = EntityState.Deleted;
+        }
     }
 
     private async Task<bool> CanCreateMoreContact()
@@ -247,13 +278,5 @@ public partial class SettingsViewModel : BaseViewModel
         }
     }
 
-    private async Task DisplayMessageAfterSaveContact()
-    {
-        if (CrudOperationsMade[0] == false &&
-            CrudOperationsMade[1] == false)
-        {
-            await Shell.Current.DisplayAlert("SUCCESS", "Saved successfully", "Ok");
-        }
-    }
     #endregion
 }
