@@ -137,10 +137,13 @@ namespace AchieveAchievement.ViewModel
 
         //DELETE
         [RelayCommand]
-        public async void FakeLogin()
+        public void FakeLogin()
         {
 #if DEBUG
-            SuccessLogin();
+            InputPassword = "sen123";
+            Account.Login = "James";
+            //LogInAAAccountAsync().Wait();
+            //SuccessLogin();
 #endif
         }
 

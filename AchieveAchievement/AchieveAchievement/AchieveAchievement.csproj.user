@@ -16,6 +16,9 @@
     <MauiXaml Update="Resources\Styles\AAColors.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
+    <MauiXaml Update="ViewPage\FriendsPage.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
     <MauiXaml Update="ViewPage\InitialPage.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>

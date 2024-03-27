@@ -19,10 +19,7 @@ public partial class LoginMobilePage : ContentPage
     #region TEST 
     private void AutoLogin()
     {
-        _viewModel.InputPassword = "sen123";
-        _viewModel.Account.Login = "James";
-
-        //await _viewModel.LogInAAAccountAsync();
+        _viewModel.FakeLogin();
     }
     #endregion
 

@@ -41,10 +41,11 @@
 
                         <Label Text="Assunto" />
 
-                        <Button Text="BTN 1"
+                        <Button Text="Friends"
                                 FontSize="20"
                                 BackgroundColor="Black"
                                 TextColor="White"
+                                Command="{Binding GoToFriendsPageCommand}"
                                 HeightRequest="40"/>
                     </VerticalStackLayout>
                 </Frame>

@@ -8,29 +8,35 @@
 
     <ScrollView>
         <VerticalStackLayout
-        Spacing="10">
+            Spacing="10">
         
-        <Label 
-            Text="{local:Translate DisplayName}"
-            FontSize="15" />
-
-        <Entry
-            Text="{Binding Player.Name}"
-            Style="{StaticResource AAEntry}"
-            MaxLength="15" />
-        
-        <Label Text="Birth Date"
+            <Label 
+                Text="{local:Translate DisplayName}"
                 FontSize="15" />
 
-        <DatePicker 
-            Date="{Binding Player.BirthDate}"
-            Style="{StaticResource AADatePicker}" 
-            HorizontalOptions="StartAndExpand"/>
-
-        <Label 
-            Text="Show Contacts"
-            FontSize="15" />
+            <Entry
+                Text="{Binding Player.Name}"
+                Style="{StaticResource AAEntry}"
+                MaxLength="15" />
         
-    </VerticalStackLayout>
+            <Label Text="Birth Date"
+                    FontSize="15" />
+
+            <DatePicker 
+                Date="{Binding Player.BirthDate}"
+                Style="{StaticResource AADatePicker}" 
+                HorizontalOptions="StartAndExpand"/>
+
+            <HorizontalStackLayout>
+                <Label 
+                    Text="Hide Contacts"
+                    FontSize="15" 
+                    VerticalTextAlignment="Center"/>
+
+                <CheckBox 
+                    IsChecked="{Binding Player.HideContacts}"/>
+            </HorizontalStackLayout>
+
+        </VerticalStackLayout>
     </ScrollView>
 </ContentView>

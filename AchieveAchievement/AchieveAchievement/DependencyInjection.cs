@@ -17,11 +17,13 @@ namespace AchieveAchievement
             services.AddScoped<LoginViewModel>();
             services.AddScoped<AppShellViewModel>();
             services.AddScoped<SettingsViewModel>();
+            services.AddScoped<FriendsViewModel>();
 
             services.AddSingleton<LoginDesktopPage>();
             services.AddSingleton<LoginMobilePage>();
             services.AddSingleton<InitialPage>();
             services.AddSingleton<SettingsPage>();
+            services.AddSingleton<FriendsPage>();
 
         }
     }

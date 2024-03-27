@@ -1,12 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:viewmodel="clr-namespace:AchieveAchievement.ViewModel"
-             xmlns:local="clr-namespace:AchieveAchievement"
-             xmlns:view="clr-namespace:AchieveAchievement.View.SettingsView"
-             x:Class="AchieveAchievement.ViewPage.SettingsPage"
-             x:DataType="viewmodel:SettingsViewModel"
-             Shell.NavBarIsVisible="True">
+             x:Class="AchieveAchievement.ViewPage.FriendsPage"
+             Title="FriendsPage">
 
     <Shell.BackButtonBehavior>
         <BackButtonBehavior IsEnabled="False"
@@ -36,43 +32,31 @@
             BackgroundColor="Transparent"
             BorderColor="Transparent"
             CornerRadius="3">
-            
+
             <ScrollView >
                 <!--Settings MENU-->
                 <VerticalStackLayout
                     Spacing="10">
 
-                    <!--Profile-->
+                    <!--Your Friends-->
                     <Button 
-                        x:Name="ProfileMenuBtn"
-                        Text="{local:Translate Profile}"
-                        Clicked="ProfileBtnClicked"
+                        Text="Your Friends"
                         Style="{StaticResource SettingsMenuButton}"
                         BackgroundColor="#4C4C4C"
                         />
 
-                    <!--Contact-->
+                    <!--Add Friend-->
                     <Button 
-                        x:Name="ContactMenuBtn"
-                        Text="Contact"
-                        Clicked="ContactBtnClicked"
+                        Text="Add a Friend"
                         Style="{StaticResource SettingsMenuButton}"
                         />
 
-                    <!--Account-->
+                    <!--Invites-->
                     <Button 
-                        x:Name="AccountMenuBtn"
-                        Text="Account"
-                        Clicked="AccountBtnClicked"
+                        Text="Invites"
                         Style="{StaticResource SettingsMenuButton}"
                         />
 
-                    <Button 
-                        Grid.Row="1"
-                        Text="Language"
-                        Command="{Binding TESTECommand}"
-                        Style="{StaticResource SettingsMenuButton}"
-                        />
                 </VerticalStackLayout>
             </ScrollView>
         </Frame>
@@ -88,17 +72,7 @@
             Grid.Column="2" 
             Padding="15">
 
-            <view:ProfileSettingsView
-                x:Name="ProfileView"
-                IsVisible="True"/>
-
-            <view:ContactSettingsView
-                x:Name="ContactView"
-                IsVisible="False"/>
-
-            <view:AccountSettingsView
-                x:Name="AccountView"
-                IsVisible="False"/>
+            
         </Grid>
     </Grid>
 </ContentPage>

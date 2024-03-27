@@ -6,14 +6,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AchieveAchievement.ViewModel
+namespace AchieveAchievement.ViewModel;
+public partial class AppShellViewModel : BaseViewModel
 {
-    public partial class AppShellViewModel : BaseViewModel
+    [RelayCommand]
+    async Task GoToSettingsAsync()
     {
-        [RelayCommand]
-        async Task GoToSettingsAsync()
-        {
-            await Shell.Current.GoToAsync(nameof(SettingsPage), false);
-        }
+        await Shell.Current.GoToAsync(nameof(SettingsPage), false);
+    }
+
+    [RelayCommand]
+    async Task GoToFriendsPageAsync()
+    {
+        await Shell.Current.GoToAsync(nameof(FriendsPage), false);
     }
 }

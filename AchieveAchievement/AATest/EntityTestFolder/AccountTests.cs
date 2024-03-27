@@ -223,7 +223,7 @@
 
             #region Assert
             Assert.That(playerFromDb.Id, Is.EqualTo(account.Player.Id));
-            Assert.That(playerFromDb.ShowContacts, Is.EqualTo(account.Player.ShowContacts));
+            Assert.That(playerFromDb.HideContacts, Is.EqualTo(account.Player.HideContacts));
             Assert.That(playerFromDb.AccountId, Is.EqualTo(account.Player.AccountId));
             #endregion
         }

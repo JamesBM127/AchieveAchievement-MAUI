@@ -5,7 +5,7 @@ namespace AchieveAchievementLibrary.Entity
     public class Player : BaseEntity
     {
         public string Name { get; set; }
-        public bool ShowContacts { get; set; }
+        public bool HideContacts { get; set; }
         public Guid AccountId { get; set; }
         public Account Account { get; set; }
         public string? Languages { get; set; }

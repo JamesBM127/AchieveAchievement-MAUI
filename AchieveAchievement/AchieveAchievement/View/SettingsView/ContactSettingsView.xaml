@@ -61,7 +61,7 @@
                                     RowDefinitions="*,*"
                                     RowSpacing="10">
 
-                                    <Grid
+                                    <!--<Grid
                                         RowDefinitions="*,*">
                                         <Label 
                                             Text="Profile Link"/>
@@ -73,7 +73,7 @@
                                             Text="{Binding Link}"
                                             HorizontalTextAlignment="Start"
                                             Style="{StaticResource AAEntry}"/>
-                                    </Grid>
+                                    </Grid>-->
 
                                     <Grid
                                         Grid.Row="1"

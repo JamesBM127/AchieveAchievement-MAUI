@@ -15,6 +15,7 @@ namespace AchieveAchievement
             Routing.RegisterRoute(nameof(LoginMobilePage), typeof(LoginMobilePage));
             Routing.RegisterRoute(nameof(InitialPage), typeof(InitialPage));
             Routing.RegisterRoute(nameof(SettingsPage), typeof(SettingsPage));
+            Routing.RegisterRoute(nameof(FriendsPage), typeof(FriendsPage));
         }
     }
 }

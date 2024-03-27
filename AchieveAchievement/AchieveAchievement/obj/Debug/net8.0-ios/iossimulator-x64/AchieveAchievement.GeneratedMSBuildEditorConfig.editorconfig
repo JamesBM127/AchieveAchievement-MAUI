@@ -52,6 +52,12 @@ build_metadata.AdditionalFiles.ManifestResourceName = AchieveAchievement.Resourc
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml
 
+[C:/Users/james/source/repos/Achieve Achievement/AchieveAchievement/AchieveAchievement/ViewPage/FriendsPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = AchieveAchievement.ViewPage.FriendsPage.xaml
+build_metadata.AdditionalFiles.TargetPath = ViewPage\FriendsPage.xaml
+build_metadata.AdditionalFiles.RelativePath = ViewPage\FriendsPage.xaml
+
 [C:/Users/james/source/repos/Achieve Achievement/AchieveAchievement/AchieveAchievement/ViewPage/InitialPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = AchieveAchievement.ViewPage.InitialPage.xaml
